@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "img": "/assets/imgs/works/full/1.png",
+    "category": "Mobile application",
+    "title": "PenPal",
+    "year": "2024",
+    "link": "/project1"
+  },
+  {
+    "id": 2,
+    "img": "/assets/imgs/works/full/2.png",
+    "category": "Web Design",
+    "title": "AlMoajil Hospitality",
+    "year": "2023",
+    "link": "/project2"
+  },
+  {
+    "id": 3,
+    "img": "/assets/imgs/works/full/3.png",
+    "category": "Web Application",
+    "title": "Eastern Gets Creative",
+    "year": "2023",
+    "link": "/project3"
+  },
+  {
+    "id": 4,
+    "img": "/assets/imgs/works/full/4.png",
+    "category": "Website development",
+    "title": "Promotion Efficiency",
+    "year": "2021",
+    "link": "/project4"
+  },
+  {
+    "id": 5,
+    "img": "/assets/imgs/works/full/4.png",
+    "category": "Website development",
+    "title": "Promotion Efficiency",
+    "year": "2021",
+    "link": "/project4"
+  },
+  {
+    "id": 6,
+    "img": "/assets/imgs/works/full/4.png",
+    "category": "Website development",
+    "title": "Promotion Efficiency",
+    "year": "2021",
+    "link": "/project4"
+  }
+  
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "numb": "01",
+    "title": "Proudly Saudi",
+    "icon": "/assets/imgs/serv-icons/0.png",
+    "content": "As a homegrown Saudi company, 6 Degrees Technologies is deeply rooted in the values and vision of the Kingdom of Saudi Arabia. We are committed to supporting the Kingdom's Vision 2030 by driving digital transformation and innovation across various sectors. Our local presence and understanding of the Saudi market enable us to deliver solutions that are culturally and regionally relevant."
+  },
+  {
+    "id": 2,
+    "numb": "02",
+    "title": "Client-Centric Approach",
+    "icon": "/assets/imgs/serv-icons/1.png",
+    "content": "Our clients are at the heart of everything we do. We take the time to understand your business goals and challenges, ensuring that our solutions are perfectly aligned with your vision. Our personalized approach guarantees that you receive the highest level of service and support, from initial consultation to project completion and beyond."
+  },
+  {
+    "id": 3,
+    "numb": "03",
+    "title": "Expertise and Experience",
+    "icon": "/assets/imgs/serv-icons/2.png",
+    "content": "With years of experience in the industry, 6 Degrees Technologies boasts a team of highly skilled professionals. Our expertise spans various domains, including website development, app development, UI/UX design, SEO, and smart building automation. This extensive knowledge base allows us to tackle complex projects with confidence and precision."
+  },
+  {
+    "id": 4,
+    "numb": "04",
+    "title": "Innovative Solutions",
+    "icon": "/assets/imgs/serv-icons/0.png",
+    "content": "At 6 Degrees Technologies, we believe in pushing the boundaries of technology. Our team of experts consistently delivers innovative solutions tailored to meet the unique needs of each client. Whether it's developing cutting-edge applications, designing intuitive user interfaces, or implementing smart automation, we are committed to staying ahead of the technological curve."
+  }
+  
+]

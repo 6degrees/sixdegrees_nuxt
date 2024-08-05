@@ -1,0 +1,1 @@
+export { default } from "file:///C:/Users/atheer/Downloads/wetransfer_main_files_2024-07-07_0656/Main_Files/sixdegrees_nuxtjs/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

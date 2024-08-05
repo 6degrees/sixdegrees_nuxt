@@ -1,0 +1,31 @@
+{
+  "name": "six-degrees-technologies",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@types/node": "^18.17.1",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "nuxt": "^3.6.5",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^3.4.7"
+  },
+  "dependencies": {
+    "@nuxtjs/style-resources": "^1.2.2",
+    "@splinetool/react-spline": "^4.0.0",
+    "@splinetool/runtime": "^1.9.5",
+    "@vitejs/plugin-react": "^4.3.1",
+    "bootstrap-icons": "^1.11.3",
+    "gsap": "^3.12.5",
+    "swiper": "^8.4.6",
+    "vite": "^4.5.3"
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "First Featured",
+    "tag": "Inspiration",
+    "date": "August 7, 2022",
+    "img": "/assets/imgs/blog/b1.jpeg"
+  },
+  {
+    "id": 2,
+    "title": "Second Featured",
+    "tag": "Inspiration",
+    "date": "August 7, 2022",
+    "img": "/assets/imgs/blog/b1.jpeg"
+  }
+]
