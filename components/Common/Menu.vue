@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-lg-8">
           <div class="menu-links">
-            <ul class="main-menu rest">
+            <ul class="main-menu m-0 p-0">
               <li @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
                 <div class="o-hidden">
                   <a href="/" class="link animsition-link" @click="closeMenu"><span class="nm">01.</span>Home</a>
@@ -26,19 +26,19 @@
         <div class="col-lg-4 valign">
           <div class="cont-info">
             <div class="item mb-50">
-              <h6 class="text-u fw-600 mb-20">Head Quarter</h6>
-              <p class="fw-400 fz-18">6919 Prince Turki Road, Al Khobar Corniche, Office #301, Al Khobar 34413</p>
+              <h6 class="uppercase font-semibold mb-20">Head Quarter</h6>
+              <p class="font-normal text-lg">6919 Prince Turki Road, Al Khobar Corniche, Office #301, Al Khobar 34413</p>
             </div>
             <div class="item mb-50">
-              <h6 class="text-u fw-600 mb-20">How to Connect</h6>
-              <a class="fw-400 fz-18" href="tel:+966-558412255">+966 55 841 2255</a>
+              <h6 class="uppercase font-semibold mb-20">How to Connect</h6>
+              <a class="font-normal text-lg" href="tel:+966-558412255">+966 55 841 2255</a>
               <br>
-              <a  class="fw-400 fz-18" href="mailto:contact@6degrees.com.sa">contact@6degrees.com.sa</a>
+              <a  class="font-normal text-lg" href="mailto:contact@6degrees.com.sa">contact@6degrees.com.sa</a>
              
             </div>
             <div class="bottom">
-              <h6 class="text-u fw-600 mb-20">Join Us</h6>
-              <ul class="rest social-text d-flex fz-13">
+              <h6 class="uppercase font-semibold mb-20">Join Us</h6>
+              <ul class="m-0 p-0 social-text d-flex text-sm	">
                 <li class="mr-20">
                   <a href="https://github.com/6degrees" class="hover-this">
                     <span class="hover-anim">github</span>

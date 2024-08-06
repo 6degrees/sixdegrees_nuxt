@@ -11,7 +11,7 @@
           <div class="col-lg-6">
             <div class="column">
               <h6 class="sub-title mb-30">Social Media</h6>
-              <ul class="rest">
+              <ul class="m-0 p-0">
                 <li class="hover-this cursor-pointer">
                   <a href="https://github.com/6degrees" class="hover-anim">GitHub</a>
                 </li>
@@ -45,7 +45,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="links">
-              <ul class="rest">
+              <ul class="m-0 p-0">
                 <li>
                   <a href="https://up.monitoring.6d.com.sa/status/main" class="animsition-link">Service Status</a>
                 </li>

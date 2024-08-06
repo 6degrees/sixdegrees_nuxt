@@ -12,51 +12,51 @@
     "jsxFragmentFactory": "Fragment",
     "paths": {
       "#imports": [
-        "C:/Users/atheer/Downloads/wetransfer_main_files_2024-07-07_0656/Main_Files/sixdegrees_nuxtjs/.nuxt/types/nitro-imports"
+        "C:/Users/atheer/Documents/GitHub/sixdegrees_nuxt/.nuxt/types/nitro-imports"
       ],
       "#paths": [
-        "C:/Users/atheer/Downloads/wetransfer_main_files_2024-07-07_0656/Main_Files/sixdegrees_nuxtjs/node_modules/nuxt/dist/core/runtime/nitro/paths"
+        "C:/Users/atheer/Documents/GitHub/sixdegrees_nuxt/node_modules/nuxt/dist/core/runtime/nitro/paths"
       ],
       "~": [
-        "C:/Users/atheer/Downloads/wetransfer_main_files_2024-07-07_0656/Main_Files/sixdegrees_nuxtjs"
+        "C:/Users/atheer/Documents/GitHub/sixdegrees_nuxt"
       ],
       "~/*": [
-        "C:/Users/atheer/Downloads/wetransfer_main_files_2024-07-07_0656/Main_Files/sixdegrees_nuxtjs/*"
+        "C:/Users/atheer/Documents/GitHub/sixdegrees_nuxt/*"
       ],
       "@": [
-        "C:/Users/atheer/Downloads/wetransfer_main_files_2024-07-07_0656/Main_Files/sixdegrees_nuxtjs"
+        "C:/Users/atheer/Documents/GitHub/sixdegrees_nuxt"
       ],
       "@/*": [
-        "C:/Users/atheer/Downloads/wetransfer_main_files_2024-07-07_0656/Main_Files/sixdegrees_nuxtjs/*"
+        "C:/Users/atheer/Documents/GitHub/sixdegrees_nuxt/*"
       ],
       "~~": [
-        "C:/Users/atheer/Downloads/wetransfer_main_files_2024-07-07_0656/Main_Files/sixdegrees_nuxtjs"
+        "C:/Users/atheer/Documents/GitHub/sixdegrees_nuxt"
       ],
       "~~/*": [
-        "C:/Users/atheer/Downloads/wetransfer_main_files_2024-07-07_0656/Main_Files/sixdegrees_nuxtjs/*"
+        "C:/Users/atheer/Documents/GitHub/sixdegrees_nuxt/*"
       ],
       "@@": [
-        "C:/Users/atheer/Downloads/wetransfer_main_files_2024-07-07_0656/Main_Files/sixdegrees_nuxtjs"
+        "C:/Users/atheer/Documents/GitHub/sixdegrees_nuxt"
       ],
       "@@/*": [
-        "C:/Users/atheer/Downloads/wetransfer_main_files_2024-07-07_0656/Main_Files/sixdegrees_nuxtjs/*"
+        "C:/Users/atheer/Documents/GitHub/sixdegrees_nuxt/*"
       ],
       "assets": [
-        "C:/Users/atheer/Downloads/wetransfer_main_files_2024-07-07_0656/Main_Files/sixdegrees_nuxtjs/assets"
+        "C:/Users/atheer/Documents/GitHub/sixdegrees_nuxt/assets"
       ],
       "assets/*": [
-        "C:/Users/atheer/Downloads/wetransfer_main_files_2024-07-07_0656/Main_Files/sixdegrees_nuxtjs/assets/*"
+        "C:/Users/atheer/Documents/GitHub/sixdegrees_nuxt/assets/*"
       ],
       "public": [
-        "C:/Users/atheer/Downloads/wetransfer_main_files_2024-07-07_0656/Main_Files/sixdegrees_nuxtjs/public"
+        "C:/Users/atheer/Documents/GitHub/sixdegrees_nuxt/public"
       ],
       "public/*": [
-        "C:/Users/atheer/Downloads/wetransfer_main_files_2024-07-07_0656/Main_Files/sixdegrees_nuxtjs/public/*"
+        "C:/Users/atheer/Documents/GitHub/sixdegrees_nuxt/public/*"
       ]
     }
   },
   "include": [
-    "C:/Users/atheer/Downloads/wetransfer_main_files_2024-07-07_0656/Main_Files/sixdegrees_nuxtjs/.nuxt/types/nitro-nuxt.d.ts",
+    "C:/Users/atheer/Documents/GitHub/sixdegrees_nuxt/.nuxt/types/nitro-nuxt.d.ts",
     "./types/nitro.d.ts",
     "../**/*",
     "../server/**/*"

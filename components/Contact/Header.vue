@@ -1,5 +1,5 @@
 <template>
-  <header class="contact-header section-padding">
+  <header class="contact-header py-[120px]">
     <div class="container mt-100">
       <div class="row justify-content-center">
         <div class="col-12">

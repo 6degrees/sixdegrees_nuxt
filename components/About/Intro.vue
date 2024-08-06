@@ -1,12 +1,12 @@
 <template>
-  <section class="section-padding main-bg ">
+  <section class="py-[120px] main-bg ">
     <div class="container">
       <div class="row">
         <div class="col-lg-10">
-          <div class="text">
-            <span class="sub-title mb-15 opacity-8">- Who We Are?</span>
+          <div class="">
+            <span class=" tracking-widest font-light text-sm uppercase mb-15 opacity-8">- Who We Are?</span>
             <div class="text-reval">
-              <h2 class="fz-50 text-u mb-30">
+              <h2 class="text-5xl uppercase mb-30">
                 <span class="text">an IT business enabler and partner</span>
               </h2>
             </div>
@@ -20,47 +20,47 @@
         <div class="col-lg-10 offset-lg-1">
           <div class="row mt-80">
             <div class="col-md-4 sm-mb30">
-              <ul class="list rest">
-                <li class="fz-18 mb-15"><span class="mr-10">+</span> UI/UX</li>
-                <li class="fz-18 mb-15"><span class="mr-10">+</span> Website Develoment</li>
-                <li class="fz-18 mb-15"><span class="mr-10">+</span> Application Development</li>
-                <li class="fz-18 mb-15"><span class="mr-10">+</span> SEO</li>
+              <ul class="list m-0 p-0">
+                <li class="text-lg mb-15"><span class="mr-10">+</span> UI/UX</li>
+                <li class="text-lg mb-15"><span class="mr-10">+</span> Website Develoment</li>
+                <li class="text-lg mb-15"><span class="mr-10">+</span> Application Development</li>
+                <li class="text-lg mb-15"><span class="mr-10">+</span> SEO</li>
               </ul>
             </div>
             <div class="col-md-4 sm-mb30">
               <ul class="list rest">
-                <li class="fz-18 mb-15"><span class="mr-10">+</span> Hardware import</li>
-                <li class="fz-18 mb-15"><span class="mr-10">+</span> Smart Busilding Automation</li>
-                <li class="fz-18 mb-15"><span class="mr-10">+</span> API Integration</li>
-                <li class="fz-18 mb-15"><span class="mr-10">+</span> Data Migration</li>
+                <li class="text-lg mb-15"><span class="mr-10">+</span> Hardware import</li>
+                <li class="text-lg mb-15"><span class="mr-10">+</span> Smart Busilding Automation</li>
+                <li class="text-lg mb-15"><span class="mr-10">+</span> API Integration</li>
+                <li class="text-lg mb-15"><span class="mr-10">+</span> Data Migration</li>
               </ul>
             </div>
             <div class="col-md-4">
               <ul class="list rest">
-                <li class="fz-18 mb-15"><span class="mr-10">+</span> Hardware import</li>
-                <li class="fz-18 mb-15"><span class="mr-10">+</span> Smart Busilding Automation</li>
-                <li class="fz-18 mb-15"><span class="mr-10">+</span> API Integration</li>
-                <li class="fz-18 mb-15"><span class="mr-10">+</span> Data Migration</li>
+                <li class="text-lg mb-15"><span class="mr-10">+</span> Hardware import</li>
+                <li class="text-lg mb-15"><span class="mr-10">+</span> Smart Busilding Automation</li>
+                <li class="text-lg mb-15"><span class="mr-10">+</span> API Integration</li>
+                <li class="text-lg mb-15"><span class="mr-10">+</span> Data Migration</li>
               </ul>
             </div>
           </div>
           <div class="row numbers mt-80">
             <div class="col-lg-4">
               <div class="item md-mb50">
-                <h3 class="stroke f-bold num pb-30 mb-30 bord-thin-bottom">+25</h3>
-                <h6 class="fz-16">Years of Experince</h6>
+                <h3 class="stroke font-medium	  pb-30 mb-30 bord-thin-bottom">+25</h3>
+                <h6 class="text-base">Years of Experince</h6>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="item md-mb50">
-                <h3 class="stroke f-bold num pb-30 mb-30 bord-thin-bottom">+50</h3>
-                <h6 class="fz-16">Completed Projects</h6>
+                <h3 class="stroke font-medium	 pb-30 mb-30 bord-thin-bottom">+50</h3>
+                <h6 class="text-base">Completed Projects</h6>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="item">
-                <h3 class="stroke f-bold num pb-30 mb-30 bord-thin-bottom">+200</h3>
-                <h6 class="fz-16">Satisfied Clients</h6>
+                <h3 class="stroke font-medium	  pb-30 mb-30 bord-thin-bottom">+200</h3>
+                <h6 class="text-base">Satisfied Clients</h6>
               </div>
             </div>
           </div>

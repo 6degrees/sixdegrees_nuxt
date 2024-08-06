@@ -1,13 +1,13 @@
 <template>
-  <section class="section-padding bord-thin-top">
+  <section class="py-[120px] bord-thin-top">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-7">
           <div class="text">
             <h2 class="mb-50">The Solution</h2>
-            <h5 class="mb-30 fw-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+            <h5 class="mb-30 font-normal">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
             </h5>
-            <p class="fz-18">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+            <p class="text-lg">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
           </div>
         </div>
       </div>

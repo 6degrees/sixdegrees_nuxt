@@ -3,7 +3,6 @@ declare module 'vue' {
   export interface GlobalComponents {
     'AboutHeader': typeof import("../components/About/Header.vue")['default']
     'AboutIntro': typeof import("../components/About/Intro.vue")['default']
-    'AboutTeam': typeof import("../components/About/Team.vue")['default']
     'AboutTestimonials': typeof import("../components/About/Testimonials.vue")['default']
     'AboutVideo': typeof import("../components/About/Video.vue")['default']
     'CommonCursor': typeof import("../components/Common/Cursor.vue")['default']
@@ -61,7 +60,6 @@ declare module 'vue' {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyAboutHeader': typeof import("../components/About/Header.vue")['default']
     'LazyAboutIntro': typeof import("../components/About/Intro.vue")['default']
-    'LazyAboutTeam': typeof import("../components/About/Team.vue")['default']
     'LazyAboutTestimonials': typeof import("../components/About/Testimonials.vue")['default']
     'LazyAboutVideo': typeof import("../components/About/Video.vue")['default']
     'LazyCommonCursor': typeof import("../components/Common/Cursor.vue")['default']
@@ -122,7 +120,6 @@ declare module 'vue' {
 
 export const AboutHeader: typeof import("../components/About/Header.vue")['default']
 export const AboutIntro: typeof import("../components/About/Intro.vue")['default']
-export const AboutTeam: typeof import("../components/About/Team.vue")['default']
 export const AboutTestimonials: typeof import("../components/About/Testimonials.vue")['default']
 export const AboutVideo: typeof import("../components/About/Video.vue")['default']
 export const CommonCursor: typeof import("../components/Common/Cursor.vue")['default']
@@ -180,7 +177,6 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyAboutHeader: typeof import("../components/About/Header.vue")['default']
 export const LazyAboutIntro: typeof import("../components/About/Intro.vue")['default']
-export const LazyAboutTeam: typeof import("../components/About/Team.vue")['default']
 export const LazyAboutTestimonials: typeof import("../components/About/Testimonials.vue")['default']
 export const LazyAboutVideo: typeof import("../components/About/Video.vue")['default']
 export const LazyCommonCursor: typeof import("../components/Common/Cursor.vue")['default']

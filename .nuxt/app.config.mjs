@@ -1,5 +1,5 @@
 
-import { defuFn } from 'C:/Users/atheer/Downloads/wetransfer_main_files_2024-07-07_0656/Main_Files/sixdegrees_nuxtjs/node_modules/defu/dist/defu.mjs'
+import { defuFn } from 'C:/Users/atheer/Documents/GitHub/sixdegrees_nuxt/node_modules/defu/dist/defu.mjs'
 
 const inlineConfig = {}
 

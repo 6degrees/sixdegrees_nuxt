@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-lg-6 valign">
           <div class="full-width mb-30">
-            <h1 class="fz-60">Penpal App</h1>
+            <h1 class="text-6xl">Penpal App</h1>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
           </div>
         </div>

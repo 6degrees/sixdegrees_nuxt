@@ -1,9 +1,9 @@
 <template>
-  <section class="info-contact section-padding  pt-0">
+  <section class="py-[120px] main-bg  pt-0">
     <div class="container">
       <div class="sec-head text-center mb-80">
         <span class="sub-title mb-15 opacity-8">- Contact Info</span>
-        <h3 class="text-u fz-50">Contact With Us!</h3>
+        <h3 class="uppercase text-5xl">Contact With Us!</h3>
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-4 col-md-6">

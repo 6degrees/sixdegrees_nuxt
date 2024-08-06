@@ -52,12 +52,12 @@
             </swiper-slide>
             <swiper-slide>
               <div class="img">
-                <img src="/assets/imgs/works/projects/2/2.jpg" alt="" />
+                <img src="/assets/imgs/works/projects/2/1.jpg" alt="" />
               </div>
             </swiper-slide>
             <swiper-slide>
               <div class="img">
-                <img src="/assets/imgs/works/projects/2/3.jpg" alt="" />
+                <img src="/assets/imgs/works/projects/2/1.jpg" alt="" />
               </div>
             </swiper-slide>
           </swiper>

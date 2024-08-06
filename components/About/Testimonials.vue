@@ -1,10 +1,10 @@
 <template>
-  <section class="testimonials section-padding">
+  <section class="testimonials py-[120px]">
     <div class="container">
       <div class="sec-head pb-20 bord-thin-bottom mb-80">
         <div class="d-flex align-items-center">
           <div>
-            <h3 class="f-bold text-u">Testimonials</h3>
+            <h3 class="font-bold uppercase">Testimonials</h3>
           </div>
           <div class="ml-auto">
             <div class="swiper-button-prev">
@@ -31,9 +31,9 @@
                       </div>
                       <div class="col-md-10">
                         <div class="cont">
-                          <h4 class="fz-24">{{ item.quote }}</h4>
+                          <h4 class="text-2xl	">{{ item.quote }}</h4>
                           <div class="info mt-30">
-                            <h5 class="text-u ls1">{{ item.author }}</h5>
+                            <h5 class="uppercase ls1">{{ item.author }}</h5>
                             <span class="sub-title opacity-8 mt-5">{{ item.client }}</span>
                           </div>
                         </div>

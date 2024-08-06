@@ -13,7 +13,7 @@
         </div>
       </div>
     </div>
-    <div class="brands mt-70">
+    <!-- <div class="brands mt-70">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-11">
@@ -29,7 +29,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
