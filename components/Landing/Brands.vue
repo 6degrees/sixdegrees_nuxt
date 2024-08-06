@@ -22,15 +22,20 @@
   </div>
 </template>
 
+
 <script setup>
-// Import the necessary modules and data
 import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/swiper-bundle.min.css'; // Make sure you have Swiper CSS
 import data from '@/data/Landing/brands.json';
 
 const swiperOptions = {
   slidesPerView: 5,
   loop: true,
   spaceBetween: 40,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     0: {
       slidesPerView: 2,
@@ -68,3 +73,4 @@ const swiperOptions = {
   align-items: center;
 }
 </style>
+
