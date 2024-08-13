@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.canvas3d-section {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust this height as needed */
+}
+
+.canvas3d-section .canvas3d-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.canvas3d-section .canvas3d-wrapper canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+.brand-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-item div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.brand-item div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.features-items {
+    background: radial-gradient(61.42% 73.53% at 94.28% 5.25%, #000 0%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(87.14% 83.69% at 118.24% 109.77%, rgba(0, 3, 8, 0.5) 0%, rgba(2, 12, 47, 0.50) 100%), radial-gradient(74.87% 191.72% at -31.72% 120.78%, rgba(0, 5, 10, 0.5) 22.83%, rgba(1, 6, 12, 0.5) 100%), radial-gradient(130.11% 116.7% at -47.61% 133.94%, rgba(0, 13, 81, 0.50) 0%, rgba(0, 13, 80, 0.50) 58.33%, rgba(87, 36, 254, 0.00) 100%), #262D67;
+}
+
+.features-items:hover {
+    background: linear-gradient(32.84deg, #1c4cf7 2.14%, #0b237d 95.1%);
+
+}
+
+#techStack .marquee-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    z-index: 10;
+    background: url('/assets/imgs/backgroundShade.png'), url('/assets/imgs/backgroundShade2.png');
+    background-size: cover, cover;
+    background-position: left, right;
+}
+
+#techStack .marquee-container .marquee-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 400%;
+    will-change: transform;
+}
+
+#techStack .marquee-container .marquee-content .marquee-row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#techStack .marquee-container .marquee-content .marquee-row .technology {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    margin: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#techStack .marquee-container .marquee-content .marquee-row .technology figcaption {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.1s ease-out;
+}
+
+#techStack .marquee-container .marquee-content .marquee-row .technology:hover figcaption {
+    opacity: 1;
+}
+
+#techStack .marquee-container .marquee-content .marquee-row .technology .logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+}
+
+#techStack .marquee-container .marquee-content .marquee-row .technology:hover .logo {
+    transform: scale(1.1);
+}
+
+.full-showcase .swiper-pagination {
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+}
+
+.half-slider .gallery-text .swiper-wrapper {
+    max-height: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.half-slider .gallery-text .swiper-slide {
+    width: 45% !important;
+    flex-shrink: 0;
+    display: block;
+    height: 100%;
+    max-height: 100%;
+}
+
+.blur {
+    --tw-blur: blur(0px);
+}
+
+@media (max-width: 1024px) {
+    .half-slider .gallery-text .swiper-slide {
+        width: 100% !important;
+    }
+}
