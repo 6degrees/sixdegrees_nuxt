@@ -13,7 +13,7 @@
         </div>
       
       </main>
-      <CommonFooter1 />
+      <CommonFooter />
     </div>
   </div>
 </template>

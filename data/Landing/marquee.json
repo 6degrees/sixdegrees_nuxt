@@ -1,22 +1,37 @@
 [
   {
     "id": 1,
-    "title": "UI-UX Design"
+    "title": {
+      "en": "UI-UX Design",
+      "ar": "تصميم واجهات المستخدم وتجربة المستخدم"
+    }
   },
   {
     "id": 2,
-    "title": "Software Development"
+    "title": {
+      "en": "Software Development",
+      "ar": "تطوير البرمجيات"
+    }
   },
   {
     "id": 3,
-    "title": "Smart Building Automation"
+    "title": {
+      "en": "Smart Building Automation",
+      "ar": "أتمتة المباني الذكية"
+    }
   },
   {
     "id": 4,
-    "title": "IoT"
+    "title": {
+      "en": "IoT",
+      "ar": "إنترنت الأشياء"
+    }
   },
   {
     "id": 5,
-    "title": "Digital Consultation"
+    "title": {
+      "en": "Digital Consultation",
+      "ar": "الاستشارات الرقمية"
+    }
   }
 ]

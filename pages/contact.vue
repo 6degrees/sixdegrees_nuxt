@@ -9,7 +9,7 @@
         <ContactInfo />
 
       </main>
-      <CommonFooter1 :subBg="true" />
+      <CommonFooter :subBg="true" />
     </div>
   </div>
 </template>

@@ -1447,7 +1447,6 @@ body.loaded {
 }
 
 .topnav .menu-icon {
-  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1497,7 +1496,6 @@ body.loaded {
 .topnav .menu-icon .text {
   font-size: 13px;
   font-weight: 500;
-  padding-right: 15px;
   position: relative;
 }
 
@@ -1792,7 +1790,6 @@ body.loaded {
   color: #0c0c0c;
   background: #35d8b1;
   border-radius: 50%;
-  margin-left: 5px;
 }
 
 
@@ -1905,7 +1902,6 @@ body.loaded {
   padding: 7px 20px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 30px;
-  margin-right: 15px;
 }
 
 .blog-list .item .info .date {
@@ -2115,7 +2111,6 @@ footer .eml .sub-title {
 
 footer .column li {
   display: inline-block;
-  margin-right: 30px;
 }
 
 footer .column li:last-of-type {
@@ -2124,7 +2119,6 @@ footer .column li:last-of-type {
 
 footer .bord .links li {
   display: inline-block;
-  margin-right: 30px;
 }
 
 footer .bord .links li:last-of-type {
@@ -2390,7 +2384,6 @@ footer .logo img {
 .feat .item .numb {
   position: absolute;
   top: 0;
-  right: 0;
 }
 
 .feat .item h6 {
