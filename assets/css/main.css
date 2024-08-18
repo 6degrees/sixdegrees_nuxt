@@ -2,27 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.canvas3d-section {
-    position: relative;
-    width: 100%;
-    height: 500px; /* Adjust this height as needed */
+@layer utilities {
+    .z--1 {
+        z-index: -1;
+    }
 }
-
-.canvas3d-section .canvas3d-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.canvas3d-section .canvas3d-wrapper canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
 
 .brand-item {
     display: flex;

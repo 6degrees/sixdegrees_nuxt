@@ -1,6 +1,6 @@
 <template>
   <!-- Start Land Header -->
-  <header class="valign pt-28 pb-24 md:pt-36 md:pb-25 sm:pt-24 sm:pb-20 xs:pt-16 xs:pb-10">
+  <header class="flex items-center pt-28 pb-24 md:pt-36 md:pb-25 sm:pt-24 sm:pb-20 xs:pt-16 xs:pb-10">
     <div class="container">
       <div class="row justify-content-between align-items-center">
         <!-- Left Section: Title and Subtitle -->
@@ -12,10 +12,10 @@
         </div>
         <!-- Right Section: Spline 3D Canvas -->
         <div class="col-lg-4">
-          <div class="canvas3d-section">
-            <div class="canvas3d-wrapper">
+          <div class="relative w-full h-[500px] flex-grow">
+            <div class="relative w-full h-full flex justify-center items-center lg:justify-start lg:items-start">
               <!-- Placeholder for the Spline 3D Canvas -->
-              <canvas id="canvas3d" style="width: 100%; height: 100%;"></canvas>
+              <canvas id="canvas3d" class="lg:absolute top-0 left-0 w-full h-full border-none z--1 lg:z-0" style="width: 100%; height: 100%;"></canvas>
             </div>
           </div>
         </div>
