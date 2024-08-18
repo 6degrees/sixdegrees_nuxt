@@ -75,6 +75,13 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
   ],
   vite: {
+    server: {
+      hmr: {
+        protocol: 'wss',
+        clientPort: 443,
+        path: 'hmr/'
+      }
+    },
     plugins: [
       react()
     ]
