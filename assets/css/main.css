@@ -120,6 +120,13 @@
     --tw-blur: blur(0px);
 }
 
+@media screen and (max-width: 991px) {
+    #canvas {
+        min-height: 512px !important;
+        width: 100% !important;
+    }
+}
+
 @media (max-width: 1024px) {
     .half-slider .gallery-text .swiper-slide {
         width: 100% !important;
