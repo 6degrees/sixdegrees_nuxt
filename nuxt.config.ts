@@ -1,4 +1,3 @@
-import react from '@vitejs/plugin-react';
 
 export default defineNuxtConfig({
   ssr: true,
@@ -74,11 +73,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/i18n',
   ],
-  vite: {
-    plugins: [
-      react()
-    ]
-  },
   i18n: {
     lazy: true,
     strategy: "prefix",
