@@ -6,13 +6,13 @@
         <div class="col-lg-7">
           <div class="text">
             <h2 class="mb-50">
-              {{ $t('components.project1.section.solutionTitle') }}
+              {{ $t('components.project1.section.bottom_content.title') }}
             </h2>
             <h5 class="mb-30 font-normal">
-              {{ $t('components.project1.section.solutionSubtitle') }}
+              {{ $t('components.project1.section.bottom_content.subtitle') }}
             </h5>
             <p class="text-lg">
-              {{ $t('components.project1.section.solutionDescription') }}
+              {{ $t('components.project1.section.bottom_content.description') }}
             </p>
           </div>
         </div>

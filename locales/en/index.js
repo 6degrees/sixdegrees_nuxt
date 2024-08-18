@@ -237,9 +237,9 @@ export default {
                     'description': 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form..'
                 },
                 'bottom_content': {
-                    "solutionTitle": "The Solution",
-                    "solutionSubtitle": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
-                    "solutionDescription": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form."
+                    "title": "The Solution",
+                    "subtitle": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+                    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form."
                 },
             }
         },
