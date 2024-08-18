@@ -40,7 +40,7 @@
           <LandingBlog/>
         </div>
 
-         Contact Section
+        <!-- Contact Section -->
         <LandingContact/>
       </main>
 
