@@ -1,4 +1,5 @@
 <template>
+  <!-- Start Land Header -->
   <section class="works thecontainer w-[300vw] min-h-[95vh] flex flex-nowrap pl-[100px] relative z-0 sub-bg">
     <div v-for="item in data" :key="item.id" class="panel">
       <div class="item">
@@ -14,15 +15,28 @@
             <h6 class="text-gray-400 text-sm">{{ item.year }}</h6>
           </div>
         </div>
-        <a :href="item.link" class="link-overlay animsition-link"></a>
+        <a :href="pageRout.toPage(item.link)" class="link-overlay animsition-link"></a>
       </div>
     </div>
   </section>
+  <!-- End Land Header -->
 </template>
 
 <script setup>
 // Import the data from the JSON file
 import data from '@/data/Landing/works.json';
+import {gsap} from 'gsap';
+/*
+|--------------------------------------------------------------------------
+| pageRout
+|--------------------------------------------------------------------------
+|
+| The pageRout variable represents the page route utility, which provides
+| methods for navigating to different pages based on predefined routes.
+|
+*/
+const pageRout = usePageRout();
+
 /*
 |--------------------------------------------------------------------------
 | Script Setup
@@ -33,6 +47,7 @@ import data from '@/data/Landing/works.json';
 |
 */
 const {locale} = useI18n()
+let ctx;
 
 /*
 |--------------------------------------------------------------------------
@@ -59,7 +74,7 @@ const handleResize = () => {
     trigger.update();
   });
 };
-
+let sections = null
 /*
 |--------------------------------------------------------------------------
 | On Component Mount
@@ -82,19 +97,22 @@ const handleResize = () => {
 */
 onMounted(() => {
   if (window.innerWidth > 991) {
-    let sections = gsap.utils.toArray(".panel");
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to(sections, {
-      xPercent: locale.value === 'ar' ? 100 * (sections.length - 1) : -100 * (sections.length - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".thecontainer",
-        pin: true,
-        scrub: 1,
-        end: () => "+=" + document.querySelector(".thecontainer")?.offsetWidth
-      }
+    ctx = gsap.context(() => {
+      sections = gsap.utils.toArray(".panel");
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.to(sections, {
+        xPercent: locale.value === 'ar' ? 100 * (sections.length - 1) : -100 * (sections.length - 1),
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".thecontainer",
+          pin: true,
+          scrub: 1,
+          end: () => "+=" + document.querySelector(".thecontainer")?.offsetWidth
+        }
+      });
     });
   }
+
   window.addEventListener('resize', handleResize);
 });
 
@@ -112,5 +130,6 @@ onMounted(() => {
 */
 onUnmounted(() => {
   window.removeEventListener('resize', handleResize);
+  ctx && ctx.revert();
 });
 </script>

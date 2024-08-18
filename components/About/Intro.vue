@@ -73,31 +73,5 @@
 </template>
 
 <script setup>
-import { onMounted, onUnmounted } from 'vue';
 
-const handleResize = () => {
-  if (window.innerWidth > 991) {
-    gsap.to(".text-reval .text", {
-      backgroundPositionX: "0%",
-      stagger: 1,
-      ease: "power1.inOut",
-      scrollTrigger: {
-        trigger: ".text-reval",
-        markers: false,
-        scrub: 1,
-        start: "top center",
-        end: "bottom center"
-      }
-    });
-  }
-};
-
-onMounted(() => {
-  handleResize();
-  window.addEventListener('resize', handleResize);
-});
-
-onUnmounted(() => {
-  window.removeEventListener('resize', handleResize);
-});
 </script>

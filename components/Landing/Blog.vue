@@ -39,7 +39,7 @@
 </template>
 
 <script setup>
-import HoverImgFx3 from '@/common/hoverEffect3';
+import HoverImgFx3 from 'assets/js/hoverEffect3';
 import data from '@/data/Landing/blog.json';
 
 /*

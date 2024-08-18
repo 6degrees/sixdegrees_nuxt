@@ -5,18 +5,16 @@
         <div class="col-lg-11">
           <div class="row">
             <div class="col-lg-5">
-              <h4 class="mb-50">02 . The Solution</h4>
+              <h4 class="mb-50">{{ $t('components.project3.bottom_content.title') }}</h4>
             </div>
             <div class="col-lg-7">
               <div class="text">
-                <p class="fz-18">There are many variations of passages of Lorem Ipsum available, but the majority have
-                  suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
-                  believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-                  embarrassing hidden in the middle of text.</p>
+                <p class="fz-18">{{ $t('components.project3.bottom_content.content') }}</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-</section></template>
+  </section>
+</template>

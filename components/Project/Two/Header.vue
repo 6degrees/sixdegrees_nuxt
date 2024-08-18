@@ -4,9 +4,8 @@
       <div class="row">
         <div class="col-lg-6 valign">
           <div class="full-width mb-30">
-            <h1 class="fz-60">AlMoajil Hospitality</h1>
-            <p>We provide digital experience services to startups and small businesses. We help our clients succeed by
-              creating brand identities.</p>
+            <h1 class="fz-60">{{ $t('components.project2.section.header.title') }}</h1>
+            <p>{{ $t('components.project2.section.header.description') }}</p>
           </div>
         </div>
         <div class="col-lg-5 offset-lg-1">
@@ -14,26 +13,26 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="item mb-30">
-                  <span class="opacity-8 mb-5">First :</span>
-                  <h6>Desc</h6>
+                  <span class="opacity-8 mb-5">{{ $t('components.project2.section.header.first') }} :</span>
+                  <h6>{{ $t('components.project2.section.header.first_desc') }}</h6>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="item mb-30">
-                  <span class="opacity-8 mb-5">Second :</span>
-                  <h6>Desc</h6>
+                  <span class="opacity-8 mb-5">{{ $t('components.project2.section.header.second') }} :</span>
+                  <h6>{{ $t('components.project2.section.header.second_desc') }}</h6>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="item mb-30">
-                  <span class="opacity-8 mb-5">Third :</span>
-                  <h6>Desc</h6>
+                  <span class="opacity-8 mb-5">{{ $t('components.project2.section.header.third') }} :</span>
+                  <h6>{{ $t('components.project2.section.header.third_desc') }}</h6>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="item">
-                  <span class="opacity-8 mb-5">Fourth :</span>
-                  <h6>Desc</h6>
+                  <span class="opacity-8 mb-5">{{ $t('components.project2.section.header.fourth') }} :</span>
+                  <h6>{{ $t('components.project2.section.header.fourth_desc') }}</h6>
                 </div>
               </div>
             </div>
@@ -68,14 +67,16 @@
 </template>
 
 <script setup>
+// Import necessary Swiper components and modules
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation, Autoplay } from 'swiper';
 
+// Swiper configuration options
 const swiperOptions = {
-  modules: [Navigation, Autoplay],
-  slidesPerView: 2,
-  loop: true,
-  centeredSlides: true,
-  spaceBetween: 30,
+  modules: [Navigation, Autoplay], // Enable Navigation and Autoplay modules
+  slidesPerView: 2, // Number of slides visible at a time
+  loop: true, // Enable infinite looping of slides
+  centeredSlides: true, // Center slides in the view
+  spaceBetween: 30, // Space between slides
 };
 </script>

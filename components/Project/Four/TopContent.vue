@@ -4,18 +4,14 @@
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div>
-            <h4 class="mb-30">01 . The Challenge</h4>
+            <h4 class="mb-30">{{ $t('components.project4.section.top_content.title') }}</h4>
             <div class="text">
               <h5 class="mb-50 fw-400 line-height-40">
-                The goal is there are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                alteration.
+                {{ $t('components.project4.section.top_content.subtitle') }}
               </h5>
               <div class="row justify-content-end">
                 <div class="col-lg-9">
-                  <p class="fz-18">There are many variations of passages of Lorem Ipsum available, but the majority have
-                    suffered alteration in some form, by injected humour, or randomised words which don't look even
-                    slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                    anything.</p>
+                  <p class="fz-18">{{ $t('components.project4.section.top_content.description') }}</p>
                 </div>
               </div>
             </div>

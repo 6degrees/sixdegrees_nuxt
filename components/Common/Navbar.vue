@@ -4,9 +4,9 @@
     <div class="container ">
       <!-- Logo Section -->
       <div :class="`logo icon-img-${borderBottom ? '100' : '90'}`">
-        <nuxt-link to="/">
+        <a :href="pageRout.toHomePage()">
           <img src="/assets/imgs/logo-light.png" alt="" />
-        </nuxt-link>
+        </a>
       </div>
       <!-- Menu Icon -->
       <div class="menu-icon cursor-pointer ml-auto rtl:mr-auto rtl:ml-0" @click="toggleMenu">
@@ -22,6 +22,17 @@
 </template>
 
 <script setup>
+/*
+|--------------------------------------------------------------------------
+| pageRout
+|--------------------------------------------------------------------------
+|
+| The pageRout variable represents the page route utility, which provides
+| methods for navigating to different pages based on predefined routes.
+|
+*/
+const pageRout = usePageRout();
+
 /*
 |--------------------------------------------------------------------------
 | Props Definition

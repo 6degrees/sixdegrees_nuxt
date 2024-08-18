@@ -92,14 +92,16 @@ export default defineNuxtConfig({
         name: "English",
         iso: "en",
         dir: "ltr",
-        file: "en"
+        file: "en",
+        hrf: "/en"
       },
       {
         code: "ar",
         name: "العربية",
         iso: "ar",
         dir: "rtl",
-        file: "ar"
+        file: "ar",
+        hrf: "/ar"
       },
     ],
     defaultLocale: "en",
