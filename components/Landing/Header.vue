@@ -1,13 +1,13 @@
 <template>
   <!-- Start Land Header -->
-  <header class="land-header valign">
+  <header class="valign pt-28 pb-24 md:pt-36 md:pb-25 sm:pt-24 sm:pb-20 xs:pt-16 xs:pb-10">
     <div class="container">
       <div class="row justify-content-between align-items-center">
         <!-- Left Section: Title and Subtitle -->
         <div class="col-lg-8">
           <div class="caption text-left rtl:text-right">
             <!-- Main Title and Subtitle, localized using $t for translation -->
-            <h1 class="text-6xl font-bold uppercase">{{ $t('components.landing.header.title') }}<span class="font-extralight text-5xl capitalize">{{ $t('components.landing.header.subtitle') }}</span></h1>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold uppercase">{{ $t('components.landing.header.title') }}<span class="font-extralight text-3xl sm:text-4xl md:text-5xl capitalize">{{ $t('components.landing.header.subtitle') }}</span></h1>
           </div>
         </div>
         <!-- Right Section: Spline 3D Canvas -->
