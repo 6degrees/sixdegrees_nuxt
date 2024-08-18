@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-12">
           <div class="caption">
-            <h1>{{ $t('components.project3.header.title') }}</h1>
+            <h1>{{ $t('components.project3.section.header.title') }}</h1>
           </div>
         </div>
       </div>

@@ -13,26 +13,26 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="item mb-30">
-                  <span class="opacity-8 mb-5">{{ $t('components.project2.section.header.first') }} :</span>
-                  <h6>{{ $t('components.project2.section.header.first_desc') }}</h6>
+                  <span class="opacity-8 mb-5">{{ $t('components.project2.section.header.info.first.label') }} :</span>
+                  <h6>{{ $t('components.project2.section.header.info.first.desc') }}</h6>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="item mb-30">
-                  <span class="opacity-8 mb-5">{{ $t('components.project2.section.header.second') }} :</span>
-                  <h6>{{ $t('components.project2.section.header.second_desc') }}</h6>
+                  <span class="opacity-8 mb-5">{{ $t('components.project2.section.header.info.second.label') }} :</span>
+                  <h6>{{ $t('components.project2.section.header.info.second.desc') }}</h6>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="item mb-30">
-                  <span class="opacity-8 mb-5">{{ $t('components.project2.section.header.third') }} :</span>
-                  <h6>{{ $t('components.project2.section.header.third_desc') }}</h6>
+                  <span class="opacity-8 mb-5">{{ $t('components.project2.section.header.info.third.label') }} :</span>
+                  <h6>{{ $t('components.project2.section.header.info.third.desc') }}</h6>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="item">
-                  <span class="opacity-8 mb-5">{{ $t('components.project2.section.header.fourth') }} :</span>
-                  <h6>{{ $t('components.project2.section.header.fourth_desc') }}</h6>
+                  <span class="opacity-8 mb-5">{{ $t('components.project2.section.header.info.fourth.label') }} :</span>
+                  <h6>{{ $t('components.project2.section.header.info.fourth.desc') }}</h6>
                 </div>
               </div>
             </div>
