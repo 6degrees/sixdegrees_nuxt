@@ -1,7 +1,7 @@
 <template>
   <Html :lang="htmlAttrs.lang" :dir="htmlAttrs.dir">
   <Body>
-<!--    <CommonCursor/>-->
+    <CommonCursor/>
     <CommonProgressScroll/>
     <slot/>
   </Body>
