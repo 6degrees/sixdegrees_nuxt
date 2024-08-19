@@ -34,7 +34,7 @@
           <LandingWorks/>
 
           <!-- Tech Stack Section -->
-          <LandingTechStack/>
+<!--          <LandingTechStack/>-->
 
           <!-- Blog Section -->
           <LandingBlog/>
