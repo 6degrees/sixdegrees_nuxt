@@ -1,4 +1,3 @@
-
 export default defineNuxtConfig({
   ssr: true,
   devtools: {enabled: false},
@@ -72,6 +71,7 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxtjs/i18n',
+    'nuxt-swiper'
   ],
   i18n: {
     lazy: true,
