@@ -12,14 +12,14 @@
         <div class="marquee-content" ref="marqueeContent">
           <div class="marquee-row" v-for="(shuffledRow, rowIndex) in logos" :key="rowIndex">
             <!-- Use precomputed shuffled array -->
-            <figure class="technology" v-for="(logo, index) in shuffledRow" :key="index + '-row' + rowIndex">
+            <figure class="technology m-3 lg:m-4" v-for="(logo, index) in shuffledRow" :key="index + '-row' + rowIndex">
               <img :src="logo.src" :alt="logo.alt" class="logo"/>
               <figcaption>
                 <span class="text-white">{{ logo.alt }}</span>
               </figcaption>
             </figure>
             <!-- Duplicate the logos for seamless looping -->
-            <figure class="technology" v-for="(logo, index) in shuffledRow" :key="'dup-' + index + '-row' + rowIndex">
+            <figure class="technology m-3 lg:m-4" v-for="(logo, index) in shuffledRow" :key="'dup-' + index + '-row' + rowIndex">
               <img :src="logo.src" :alt="logo.alt" class="logo"/>
               <figcaption>
                 <span class="text-white">{{ logo.alt }}</span>
