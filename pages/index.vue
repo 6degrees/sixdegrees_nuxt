@@ -28,7 +28,7 @@
           <LandingFeatures/>
 
           <!-- Marquee Section -->
-<!--          <LandingMarquee/>-->
+          <LandingMarquee/>
 
           <!-- Works Section -->
 <!--          <LandingWorks/>-->
