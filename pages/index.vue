@@ -16,7 +16,7 @@
         <!-- Main container with background and overlay -->
         <div class="main-box main-bg ontop">
           <!-- Header Section -->
-<!--          <LandingHeader/>-->
+          <LandingHeader/>
 
           <!-- Brands Section -->
           <LandingBrands/>
@@ -31,10 +31,10 @@
           <LandingMarquee/>
 
           <!-- Works Section -->
-<!--          <LandingWorks/>-->
+          <LandingWorks/>
 
           <!-- Tech Stack Section -->
-<!--          <LandingTechStack/>-->
+          <LandingTechStack/>
 
           <!-- Blog Section -->
           <LandingBlog/>
