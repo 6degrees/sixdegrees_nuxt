@@ -16,28 +16,28 @@
         <!-- Main container with background and overlay -->
         <div class="main-box main-bg ontop">
           <!-- Header Section -->
-<!--          <LandingHeader/>-->
+          <LandingHeader/>
 
           <!-- Brands Section -->
           <LandingBrands/>
 
-<!--          &lt;!&ndash; About Section &ndash;&gt;-->
-<!--          <LandingAbout/>-->
+          <!-- About Section -->
+          <LandingAbout/>
 
-<!--          &lt;!&ndash; Features Section &ndash;&gt;-->
-<!--          <LandingFeatures/>-->
+          <!-- Features Section -->
+          <LandingFeatures/>
 
-<!--          &lt;!&ndash; Marquee Section &ndash;&gt;-->
-<!--          <LandingMarquee/>-->
+          <!-- Marquee Section -->
+          <LandingMarquee/>
 
-<!--          &lt;!&ndash; Works Section &ndash;&gt;-->
-<!--          <LandingWorks/>-->
+          <!-- Works Section -->
+          <LandingWorks/>
 
-<!--          &lt;!&ndash; Tech Stack Section &ndash;&gt;-->
-<!--          <LandingTechStack/>-->
+          <!-- Tech Stack Section -->
+          <LandingTechStack/>
 
-<!--          &lt;!&ndash; Blog Section &ndash;&gt;-->
-<!--          <LandingBlog/>-->
+          <!-- Blog Section -->
+          <LandingBlog/>
         </div>
 
         <!-- Contact Section -->

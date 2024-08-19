@@ -26,7 +26,7 @@
       <!-- Features Grid -->
       <div class="row">
         <!-- Iterate over each feature item -->
-        <div v-for="item in data" :key="item.id" class="col-lg-3 col-md-6 features-items">
+        <div v-for="item in data" :key="item.id" class="col-lg-3 col-md-6 mb-3 lg:mb-0 features-items">
           <div class="item">
             <!-- Feature Number -->
             <span class="numb ltr:right-0 rtl:left-0">{{ item.numb }}</span>

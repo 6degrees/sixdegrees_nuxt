@@ -50,9 +50,7 @@ onMounted(() => {
   const app = new Application(canvas)
 
   // Load the Spline 3D scene from the provided URL
-  app.load('https://prod.spline.design/rah9TcbBELz5h1ps/scene.splinecode').then(() => {
-    app.setSize(1, 1)
-  })
+  app.load('https://prod.spline.design/rah9TcbBELz5h1ps/scene.splinecode');
 
   /*
   |--------------------------------------------------------------------------

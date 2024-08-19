@@ -74,7 +74,7 @@ const handleResize = () => {
     trigger.update();
   });
 };
-let sections = null
+
 /*
 |--------------------------------------------------------------------------
 | On Component Mount
@@ -96,24 +96,25 @@ let sections = null
 |
 */
 onMounted(() => {
-  if (window.innerWidth > 991) {
-    ctx = gsap.context(() => {
-      sections = gsap.utils.toArray(".panel");
-      gsap.registerPlugin(ScrollTrigger);
-      gsap.to(sections, {
-        xPercent: locale.value === 'ar' ? 100 * (sections.length - 1) : -100 * (sections.length - 1),
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".thecontainer",
-          pin: true,
-          scrub: 1,
-          end: () => "+=" + document.querySelector(".thecontainer")?.offsetWidth
-        }
-      });
-    });
+  if (window.innerWidth < 991) {
+    return !0;
   }
 
-  window.addEventListener('resize', handleResize);
+  ctx = gsap.context(() => {
+    let sections = gsap.utils.toArray(".panel");
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(sections, {
+      xPercent: locale.value === 'ar' ? 100 * (sections.length - 1) : -100 * (sections.length - 1),
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".thecontainer",
+        pin: true,
+        scrub: 1,
+        end: () => "+=" + document.querySelector(".thecontainer")?.offsetWidth
+      }
+    });
+    window.addEventListener('resize', handleResize);
+  });
 });
 
 /*
