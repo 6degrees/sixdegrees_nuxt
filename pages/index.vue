@@ -31,10 +31,10 @@
           <LandingMarquee/>
 
           <!-- Works Section -->
-          <LandingWorks/>
+<!--          <LandingWorks/>-->
 
           <!-- Tech Stack Section -->
-<!--          <LandingTechStack/>-->
+          <LandingTechStack/>
 
           <!-- Blog Section -->
           <LandingBlog/>
