@@ -25,7 +25,7 @@
           <LandingAbout/>
 
           <!-- Features Section -->
-          <LandingFeatures/>
+<!--          <LandingFeatures/>-->
 
           <!-- Marquee Section -->
 <!--          <LandingMarquee/>-->
