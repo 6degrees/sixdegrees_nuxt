@@ -2,7 +2,7 @@
   <Html :lang="htmlAttrs.lang" :dir="htmlAttrs.dir">
   <Body>
 <!--    <CommonCursor/>-->
-<!--    <CommonProgressScroll/>-->
+    <CommonProgressScroll/>
     <slot/>
   </Body>
   </Html>
