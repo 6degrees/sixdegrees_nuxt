@@ -18,26 +18,26 @@
           <!-- Header Section -->
           <LandingHeader/>
 
-          <!-- Brands Section -->
-          <LandingBrands/>
+<!--          &lt;!&ndash; Brands Section &ndash;&gt;-->
+<!--          <LandingBrands/>-->
 
-          <!-- About Section -->
-          <LandingAbout/>
+<!--          &lt;!&ndash; About Section &ndash;&gt;-->
+<!--          <LandingAbout/>-->
 
-          <!-- Features Section -->
-          <LandingFeatures/>
+<!--          &lt;!&ndash; Features Section &ndash;&gt;-->
+<!--          <LandingFeatures/>-->
 
-          <!-- Marquee Section -->
-          <LandingMarquee/>
+<!--          &lt;!&ndash; Marquee Section &ndash;&gt;-->
+<!--          <LandingMarquee/>-->
 
-          <!-- Works Section -->
-          <LandingWorks/>
+<!--          &lt;!&ndash; Works Section &ndash;&gt;-->
+<!--          <LandingWorks/>-->
 
-          <!-- Tech Stack Section -->
-          <LandingTechStack/>
+<!--          &lt;!&ndash; Tech Stack Section &ndash;&gt;-->
+<!--          <LandingTechStack/>-->
 
-          <!-- Blog Section -->
-          <LandingBlog/>
+<!--          &lt;!&ndash; Blog Section &ndash;&gt;-->
+<!--          <LandingBlog/>-->
         </div>
 
         <!-- Contact Section -->
