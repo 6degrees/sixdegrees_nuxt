@@ -52,6 +52,8 @@ onMounted(() => {
   // Load the Spline 3D scene from the provided URL
   app.load('https://prod.spline.design/rah9TcbBELz5h1ps/scene.splinecode');
 
+  canvas.style.willChange = 'transform'; // Hint for GPU acceleration
+
   /*
   |--------------------------------------------------------------------------
   | Prevent Mouse Wheel Zooming
@@ -64,7 +66,7 @@ onMounted(() => {
   */
   canvas.addEventListener('wheel', (event) => {
     event.preventDefault()
-  }, {passive: false})
+  }, {passive: true})
 
   /*
   |--------------------------------------------------------------------------
@@ -79,7 +81,7 @@ onMounted(() => {
     if (event.touches.length > 1) {
       event.preventDefault()
     }
-  }, {passive: false})
+  }, {passive: true})
 
   /*
   |--------------------------------------------------------------------------
@@ -98,7 +100,7 @@ onMounted(() => {
       event.preventDefault()
     }
     lastTouchEnd = now
-  }, false)
+  }, true)
 
   /*
   |--------------------------------------------------------------------------
