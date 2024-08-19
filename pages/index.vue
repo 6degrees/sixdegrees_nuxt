@@ -37,11 +37,11 @@
 <!--          <LandingTechStack/>-->
 
           <!-- Blog Section -->
-          <LandingBlog/>
+<!--          <LandingBlog/>-->
         </div>
 
         <!-- Contact Section -->
-        <LandingContact/>
+<!--        <LandingContact/>-->
       </main>
 
       <!-- Common Footer -->
