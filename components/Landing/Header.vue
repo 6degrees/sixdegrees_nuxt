@@ -43,79 +43,44 @@ import {Application} from '@splinetool/runtime'
 |
 */
 onMounted(() => {
-  // Retrieve the canvas element by its ID
-  const canvas = document.getElementById('canvas') as HTMLCanvasElement
+  const canvas = document.getElementById('canvas') as HTMLCanvasElement;
+  const app = new Application(canvas);
 
-  // Initialize the Spline application with the canvas element
-  const app = new Application(canvas)
+  app.load('https://prod.spline.design/rah9TcbBELz5h1ps/scene.splinecode')
+      .then(() => {
+        canvas.style.willChange = 'transform'; // Hint for GPU acceleration
+      })
+      .catch(error => {
+        console.error("Failed to load the Spline scene:", error);
+      });
 
-  // Load the Spline 3D scene from the provided URL
-  app.load('https://prod.spline.design/rah9TcbBELz5h1ps/scene.splinecode');
-
-  canvas.style.willChange = 'transform'; // Hint for GPU acceleration
-
-  /*
-  |--------------------------------------------------------------------------
-  | Prevent Mouse Wheel Zooming
-  |--------------------------------------------------------------------------
-  |
-  | The following event listener is added to the canvas to prevent zooming
-  | with the mouse wheel, which could interfere with the user's interaction
-  | with the 3D scene.
-  |
-  */
+  // Prevent Mouse Wheel Zooming
   canvas.addEventListener('wheel', (event) => {
-    event.preventDefault()
-  }, {passive: true})
+    event.preventDefault();
+  }, {passive: false}); // Set passive to false for preventing the default behavior
 
-  /*
-  |--------------------------------------------------------------------------
-  | Prevent Pinch-to-Zoom on Touch Devices
-  |--------------------------------------------------------------------------
-  |
-  | This event listener prevents pinch-to-zoom gestures on touch devices
-  | by blocking the default behavior when more than one touch point is detected.
-  |
-  */
+  // Prevent Pinch-to-Zoom on Touch Devices
   canvas.addEventListener('touchmove', (event) => {
     if (event.touches.length > 1) {
-      event.preventDefault()
+      event.preventDefault();
     }
-  }, {passive: true})
+  }, {passive: false}); // Set passive to false for preventing the default behavior
 
-  /*
-  |--------------------------------------------------------------------------
-  | Prevent Double-Tap-to-Zoom on Touch Devices
-  |--------------------------------------------------------------------------
-  |
-  | Double-tap zooming is a common gesture on touch devices that can disrupt
-  | the interaction with the 3D scene. This listener prevents it by checking
-  | the time interval between touchend events.
-  |
-  */
-  let lastTouchEnd = 0
+  // Prevent Double-Tap-to-Zoom on Touch Devices
+  let lastTouchEnd = 0;
   canvas.addEventListener('touchend', (event) => {
-    const now = (new Date()).getTime()
+    const now = Date.now();
     if (now - lastTouchEnd <= 300) {
-      event.preventDefault()
+      event.preventDefault();
     }
-    lastTouchEnd = now
-  }, true)
+    lastTouchEnd = now;
+  }, true);
 
-  /*
-  |--------------------------------------------------------------------------
-  | Prevent Key-Based Zooming (Ctrl + +/-)
-  |--------------------------------------------------------------------------
-  |
-  | This listener prevents users from zooming the page using the Ctrl key
-  | combined with the '+' or '-' keys, which can alter the display of the
-  | 3D scene on the canvas.
-  |
-  */
+  // Prevent Key-Based Zooming (Ctrl + +/-)
   window.addEventListener('keydown', (event) => {
     if (event.ctrlKey && (event.key === '+' || event.key === '-')) {
-      event.preventDefault()
+      event.preventDefault();
     }
-  })
-})
+  });
+});
 </script>
