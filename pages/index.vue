@@ -16,10 +16,10 @@
         <!-- Main container with background and overlay -->
         <div class="main-box main-bg ontop">
           <!-- Header Section -->
-          <LandingHeader/>
+<!--          <LandingHeader/>-->
 
-<!--          &lt;!&ndash; Brands Section &ndash;&gt;-->
-<!--          <LandingBrands/>-->
+          <!-- Brands Section -->
+          <LandingBrands/>
 
 <!--          &lt;!&ndash; About Section &ndash;&gt;-->
 <!--          <LandingAbout/>-->
