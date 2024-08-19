@@ -45,7 +45,7 @@
       </main>
 
       <!-- Common Footer -->
-      <CommonFooter/>
+<!--      <CommonFooter/>-->
     </div>
   </div>
 </template>
