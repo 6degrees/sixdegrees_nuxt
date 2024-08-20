@@ -18,7 +18,7 @@
           <div class="relative w-full h-[500px] flex-grow">
             <div class="relative w-full h-full flex justify-center items-center lg:justify-start lg:items-start">
               <!-- Placeholder for the Spline 3D Canvas -->
-              <canvas id="canvas" class="w-full h-full border-none z--1 lg:z-0"></canvas>
+<!--              <canvas id="canvas" class="w-full h-full border-none z&#45;&#45;1 lg:z-0"></canvas>-->
             </div>
           </div>
         </div>
