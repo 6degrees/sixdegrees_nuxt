@@ -7,10 +7,9 @@
         <div class="col-lg-8 mb-2 lg:mb-0">
           <div class="caption text-left rtl:text-right">
             <!-- Main Title and Subtitle, localized using $t for translation -->
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold uppercase">{{ $t('components.landing.header.title') }}<span
-                class="font-extralight text-3xl sm:text-4xl md:text-5xl capitalize">{{
-                $t('components.landing.header.subtitle')
-              }}</span></h1>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold uppercase">{{ $t('components.landing.header.title') }}
+              <span class="font-extralight text-3xl sm:text-4xl md:text-5xl capitalize">{{$t('components.landing.header.subtitle')}}</span>
+            </h1>
           </div>
         </div>
         <!-- Right Section: Spline 3D Canvas -->

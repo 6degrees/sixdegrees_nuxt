@@ -25,8 +25,8 @@ export default {
                     },
                     'links': {
                         'serviceStatus': 'Service Status',
-                        'terms': 'Terms',
-                        'privacy': 'Privacy',
+                        'about': 'About',
+                        'contact': 'Contact',
                         'docs': 'Docs'
                     },
                     'copyright': {

@@ -15,7 +15,7 @@
             <h6 class="text-gray-400 text-sm">{{ item.year }}</h6>
           </div>
         </div>
-        <a :href="pageRout.toPage(item.link)" class="link-overlay animsition-link"></a>
+        <NuxtLink :to="pageRout.toPage(item.link)" class="link-overlay animsition-link"></NuxtLink>
       </div>
     </div>
   </section>

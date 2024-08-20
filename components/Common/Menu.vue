@@ -15,16 +15,16 @@
               </li>
               <li @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
                 <div class="o-hidden">
-                  <a :href="pageRout.toAboutPage()" class="link animsition-link" @click="closeMenu"><span
+                  <NuxtLink :to="pageRout.toAboutPage()" class="link animsition-link" @click="closeMenu"><span
                       class="nm">02.</span>{{ $t('components.common.menu.section.menu.about') }}
-                  </a>
+                  </NuxtLink>
                 </div>
               </li>
               <li @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
                 <div class="o-hidden">
-                  <a :href="pageRout.toContactPage()" class="link animsition-link" @click="closeMenu"><span
+                  <NuxtLink :to="pageRout.toContactPage()" class="link animsition-link" @click="closeMenu"><span
                       class="nm">03.</span>{{ $t('components.common.menu.section.menu.contact') }}
-                  </a>
+                  </NuxtLink>
                 </div>
               </li>
               <li @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
@@ -55,50 +55,36 @@
               <a class="font-normal text-lg" href="mailto:contact@6degrees.com.sa">contact@6degrees.com.sa</a>
             </div>
             <div class="bottom">
-              <h6 class="uppercase font-semibold mb-20">{{
-                  $t('components.common.menu.section.contactInfo.joinUs.title')
-                }}</h6>
+              <h6 class="uppercase font-semibold mb-20">{{ $t('components.common.menu.section.contactInfo.joinUs.title') }}</h6>
               <ul class="m-0 p-0 social-text d-flex text-sm">
                 <li class="mr-20">
                   <a href="https://github.com/6degrees" class="hover-this">
-                    <span class="hover-anim">{{
-                        $t('components.common.menu.section.contactInfo.joinUs.socialMedia.github')
-                      }}</span>
+                    <span class="hover-anim">{{ $t('components.common.menu.section.contactInfo.joinUs.socialMedia.github') }}</span>
                   </a>
                 </li>
                 <li class="mr-20">
                   <a href="https://github.com/6degrees" class="hover-this">
-                    <span class="hover-anim">{{
-                        $t('components.common.menu.section.contactInfo.joinUs.socialMedia.behance')
-                      }}</span>
+                    <span class="hover-anim">{{ $t('components.common.menu.section.contactInfo.joinUs.socialMedia.behance') }}</span>
                   </a>
                 </li>
                 <li class="mr-20">
                   <a href="javascript:void(0)" class="hover-this">
-                    <span class="hover-anim">{{
-                        $t('components.common.menu.section.contactInfo.joinUs.socialMedia.facebook')
-                      }}</span>
+                    <span class="hover-anim">{{ $t('components.common.menu.section.contactInfo.joinUs.socialMedia.facebook') }}</span>
                   </a>
                 </li>
                 <li class="mr-20">
                   <a href="https://twitter.com/6degrees_sa" class="hover-this">
-                    <span class="hover-anim">{{
-                        $t('components.common.menu.section.contactInfo.joinUs.socialMedia.twitter')
-                      }}</span>
+                    <span class="hover-anim">{{ $t('components.common.menu.section.contactInfo.joinUs.socialMedia.twitter') }}</span>
                   </a>
                 </li>
                 <li class="mr-20">
                   <a href="https://www.linkedin.com/company/6degz" class="hover-this">
-                    <span class="hover-anim">{{
-                        $t('components.common.menu.section.contactInfo.joinUs.socialMedia.linkedin')
-                      }}</span>
+                    <span class="hover-anim">{{ $t('components.common.menu.section.contactInfo.joinUs.socialMedia.linkedin') }}</span>
                   </a>
                 </li>
                 <li>
                   <a href="https://instagram.com/6degrees_sa" class="hover-this">
-                    <span class="hover-anim">{{
-                        $t('components.common.menu.section.contactInfo.joinUs.socialMedia.instagram')
-                      }}</span>
+                    <span class="hover-anim">{{ $t('components.common.menu.section.contactInfo.joinUs.socialMedia.instagram') }}</span>
                   </a>
                 </li>
               </ul>

@@ -25,8 +25,8 @@ export default {
                     },
                     'links': {
                         'serviceStatus': 'حالة الخدمة',
-                        'terms': 'الشروط',
-                        'privacy': 'الخصوصية',
+                        'about': 'حول الموقع',
+                        'contact': 'تواصل معنا',
                         'docs': 'الوثائق'
                     },
                     'copyright': {

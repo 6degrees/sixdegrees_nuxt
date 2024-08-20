@@ -53,10 +53,10 @@
                   <a href="https://up.monitoring.6d.com.sa/status/main" class="animsition-link">{{ $t('components.common.footer.section.links.serviceStatus') }}</a>
                 </li>
                 <li class="mr-9 rtl:mr-0 rtl:ml-9">
-                  <a href="/about" class="animsition-link">{{ $t('components.common.footer.section.links.terms') }}</a>
+                  <NuxtLink :to="pageRout.toAboutPage()" class="animsition-link">{{ $t('components.common.footer.section.links.about') }}</NuxtLink>
                 </li>
                 <li class="mr-9 rtl:mr-0 rtl:ml-9">
-                  <a href="/contact" class="animsition-link">{{ $t('components.common.footer.section.links.privacy') }}</a>
+                  <NuxtLink :to="pageRout.toContactPage()" class="animsition-link">{{ $t('components.common.footer.section.links.contact') }}</NuxtLink>
                 </li>
                 <li class="mr-9 rtl:mr-0 rtl:ml-9">
                   <a href="https://wiki.6degrees.com.sa/" class="animsition-link">{{ $t('components.common.footer.section.links.docs') }}</a>
@@ -81,6 +81,17 @@
 </template>
 
 <script setup>
+/*
+|--------------------------------------------------------------------------
+| pageRout
+|--------------------------------------------------------------------------
+|
+| The pageRout variable represents the page route utility, which provides
+| methods for navigating to different pages based on predefined routes.
+|
+*/
+const pageRout = usePageRout()
+
 /*
 |--------------------------------------------------------------------------
 | handleResize Function
