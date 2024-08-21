@@ -110,6 +110,7 @@ const toggleMenu = () => {
   if (document.querySelector('.topnav .menu-icon').classList.contains('open')) {
     document.querySelector('.hamenu').style.top = '0';
   } else {
+    console.log(1)
     document.querySelector('.hamenu').style.top = '-100%';
   }
 };

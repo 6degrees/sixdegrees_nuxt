@@ -141,6 +141,8 @@ const availableLocales = computed(() => locales.value.filter(i => i.code !== loc
 */
 const closeMenu = () => {
   document.querySelector('.hamenu').classList.remove("open");
+  document.querySelector('.topnav .menu-icon').classList.remove("open");
+  document.querySelector('.hamenu').style.top = '-100%';
 };
 
 /*
