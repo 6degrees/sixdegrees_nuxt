@@ -1,15 +1,19 @@
 <template>
+  <!-- Start Clients Section -->
   <div class="clients-carso">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-11">
           <div class="swiper5">
+            <!-- Swiper container for the client logos carousel -->
             <Swiper id="content-carousel-container-unq-clients" class="swiper-container" v-bind="swiperOptions">
               <SwiperSlide v-for="item in data" :key="item.id">
-                <div class="item">
-                  <div class="img icon-img-100">
-                    <a href="#0">
-                      <img :src="item.img" alt="" class="brand-image"/>
+                <!-- Brand Item -->
+                <div class="brand-item">
+                  <div class="icon-img-100">
+                    <a href="#">
+                      <!-- Client Logo Image -->
+                      <img :src="item.img"  alt="Client Logo"/>
                     </a>
                   </div>
                 </div>
@@ -20,57 +24,31 @@
       </div>
     </div>
   </div>
+  <!-- End Clients Section -->
 </template>
 
-
 <script setup>
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/swiper-bundle.min.css'; // Make sure you have Swiper CSS
-import data from '@/data/Landing/brands.json';
+import data from '@/data/Landing/brands.json'; // Import the JSON data for use in the Swiper component
 
+/*
+|--------------------------------------------------------------------------
+| Swiper Options
+|--------------------------------------------------------------------------
+|
+| Configuration for the Swiper slider component. These options control the
+| behavior and appearance of the slider.
+|
+| @type {Object}
+|
+*/
 const swiperOptions = {
-  slidesPerView: 5,
-  loop: true,
-  spaceBetween: 40,
+  slidesPerView: 4, // Number of slides visible at a time
+  loop: true, // Enable infinite loop mode
+  spaceBetween: 40, // Space between slides in pixels
   autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
+    delay: 2500, // Delay between slide transitions in milliseconds
+    disableOnInteraction: false, // Keep autoplay active after user interactions
   },
-  breakpoints: {
-    0: {
-      slidesPerView: 2,
-    },
-    640: {
-      slidesPerView: 3,
-    },
-    768: {
-      slidesPerView: 3,
-    },
-    1024: {
-      slidesPerView: 5,
-    },
-  }
 };
 </script>
-
-<style scoped>
-.brand-image {
-  width: 100%;  
-  height: 100%; 
-  object-fit: cover; 
-}
-
-.img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70px; 
-}
-
-.item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-</style>
 

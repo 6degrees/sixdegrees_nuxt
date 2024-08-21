@@ -9,7 +9,7 @@
 <script setup>
 import { onMounted } from 'vue';
 //= Scripts
-import scrollToTop from '@/common/scrollToTop';
+import scrollToTop from 'assets/js/scrollToTop';
 
 onMounted(() => {
   scrollToTop();

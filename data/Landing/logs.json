@@ -1,0 +1,200 @@
+[
+  [
+    {
+      "src": "assets/imgs/stack/angular.svg",
+      "alt": "Angular"
+    },
+    {
+      "src": "assets/imgs/stack/php.svg",
+      "alt": "PHP"
+    },
+    {
+      "src": "assets/imgs/stack/tailwindcss.svg",
+      "alt": "Tailwind"
+    },
+    {
+      "src": "assets/imgs/stack/nuxt.svg",
+      "alt": "Nuxt"
+    },
+    {
+      "src": "assets/imgs/stack/react.svg",
+      "alt": "React"
+    },
+    {
+      "src": "assets/imgs/stack/js.svg",
+      "alt": "JavaScript"
+    },
+    {
+      "src": "assets/imgs/stack/ts.svg",
+      "alt": "TypeScript"
+    },
+    {
+      "src": "assets/imgs/stack/laravel.svg",
+      "alt": "Laravel"
+    },
+    {
+      "src": "assets/imgs/stack/nodejs.svg",
+      "alt": "Node.js"
+    },
+    {
+      "src": "assets/imgs/stack/astro.svg",
+      "alt": "Astro"
+    },
+    {
+      "src": "assets/imgs/stack/markdown.svg",
+      "alt": "Markdown"
+    },
+    {
+      "src": "assets/imgs/stack/ios.svg",
+      "alt": "iOS"
+    },
+    {
+      "src": "assets/imgs/stack/sass.svg",
+      "alt": "Sass"
+    },
+    {
+      "src": "assets/imgs/stack/vuejs.svg",
+      "alt": "Vue.js"
+    },
+    {
+      "src": "assets/imgs/stack/nextjs.svg",
+      "alt": "Next.js"
+    },
+    {
+      "src": "assets/imgs/stack/mysql.svg",
+      "alt": "MySQL"
+    }
+  ],
+  [
+    {
+      "src": "assets/imgs/stack/tailwindcss.svg",
+      "alt": "Tailwind"
+    },
+    {
+      "src": "assets/imgs/stack/ios.svg",
+      "alt": "iOS"
+    },
+    {
+      "src": "assets/imgs/stack/nodejs.svg",
+      "alt": "Node.js"
+    },
+    {
+      "src": "assets/imgs/stack/markdown.svg",
+      "alt": "Markdown"
+    },
+    {
+      "src": "assets/imgs/stack/laravel.svg",
+      "alt": "Laravel"
+    },
+    {
+      "src": "assets/imgs/stack/nuxt.svg",
+      "alt": "Nuxt"
+    },
+    {
+      "src": "assets/imgs/stack/php.svg",
+      "alt": "PHP"
+    },
+    {
+      "src": "assets/imgs/stack/nextjs.svg",
+      "alt": "Next.js"
+    },
+    {
+      "src": "assets/imgs/stack/sass.svg",
+      "alt": "Sass"
+    },
+    {
+      "src": "assets/imgs/stack/angular.svg",
+      "alt": "Angular"
+    },
+    {
+      "src": "assets/imgs/stack/astro.svg",
+      "alt": "Astro"
+    },
+    {
+      "src": "assets/imgs/stack/ts.svg",
+      "alt": "TypeScript"
+    },
+    {
+      "src": "assets/imgs/stack/vuejs.svg",
+      "alt": "Vue.js"
+    },
+    {
+      "src": "assets/imgs/stack/mysql.svg",
+      "alt": "MySQL"
+    },
+    {
+      "src": "assets/imgs/stack/js.svg",
+      "alt": "JavaScript"
+    },
+    {
+      "src": "assets/imgs/stack/react.svg",
+      "alt": "React"
+    }
+  ],
+  [
+    {
+      "src": "assets/imgs/stack/laravel.svg",
+      "alt": "Laravel"
+    },
+    {
+      "src": "assets/imgs/stack/js.svg",
+      "alt": "JavaScript"
+    },
+    {
+      "src": "assets/imgs/stack/vuejs.svg",
+      "alt": "Vue.js"
+    },
+    {
+      "src": "assets/imgs/stack/nodejs.svg",
+      "alt": "Node.js"
+    },
+    {
+      "src": "assets/imgs/stack/angular.svg",
+      "alt": "Angular"
+    },
+    {
+      "src": "assets/imgs/stack/markdown.svg",
+      "alt": "Markdown"
+    },
+    {
+      "src": "assets/imgs/stack/nuxt.svg",
+      "alt": "Nuxt"
+    },
+    {
+      "src": "assets/imgs/stack/ios.svg",
+      "alt": "iOS"
+    },
+    {
+      "src": "assets/imgs/stack/astro.svg",
+      "alt": "Astro"
+    },
+    {
+      "src": "assets/imgs/stack/php.svg",
+      "alt": "PHP"
+    },
+    {
+      "src": "assets/imgs/stack/react.svg",
+      "alt": "React"
+    },
+    {
+      "src": "assets/imgs/stack/nextjs.svg",
+      "alt": "Next.js"
+    },
+    {
+      "src": "assets/imgs/stack/ts.svg",
+      "alt": "TypeScript"
+    },
+    {
+      "src": "assets/imgs/stack/mysql.svg",
+      "alt": "MySQL"
+    },
+    {
+      "src": "assets/imgs/stack/sass.svg",
+      "alt": "Sass"
+    },
+    {
+      "src": "assets/imgs/stack/tailwindcss.svg",
+      "alt": "Tailwind"
+    }
+  ]
+]

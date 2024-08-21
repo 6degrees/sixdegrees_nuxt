@@ -1,30 +1,69 @@
 <template>
-  <section class="works thecontainer w-[300vw] min-h-[95vh] flex flex-nowrap pl-[100px] relative z-0  sub-bg">
+  <!-- Start Land Header -->
+  <section class="works thecontainer w-[300vw] min-h-[95vh] flex flex-nowrap pl-[100px] relative z-0 sub-bg">
     <div v-for="item in data" :key="item.id" class="panel">
       <div class="item">
         <div class="h-[400px] min-h-[50vh]">
-          <img :src="item.img" class="w-full h-full object-cover object-center" alt="" />
+          <img :src="item.img" class="w-full h-full object-cover object-center" alt=""/>
         </div>
         <div class="px-2.5 py-6 border-b border-[rgba(12,0,0,0.2)] d-flex align-items-center">
           <div>
-            <span class="text-gray-600 upercase text-base">{{ item.category }}</span>
-            <h5 class="text-gray-900 text-2xl">{{ item.title }}</h5>
+            <span class="text-gray-600 upercase text-base">{{ item.category[locale] }}</span>
+            <h5 class="text-gray-900 text-2xl">{{ item.title[locale] }}</h5>
           </div>
-          <div class="ml-auto ">
+          <div class="ml-auto rtl:ml-0 rtl:mr-auto">
             <h6 class="text-gray-400 text-sm">{{ item.year }}</h6>
           </div>
         </div>
-        <a :href="item.link" class="link-overlay animsition-link"></a>
+        <NuxtLink :to="pageRout.toPage(item.link)" class="link-overlay animsition-link"></NuxtLink>
       </div>
     </div>
   </section>
+  <!-- End Land Header -->
 </template>
 
 <script setup>
-import { onMounted, onUnmounted } from 'vue';
 // Import the data from the JSON file
 import data from '@/data/Landing/works.json';
+import {gsap} from 'gsap';
+/*
+|--------------------------------------------------------------------------
+| pageRout
+|--------------------------------------------------------------------------
+|
+| The pageRout variable represents the page route utility, which provides
+| methods for navigating to different pages based on predefined routes.
+|
+*/
+const pageRout = usePageRout();
 
+/*
+|--------------------------------------------------------------------------
+| Script Setup
+|--------------------------------------------------------------------------
+|
+| The script setup block initializes variables and functions for managing
+| locale settings and navigation within the application.
+|
+*/
+const {locale} = useI18n()
+let ctx;
+
+/*
+|--------------------------------------------------------------------------
+| Handle Resize
+|--------------------------------------------------------------------------
+|
+| Function to handle window resize events. Checks if the width of the
+| window crosses the 991px threshold and reloads the page if necessary.
+| Also updates all ScrollTrigger instances to reflect changes in layout.
+|
+| @function handleResize - Handles window resizing
+| @function window.location.reload - Reloads the page if conditions are met
+| @function ScrollTrigger.getAll - Retrieves all ScrollTrigger instances
+| @function trigger.update - Updates the ScrollTrigger instance
+|
+*/
 const handleResize = () => {
   const allTriggers = ScrollTrigger.getAll();
   if ((window.innerWidth < 991 && allTriggers.length) || (window.innerWidth > 991 && !allTriggers.length)) {
@@ -36,13 +75,36 @@ const handleResize = () => {
   });
 };
 
-// Register the ScrollTrigger plugin and animate on component mount
+/*
+|--------------------------------------------------------------------------
+| On Component Mount
+|--------------------------------------------------------------------------
+|
+| Registers the ScrollTrigger plugin and sets up the GSAP animation for
+| the panels on mount. If the window width is greater than 991px, it
+| animates sections horizontally based on scroll position.
+|
+| @function onMounted - Lifecycle hook that runs when the component is mounted
+| @function gsap.registerPlugin - Registers the ScrollTrigger plugin with GSAP
+| @function gsap.to - Creates an animation for the panels with horizontal scrolling
+| @property {Array} sections - Array of elements to animate
+| @property {Object} scrollTrigger - Configuration object for ScrollTrigger
+|   @property {string} trigger - Selector for the trigger element
+|   @property {boolean} pin - Pins the trigger element during the scroll
+|   @property {number} scrub - Smoothens the animation to match the scroll
+|   @property {function} end - End position of the scrollTrigger animation
+|
+*/
 onMounted(() => {
-  if (window.innerWidth > 991) {
+  if (window.innerWidth < 991) {
+    return !0;
+  }
+
+  ctx = gsap.context(() => {
     let sections = gsap.utils.toArray(".panel");
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1),
+      xPercent: locale.value === 'ar' ? 100 * (sections.length - 1) : -100 * (sections.length - 1),
       ease: "none",
       scrollTrigger: {
         trigger: ".thecontainer",
@@ -51,12 +113,24 @@ onMounted(() => {
         end: () => "+=" + document.querySelector(".thecontainer")?.offsetWidth
       }
     });
-  }
-  window.addEventListener('resize', handleResize);
+    window.addEventListener('resize', handleResize);
+  });
 });
 
-// Remove the resize event listener on component unmount
+/*
+|--------------------------------------------------------------------------
+| On Component Unmount
+|--------------------------------------------------------------------------
+|
+| Removes the resize event listener when the component is unmounted to
+| prevent memory leaks and unnecessary event handling.
+|
+| @function onUnmounted - Lifecycle hook that runs when the component is unmounted
+| @function window.removeEventListener - Removes the resize event listener
+|
+*/
 onUnmounted(() => {
   window.removeEventListener('resize', handleResize);
+  ctx && ctx.revert();
 });
 </script>

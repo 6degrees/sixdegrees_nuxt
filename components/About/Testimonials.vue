@@ -58,7 +58,7 @@ import { onMounted } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation, Pagination } from 'swiper';
 //= Common Scripts
-import removeSlashFromPagination from '@/common/removeSlashFromPagination';
+import removeSlashFromPagination from 'assets/js/removeSlashFromPagination';
 //= Static Data
 import data from '@/data/About/testimonials.json';
 

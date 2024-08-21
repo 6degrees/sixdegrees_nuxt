@@ -1,51 +1,78 @@
 <template>
+  <!-- Start Blogs Section -->
   <section class="blog-list py-[120px] sub-bg text-dark">
+    <!-- Container for the blog list section -->
     <div class="container">
+      <!-- Section Header -->
       <div class="sec-head mb-80">
         <div class="d-flex align-items-center justify-end">
+          <!-- Title Section -->
           <div>
-            <h3 class="uppercase font-extralight  fz-50">Our Featured <span class="font-bold">Highlights</span></h3>
+            <h3 class="uppercase font-extralight fz-50">{{ $t('components.landing.blogs.section.title') }} <span class="font-bold">{{ $t('components.landing.blogs.section.subtitle') }}</span></h3>
           </div>
+          <!-- Link to All Blogs -->
           <div class="ml-auto underline">
-            <a href="/blog" class="animsition-link all-more sub-title ls1">
-            </a>
+            <a href="/blog" class="animsition-link all-more sub-title ls1"></a>
           </div>
         </div>
       </div>
-      <div v-for="(item, index) in data" :key="item.id" :class="`item block wow fadeInUp`"
-        :data-wow-delay="`${(index * 0.2) + 0.2}s`" data-fx="3">
+      <!-- Loop through blog items -->
+      <div v-for="(item, index) in data" :key="item.id" :class="`item block wow fadeInUp`" :data-wow-delay="`${(index * 0.2) + 0.2}s`" data-fx="3">
+        <!-- Link Wrapper -->
         <a :href="item.link" class="block__link animsition-link" :data-img="item.img"></a>
+        <!-- Row for Blog Content -->
         <div class="row">
           <div class="col-lg-6 cont">
+            <!-- Blog Info (Tag and Date) -->
             <div class="info">
-              <span class="tag">{{ item.tag }}</span>
-              <span class="date">{{ item.date }}</span>
+              <span class="tag mr-1.5 rtl:mr-0 rtl:ml-1.5">{{ item.tag[$i18n.locale] }}</span>
+              <span class="date">{{ item.date[$i18n.locale] }}</span>
             </div>
-            <h3 class="uppercase">{{ item.title }}</h3>
+            <!-- Blog Title -->
+            <h3 class="uppercase">{{ item.title[$i18n.locale] }}</h3>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- End Blogs Section -->
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
-import HoverImgFx3 from '@/common/hoverEffect3';
-
+import HoverImgFx3 from 'assets/js/hoverEffect3';
 import data from '@/data/Landing/blog.json';
 
-// Call the onMounted hook
+/*
+|--------------------------------------------------------------------------
+| On Component Mount
+|--------------------------------------------------------------------------
+|
+| This code runs after the component has been mounted. It initializes the
+| hover effect and preloads images based on data attributes.
+|
+| @function onMounted - Lifecycle hook that runs when the component is mounted
+| @function document.querySelectorAll - Selects elements with specific attributes or classes
+| @class HoverImgFx3 - Class for handling hover effects
+| @function new HoverImgFx3 - Initializes the hover effect for the selected elements
+| @function el.dataset.img.split - Splits the data-img attribute into an array of image URLs
+| @function document.createElement - Creates new image elements for preloading
+| @property {string} imgel.src - Sets the source of the image to preload
+| @property {string} imgel.className - Adds a class to the image element for styling
+|
+*/
 onMounted(() => {
+  // Initialize hover effects on elements with the specified data attribute
   [...document.querySelectorAll('[data-fx="3"] > a, a[data-fx="3"]')].forEach(link => new HoverImgFx3(link));
+
+  // Preload images for elements with the specified classes
   [...document.querySelectorAll('.block__title, .block__link, .content__text-link')].forEach((el) => {
-    const imgsArr = el.dataset.img.split(',');
+    const imgsArr = el.dataset.img.split(','); // Split the data-img attribute into an array of image URLs
     for (let i = 0, len = imgsArr.length; i <= len - 1; ++i) {
-      const imgel = document.createElement('img');
-      imgel.style.visibility = 'hidden';
-      imgel.style.width = 0;
-      imgel.src = imgsArr[i];
-      imgel.className = 'preload';
+      const imgel = document.createElement('img'); // Create a new image element
+      imgel.style.visibility = 'hidden'; // Hide the image element to avoid display issues
+      imgel.style.width = 0; // Set the width to 0 to prevent layout shifts
+      imgel.src = imgsArr[i]; // Set the source of the image
+      imgel.className = 'preload'; // Add a class for possible styling or identification
     }
   });
 });

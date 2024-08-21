@@ -10,11 +10,12 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxtjs/i18n": "^8.3.3",
     "@types/node": "^18.17.1",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.20",
-    "nuxt": "^3.6.5",
+    "nuxt": "^3.10.3",
     "postcss": "^8.4.40",
     "tailwindcss": "^3.4.7"
   },
@@ -25,6 +26,7 @@
     "@vitejs/plugin-react": "^4.3.1",
     "bootstrap-icons": "^1.11.3",
     "gsap": "^3.12.5",
+    "nuxt-swiper": "^1.2.2",
     "swiper": "^8.4.7",
     "vite": "^4.5.3"
   }

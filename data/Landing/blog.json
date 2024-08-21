@@ -1,16 +1,34 @@
 [
   {
     "id": 1,
-    "title": "First Featured",
-    "tag": "Inspiration",
-    "date": "August 7, 2022",
+    "title": {
+      "en": "First Featured",
+      "ar": "الأولى المميزة"
+    },
+    "tag": {
+      "en": "Inspiration",
+      "ar": "إلهام"
+    },
+    "date": {
+      "en": "August 7, 2022",
+      "ar": "7 أغسطس 2022"
+    },
     "img": "/assets/imgs/blog/b1.jpeg"
   },
   {
     "id": 2,
-    "title": "Second Featured",
-    "tag": "Inspiration",
-    "date": "August 7, 2022",
+    "title": {
+      "en": "Second Featured",
+      "ar": "الثانية المميزة"
+    },
+    "tag": {
+      "en": "Inspiration",
+      "ar": "إلهام"
+    },
+    "date": {
+      "en": "August 7, 2022",
+      "ar": "7 أغسطس 2022"
+    },
     "img": "/assets/imgs/blog/b1.jpeg"
   }
 ]

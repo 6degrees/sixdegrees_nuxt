@@ -1,15 +1,22 @@
 <template>
+  <!-- Bottom content section specific to Project 1 -->
   <section class="py-[120px] bord-thin-top">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-7">
           <div class="text">
-            <h2 class="mb-50">The Solution</h2>
-            <h5 class="mb-30 font-normal">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+            <h2 class="mb-50">
+              {{ $t('components.project1.section.bottom_content.title') }}
+            </h2>
+            <h5 class="mb-30 font-normal">
+              {{ $t('components.project1.section.bottom_content.subtitle') }}
             </h5>
-            <p class="text-lg">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+            <p class="text-lg">
+              {{ $t('components.project1.section.bottom_content.description') }}
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </section></template>
+  </section>
+</template>
