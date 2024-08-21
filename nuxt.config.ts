@@ -73,6 +73,13 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     'nuxt-swiper'
   ],
+  hooks: {
+    'vite:extendConfig': (config) => {
+      if (typeof config.server!.hmr === 'object') {
+        config.server!.hmr.protocol = 'wss';
+      }
+    },
+  },
   i18n: {
     lazy: true,
     strategy: "prefix",
