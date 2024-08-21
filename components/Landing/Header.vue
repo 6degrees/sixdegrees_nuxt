@@ -44,16 +44,13 @@ import {Application} from '@splinetool/runtime'
 onMounted(() => {
   // Retrieve the canvas element by its ID
   const canvas = document.getElementById('canvas') as HTMLCanvasElement
-  const pixelRatio = window.devicePixelRatio || 1;
-  canvas.width = window.innerWidth * pixelRatio;
-  canvas.height = window.innerHeight * pixelRatio;
-  canvas.style.willChange = 'transform'; // Hint for GPU acceleration
 
   // Initialize the Spline application with the canvas element
   const app = new Application(canvas)
 
   // Load the Spline 3D scene from the provided URL
   app.load('https://prod.spline.design/rah9TcbBELz5h1ps/scene.splinecode');
+  canvas.style.willChange = 'transform'; // Hint for GPU acceleration
 
   /*
   |--------------------------------------------------------------------------
@@ -67,7 +64,7 @@ onMounted(() => {
   */
   canvas.addEventListener('wheel', (event) => {
     event.preventDefault()
-  }, {passive: true})
+  }, {passive: false})
 
   /*
   |--------------------------------------------------------------------------
@@ -82,7 +79,7 @@ onMounted(() => {
     if (event.touches.length > 1) {
       event.preventDefault()
     }
-  }, {passive: true})
+  }, {passive: false})
 
   /*
   |--------------------------------------------------------------------------
@@ -101,7 +98,7 @@ onMounted(() => {
       event.preventDefault()
     }
     lastTouchEnd = now
-  }, true)
+  }, false)
 
   /*
   |--------------------------------------------------------------------------
