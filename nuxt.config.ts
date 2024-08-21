@@ -76,7 +76,7 @@ export default defineNuxtConfig({
   hooks: {
     'vite:extendConfig': (config) => {
       if (typeof config.server!.hmr === 'object') {
-        config.server!.hmr.protocol = 'wss';
+        config.server!.hmr.protocol = process.env.HMR_PROTOCOL || 'ws';
       }
     },
   },
