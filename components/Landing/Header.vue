@@ -50,8 +50,7 @@ onMounted(() => {
 
   // Load the Spline 3D scene from the provided URL
   app.load('https://prod.spline.design/rah9TcbBELz5h1ps/scene.splinecode');
-  canvas.style.willChange = 'transform, opacity';
-  canvas.style.transform = 'translateZ(0)';
+  canvas.style.willChange = 'transform'; // Hint for GPU acceleration
 
   /*
   |--------------------------------------------------------------------------
