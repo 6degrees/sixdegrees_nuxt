@@ -1,7 +1,7 @@
 <template>
   <!-- Start About Us Section -->
   <section class="about">
-    <div class="container py-8">
+    <div class="container py-12">
       <div class="row">
         <!-- Left Column with Subtitle -->
         <div class="col-lg-4">
@@ -25,7 +25,7 @@
           <div class="col-lg-8">
             <!-- Service Item: Design -->
             <div class="item py-4 mb-6 bord-thin-top bord-thin-bottom wow fadeInUp" data-wow-delay=".2s">
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center justify-content-between">
                 <div>
                   <span class="mb-8 opacity-8">
                     {{ $t('components.landing.about.section.services.design.number') }} /
@@ -33,17 +33,15 @@
                   </span>
                   <h5 class="text-2xl">{{ $t('components.landing.about.section.services.design.subtitle') }}</h5>
                 </div>
-                <div class="ml-auto rtl:ml-0 rtl: mr-auto">
-                  <div class="d-flex align-items-center">
-                    <NuxtLink :to="pageRout.toAboutPage()" class="animsition-link">{{ $t('components.landing.about.section.services.design.link') }}</NuxtLink>
-                    <span class="text-3xl pe-7s-angle-right"></span>
-                  </div>
+                <div class="arrow-container">
+                  <NuxtLink :to="pageRout.toAboutPage()" class="animsition-link">{{ $t('components.landing.about.section.services.design.link') }}</NuxtLink>
+                  <span class="text-3xl pe-7s-angle-right"></span>
                 </div>
               </div>
             </div>
             <!-- Service Item: Development -->
             <div class="item py-4 mb-6 bord-thin-bottom wow fadeInUp" data-wow-delay=".4s">
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center justify-content-between">
                 <div>
                   <span class="mb-8 opacity-8">
                     {{ $t('components.landing.about.section.services.development.number') }} /
@@ -51,17 +49,15 @@
                   </span>
                   <h5 class="text-2xl">{{ $t('components.landing.about.section.services.development.subtitle') }}</h5>
                 </div>
-                <div class="ml-auto rtl:ml-0 rtl: mr-auto">
-                  <div class="d-flex align-items-center">
-                    <NuxtLink :to="pageRout.toAboutPage()" class="animsition-link">{{ $t('components.landing.about.section.services.development.link') }}</NuxtLink>
-                    <span class="text-3xl pe-7s-angle-right"></span>
-                  </div>
+                <div class="arrow-container">
+                  <NuxtLink :to="pageRout.toAboutPage()" class="animsition-link">{{ $t('components.landing.about.section.services.development.link') }}</NuxtLink>
+                  <span class="text-3xl pe-7s-angle-right"></span>
                 </div>
               </div>
             </div>
             <!-- Service Item: IoT -->
             <div class="item py-4 mb-6 bord-thin-bottom wow fadeInUp" data-wow-delay=".6s">
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center justify-content-between">
                 <div>
                   <span class="mb-8 opacity-8">
                     {{ $t('components.landing.about.section.services.iot.number') }} /
@@ -69,11 +65,9 @@
                   </span>
                   <h5 class="text-2xl">{{ $t('components.landing.about.section.services.iot.subtitle') }}</h5>
                 </div>
-                <div class="ml-auto rtl:ml-0 rtl: mr-auto">
-                  <div class="d-flex align-items-center">
-                    <NuxtLink :to="pageRout.toAboutPage()" class="animsition-link">{{ $t('components.landing.about.section.services.iot.link') }}</NuxtLink>
-                    <span class="text-3xl pe-7s-angle-right"></span>
-                  </div>
+                <div class="arrow-container">
+                  <NuxtLink :to="pageRout.toAboutPage()" class="animsition-link">{{ $t('components.landing.about.section.services.iot.link') }}</NuxtLink>
+                  <span class="text-3xl pe-7s-angle-right"></span>
                 </div>
               </div>
             </div>
@@ -85,6 +79,7 @@
   </section>
   <!-- End About Us Section -->
 </template>
+
 <script setup>
 /*
 |--------------------------------------------------------------------------
@@ -97,3 +92,18 @@
 */
 const pageRout = usePageRout()
 </script>
+
+<style scoped>
+.arrow-container {
+  display: flex;
+  align-items: center;
+}
+
+.pe-7s-angle-right {
+  margin-left: 10px; /* Add some space between the link and the arrow */
+}
+
+.animsition-link {
+  text-decoration: none;
+}
+</style>

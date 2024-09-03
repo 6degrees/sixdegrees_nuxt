@@ -19,7 +19,7 @@
         <div class="main-box main-bg ontop">
 
           <!-- Header component for Project Four -->
-
+          <ProjectFourHeader />
           <!-- Top content component specific to Project Four -->
           <ProjectFourTopContent />
 

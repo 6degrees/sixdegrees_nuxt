@@ -2,33 +2,33 @@
   {
     "id": 1,
     "title": {
-      "en": "First Featured",
-      "ar": "الأولى المميزة"
+      "en": "Award of Recognition by His Highness Prince Saud bin Nayef Al Saud",
+      "ar": " جائزة تقدير من صاحب السمو الملكي الأمير سعود بن نايف آل سعود"
     },
     "tag": {
-      "en": "Inspiration",
-      "ar": "إلهام"
+      "en": "Recognition",
+      "ar": "تكريم"
     },
     "date": {
-      "en": "August 7, 2022",
-      "ar": "7 أغسطس 2022"
+      "en": "November 16, 2023",
+      "ar": "16 نوفمبر 2023"
     },
-    "img": "/assets/imgs/blog/b1.jpeg"
+    "img": "/assets/imgs/blog/first-features.png"
   },
   {
     "id": 2,
     "title": {
-      "en": "Second Featured",
-      "ar": "الثانية المميزة"
+      "en": "Technical Partner of Eastern Gets Creative Initiative (Ithra)",
+      "ar": " الشريك التقني لمبادرة الشرقية تُبدع (إثراء)"
     },
     "tag": {
-      "en": "Inspiration",
-      "ar": "إلهام"
+      "en": "Partnership",
+      "ar": "شراكة"
     },
     "date": {
-      "en": "August 7, 2022",
-      "ar": "7 أغسطس 2022"
+      "en": "September 02, 2022",
+      "ar": "02 سبتمبر 2024"
     },
-    "img": "/assets/imgs/blog/b1.jpeg"
+    "img": "/assets/imgs/blog/second-features.png"
   }
 ]

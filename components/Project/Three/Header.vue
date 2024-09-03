@@ -1,5 +1,5 @@
 <template>
-  <header class="header-project3 bg-img d-flex align-items-end" data-background="/assets/imgs/works/projects/3/1.jpg"  data-overlay-dark="9">
+  <header class="header-project3 bg-img d-flex align-items-end" data-background="/assets/imgs/works/projects/2/first.png"  data-overlay-dark="9">
     <div class="container">
       <div class="row">
         <div class="col-12">

@@ -1,6 +1,6 @@
 <template>
   <!-- Start Land Header -->
-  <section class="works thecontainer w-[300vw] min-h-[95vh] flex flex-nowrap pl-[100px] relative z-0 sub-bg">
+  <section class="works thecontainer w-[100vw] min-h-[95vh] flex flex-nowrap pl-[50px] relative z-0 sub-bg">
     <div v-for="item in data" :key="item.id" class="panel">
       <div class="item">
         <div class="h-[400px] min-h-[50vh]">

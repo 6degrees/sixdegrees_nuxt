@@ -11,6 +11,7 @@
             </div>
             <div class="row row-cols-1 ">
               <div class="col col-md-6 px-4">
+                <!-- Pipedrive Form Container -->
                 <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/6FxcygmIqiOLw3yJbcPSFhs2Hntf0KMmgg3NwvCvYI7aGT2E4bMKALVs28jEYHPTqP">
                   <h4>{{ $t('components.landing.contacts.section.contactForm.title') }}</h4>
                 </div>
@@ -75,8 +76,27 @@ const state = reactive({
 onMounted(() => {
   handleResize();
   window.addEventListener('resize', handleResize);
+  loadPipedriveForm(); // Load Pipedrive form script on component mount
+
   return () => window.removeEventListener('resize', handleResize);
 });
+
+/*
+|--------------------------------------------------------------------------
+| Function: loadPipedriveForm
+|--------------------------------------------------------------------------
+|
+| Dynamically load the Pipedrive form script to ensure it is available when
+| the component is rendered. This prevents issues with the form not displaying
+| correctly due to script not being loaded.
+|
+*/
+function loadPipedriveForm() {
+  const script = document.createElement('script');
+  script.src = 'https://webforms.pipedrive.com/f/loader';
+  script.async = true;
+  document.body.appendChild(script);
+}
 
 /*
 |--------------------------------------------------------------------------

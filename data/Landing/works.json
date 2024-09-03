@@ -3,22 +3,22 @@
     "id": 1,
     "img": "/assets/imgs/works/full/1.png",
     "category": {
-      "en": "Mobile application",
-      "ar": "تطبيق موبايل"
+      "en": "Web Application",
+      "ar": " تطبيق الويب"
     },
     "title": {
-      "en": "PenPal",
-      "ar": "بين بال"
+      "en": "SATORP",
+      "ar": " ساتورب"
     },
-    "year": "2024",
+    "year": "2022",
     "link": "/project1"
   },
   {
     "id": 2,
     "img": "/assets/imgs/works/full/2.png",
     "category": {
-      "en": "Web Design",
-      "ar": "تصميم الويب"
+      "en": "Web Development",
+      "ar": "تطوير الويب"
     },
     "title": {
       "en": "AlMoajil Hospitality",
@@ -31,56 +31,28 @@
     "id": 3,
     "img": "/assets/imgs/works/full/3.png",
     "category": {
-      "en": "Web Application",
-      "ar": "تطبيق الويب"
+      "en": "Application Development",
+      "ar": " تطوير التطبيقات"
     },
     "title": {
-      "en": "Eastern Gets Creative",
-      "ar": "الشرقيه تبدع"
+      "en": "PenPal",
+      "ar": " بنبال"
     },
-    "year": "2023",
+    "year": "2024",
     "link": "/project3"
   },
   {
     "id": 4,
     "img": "/assets/imgs/works/full/4.png",
     "category": {
-      "en": "Website development",
-      "ar": "تطوير المواقع"
+      "en": "Web Application",
+      "ar": " تطبيق الويب"
     },
     "title": {
-      "en": "Promotion Efficiency",
-      "ar": "كفاءة العرض"
+      "en": "Eastern Gets Creative",
+      "ar": " الشرقيه تبدع"
     },
-    "year": "2021",
-    "link": "/project4"
-  },
-  {
-    "id": 5,
-    "img": "/assets/imgs/works/full/4.png",
-    "category": {
-      "en": "Website development",
-      "ar": "تطوير المواقع"
-    },
-    "title": {
-      "en": "Promotion Efficiency",
-      "ar": "كفاءة العرض"
-    },
-    "year": "2021",
-    "link": "/project4"
-  },
-  {
-    "id": 6,
-    "img": "/assets/imgs/works/full/4.png",
-    "category": {
-      "en": "Website development",
-      "ar": "تطوير المواقع"
-    },
-    "title": {
-      "en": "Promotion Efficiency",
-      "ar": "كفاءة العرض"
-    },
-    "year": "2021",
+    "year": "2023",
     "link": "/project4"
   }
 ]

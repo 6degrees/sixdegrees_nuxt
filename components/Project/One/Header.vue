@@ -57,7 +57,7 @@
     </div>
 
     <!-- Background image with custom margin -->
-    <div class="bg-img mt-100" data-background="/assets/imgs/works/projects/0/1.jpg"></div>
+    <div class="bg-img mt-100" data-background="/assets/imgs/works/projects/0/first.png"></div>
   </header>
 </template>
 

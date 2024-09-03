@@ -210,36 +210,36 @@ export default {
         'project1': {
             'section': {
                 'header': {
-                    'title': 'Penpal App',
-                    'description': 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
+                    'title': 'SATORP - World Safety Day Web App',
+                    'description': 'A web application was developed for SATORP to manage event booths, track attendee participation, and collect instant visitor feedback, streamlining event operations for enhanced efficiency.',
                     'info': {
                         'first': {
-                            'label': 'First :',
-                            'desc': 'Desc'
+                            'label': 'Client :',
+                            'desc': 'SATORP'
                         },
                         'second': {
-                            'label': 'Second :',
-                            'desc': 'Desc'
+                            'label': 'Service Provided :',
+                            'desc': 'Web Application Development'
                         },
                         'third': {
-                            'label': 'Third :',
-                            'desc': 'Desc'
+                            'label': 'Date :',
+                            'desc': '05 October 2022'
                         },
                         'fourth': {
-                            'label': 'Fourth :',
-                            'desc': 'Desc'
+                            'label': 'Industry :',
+                            'desc': 'Oil & Gas / Corporate Events'
                         }
                     }
                 },
                 'top_content': {
                     'title': 'The <br /> Challenge',
-                    'subtitle': 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form..',
-                    'description': 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form..'
+                    'subtitle': 'SATORP required a robust and user-friendly solution to manage the complexities of large-scale events. ',
+                    'description': 'The challenge was to create a platform that could seamlessly handle the coordination of multiple event booths, manage real-time data from a high volume of attendees and participating companies, and facilitate instant feedback collection from visitors—all within a tight timeframe.'
                 },
                 'bottom_content': {
                     "title": "The Solution",
-                    "subtitle": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
-                    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form."
+                    "subtitle": "Streamlining Event Operations for SATORP",
+                    "description": "he solution provided a robust, user-friendly web application featuring a centralized dashboard for real-time event management. It included tools for tracking attendee participation, managing event booths, and collecting instant visitor feedback. This integrated platform enabled SATORP to efficiently oversee their event, make on-the-fly adjustments, and ensure a seamless experience for all participants."
                 },
             }
         },
@@ -247,39 +247,39 @@ export default {
             'section': {
                 'header': {
                     'title': 'AlMoajil Hospitality',
-                    'description': 'We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities.',
+                    'description': 'Al-Moajil Hospitality required a dynamic website to enhance their online presence and improve user engagement. The goal was to develop a platform that would allow easy content updates through an intuitive admin panel, while also implementing SEO best practices to boost search engine visibility.',
                     'info': {
                         'first': {
-                            'label': 'First :',
-                            'desc': 'Desc'
+                            'label': 'Client:',
+                            'desc': 'Al-Moajil Hospitality'
                         },
                         'second': {
-                            'label': 'Second :',
-                            'desc': 'Desc'
+                            'label': 'Service Provided:',
+                            'desc': 'Web Design and Development, SEO Optimization'
                         },
                         'third': {
-                            'label': 'Third :',
-                            'desc': 'Desc'
+                            'label': 'Date:',
+                            'desc': '29 December 2023'
                         },
                         'fourth': {
-                            'label': 'Fourth :',
-                            'desc': 'Desc'
+                            'label': 'Industry:',
+                            'desc': 'Hospitality'
                         }
                     }
                 },
                 'challenge': {
                     'title': 'The <br /> Challenge',
-                    'goal': "The goal is there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-                    'description': "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+                    'goal': "The primary challenges faced in this project included the existing website's low search engine rankings, which hindered visibility and organic traffic.",
+                    'description': "Additionally, the website's content management system was cumbersome, requiring technical assistance for updates, which made it difficult for the client to manage content efficiently. Lastly, the lack of engaging visuals resulted in a less compelling user experience, failing to meet the expectations of Al-Moajil Hospitality's high-end clientele. These challenges necessitated a comprehensive redesign to improve both functionality and aesthetic appeal.",
                 },
                 'bottom_content': {
                     'story': {
                         'title': 'The Story',
-                        'description': 'We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences, and print materials. Install any demo, plugin or template in a matter of seconds. Just select the demo and click OK. It’s that easy! The latest design trends meet hand-crafted templates in Ave Collection. Use pre-built sections to speed up your design process. Open a beautiful store, increase your conversion rates and boost your sales in minutes with object-oriented UX.'
+                        'description': 'Al-Moajil Hospitality, a leader in the hospitality industry, needed a website that would reflect their brand"s timeless elegance and cater to their high-end clientele, including premium clients, food connoisseurs, and luxury travelers. Their existing website was not only difficult to update but also failed to deliver a visually compelling experience, which was essential for engaging their discerning audience. The objective was clear: create a website that would not only showcase their offerings but also elevate the user experience and improve their search engine rankings.'
                     },
                     'approach': {
                         'title': 'Approach',
-                        'description': 'We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences, and print materials. Install any demo, plugin or template in a matter of seconds. Just select the demo and click OK. It’s that easy! The latest design trends meet hand-crafted templates in Ave Collection. Use pre-built sections to speed up your design process. Open a beautiful store, increase your conversion rates and boost your sales in minutes with object-oriented UX.'
+                        'description': 'To address these challenges, the team adopted a user-centric design approach. The new website was built with a focus on a light theme that aligns with Al-Moajil Hospitality’s sophisticated identity. Key design elements included prominent sections and captivating full-width images to enhance visual appeal. The website was also equipped with a content management system (CMS) that allowed for easy updates without needing technical assistance. Additionally, SEO strategies were implemented to boost organic traffic, improving both visibility and user engagement. This approach ensured that the final product was both visually stunning and functionally robust, reflecting the brand’s commitment to quality and elegance.'
                     }
                 },
             }
@@ -287,67 +287,67 @@ export default {
         'project3': {
             'section': {
                 'header': {
-                    'title': 'Eastern Gets Creative'
+                    'title': 'Penpal'
                 },
                 'top_content': {
                     'item1': {
-                        'label': 'First :',
-                        'description': 'Desc'
+                        'label': 'Project Name:',
+                        'description': 'Penpal Platform'
                     },
                     'item2': {
-                        'label': 'Second :',
-                        'description': 'Desc'
+                        'label': 'Service Provided:',
+                        'description': 'Mobile App Development, Web App Development, UI/UX Design'
                     },
                     'item3': {
-                        'label': 'Third :',
-                        'description': 'Desc'
+                        'label': 'Date:',
+                        'description': '03 September 2024'
                     },
                     'item4': {
-                        'label': 'Fourth :',
-                        'description': 'Desc'
+                        'label': 'Industry:',
+                        'description': 'Education, Retail, Community Engagement'
                     },
                     'challengeTitle': '01 . The Challenge',
-                    'challengeSubtitle': 'The goal is there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.',
-                    'challengeDescription': 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn\'t anything embarrassing hidden in the middle of text.'
+                    'challengeSubtitle': 'The Penpal project faced the challenge of creating a platform that would effectively engage college students while also bridging the gap between them and local businesses',
+                    'challengeDescription': 'It was essential to design two distinct applications—one for students and one for businesses—that maintained a seamless, user-friendly experience across both platforms. Additionally, the project required the implementation of a robust admin dashboard capable of centralized management, content control, and detailed analytics and reporting, ensuring that the platform could be efficiently managed and optimized.'
                 },
                 'bottom_content': {
                     'title': '02 . The Solution',
-                    'content': "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+                    'content': "The primary goals of the Penpal project were to develop a user-centric platform that resonates with college students, making it intuitive and engaging. The project also aimed to promote local businesses by fostering stronger connections with students, enabling these businesses to offer exclusive discounts. Another key goal was to facilitate significant savings for students through easily accessible offers. Furthermore, the project sought to enhance community engagement by encouraging interactions between students and local businesses. Finally, the development of a powerful admin dashboard was crucial, providing centralized control, comprehensive analytics, and streamlined content management for efficient platform operation."
                 },
             }
         },
         'project4': {
             'section': {
                 'header': {
-                    'title': 'Promotion Efficiency',
+                    'title': 'Eastern Gets Creative',
                     'info': {
                         'first': {
-                            'title': 'First :',
-                            'desc': 'Desc'
+                            'title': 'Client:',
+                            'desc': 'Ithra (King Abdulaziz Center for World Culture)'
                         },
                         'second': {
-                            'title': 'Second :',
-                            'desc': 'Desc'
+                            'title': 'Service Provided:',
+                            'desc': 'Progressive Web Application Development'
                         },
                         'third': {
-                            'title': 'Third :',
-                            'desc': 'Desc'
+                            'title': 'Date:',
+                            'desc': 'djla'
                         },
                         'fourth': {
-                            'title': 'Fourth :',
-                            'desc': 'Desc'
+                            'title': 'Industry:',
+                            'desc': 'Community and Culture'
                         }
                     }
                 },
                 'top_content': {
                     'title': '01 . The Challenge',
-                    'subtitle': 'The goal is there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.',
-                    'description': 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn\'t anything.'
+                    'subtitle': 'The primary challenges faced in the AlSharqiya Gets Creative project included creating a platform that effectively showcases the creativity within the Eastern Province while also driving engagement within the community.',
+                    'description': 'Another challenge was ensuring the platform provided seamless accessibility for users to discover and participate in local creative events. Additionally, it was crucial to design a centralized hub that could foster collaboration among local artists, designers, and creative individuals, enabling them to gain visibility and collaborate on projects.'
 
                 },
                 'bottom_content': {
                     'title': '02 . The Solution',
-                    'description': 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn\'t anything embarrassing hidden in the middle of text.'
+                    'description': 'The solution involved developing a Progressive Web Application (PWA) that served as a centralized hub for the AlSharqiya Gets Creative initiative. The PWA was designed with a user-centric approach, providing a platform where users could easily access event data, rate events, and obtain detailed information, including directions to event locations. The platform enhanced community engagement by offering a space where local artists and creatives could showcase their work, collaborate on projects, and gain visibility. This user-friendly platform also ensured seamless accessibility, helping to increase visibility for local creatives and their work.'
                 }
             }
         },

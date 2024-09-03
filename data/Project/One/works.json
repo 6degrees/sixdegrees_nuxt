@@ -1,26 +1,26 @@
 [
   {
     "id": 1,
-    "image": "/assets/imgs/works/projects/0/1.jpg"
+    "image": "/assets/imgs/works/projects/0/second.png"
   },
   {
     "id": 2,
-    "image": "/assets/imgs/works/projects/0/1.jpg"
+    "image": "/assets/imgs/works/projects/0/third.png"
   },
   {
     "id": 3,
-    "image": "/assets/imgs/works/projects/0/1.jpg"
+    "image": "/assets/imgs/works/projects/0/fourth.png"
   },
   {
     "id": 4,
-    "image": "/assets/imgs/works/projects/0/1.jpg"
+    "image": "/assets/imgs/works/projects/0/fifth.png"
   },
   {
     "id": 5,
-    "image": "/assets/imgs/works/projects/0/1.jpg"
+    "image": "/assets/imgs/works/projects/0/sixth.png"
   },
   {
     "id": 6,
-    "image": "/assets/imgs/works/projects/0/1.jpg"
+    "image": "/assets/imgs/works/projects/0/sixth.png"
   }
 ]

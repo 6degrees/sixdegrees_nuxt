@@ -4,7 +4,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-11">
           <div class="img">
-            <img src="/assets/imgs/works/projects/2/1.jpg" alt="" />
+            <img src="/assets/imgs/works/projects/1/fourth.png" alt="" />
           </div>
           <div class="cont section-padding">
             <div class="row">
@@ -19,7 +19,7 @@
             </div>
           </div>
           <div class="img">
-            <img src="/assets/imgs/works/projects/2/1.jpg" alt="" />
+            <img src="/assets/imgs/works/projects/1/first.png" alt="" />
           </div>
           <div class="cont section-padding">
             <div class="row">
@@ -34,7 +34,7 @@
             </div>
           </div>
           <div class="img">
-            <img src="/assets/imgs/works/projects/2/1.jpg" alt="" />
+            <img src="/assets/imgs/works/projects/1/second.png" alt="" />
           </div>
         </div>
       </div>

@@ -14,16 +14,6 @@
 <script setup>
 import data from '@/data/Project/One/works.json';
 
-/*
-|--------------------------------------------------------------------------
-| Resize Handling and Animation Setup
-|--------------------------------------------------------------------------
-|
-| Handles resizing by reloading the page if necessary and updating
-| ScrollTrigger instances. Initializes GSAP animations for the sections
-| if the window width is greater than 991 pixels.
-|
-*/
 function handleResize() {
   const allTriggers = ScrollTrigger.getAll();
   if (window.innerWidth < 991 && allTriggers.length || window.innerWidth > 991 && !allTriggers.length) {
@@ -35,17 +25,6 @@ function handleResize() {
   });
 }
 
-/*
-|--------------------------------------------------------------------------
-| onMounted Lifecycle Hook
-|--------------------------------------------------------------------------
-|
-| Registers the GSAP ScrollTrigger plugin and sets up the horizontal
-| scrolling animation for the panels if the window width is greater
-| than 991 pixels. Adds an event listener for window resize to adjust
-| animations as needed.
-|
-*/
 onMounted(() => {
   if (window.innerWidth > 991) {
     let sections = gsap.utils.toArray(".panel");
@@ -65,16 +44,11 @@ onMounted(() => {
   window.addEventListener('resize', handleResize);
 });
 
-/*
-|--------------------------------------------------------------------------
-| onUnmounted Lifecycle Hook
-|--------------------------------------------------------------------------
-|
-| Removes the resize event listener when the component is unmounted to
-| prevent memory leaks and unnecessary processing.
-|
-*/
 onUnmounted(() => {
   window.removeEventListener('resize', handleResize);
 });
 </script>
+
+<style scoped>
+
+</style>

@@ -11,8 +11,11 @@
         </div>
       </div>
     </div>
+    
     <div class="w-full h-[65vh] min-h-[350px] mt-80" data-overlay-dark="4">
-      <img class="w-full h-full object-cover object-center" src="/assets/imgs/b3.png" alt="{{ $t('components.about.header.section.image.altText') }}" />
+      <video autoplay loop muted class="w-full h-full object-cover object-center">
+                <source src="/assets/vid/vid-startup.mp4" type="video/mp4" />
+              </video>
     </div>
   </header>
   <!-- End Header Section -->

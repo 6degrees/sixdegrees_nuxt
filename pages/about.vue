@@ -23,9 +23,6 @@
         <!-- Introduction section for the About page -->
         <AboutIntro />
 
-        <!-- Video section for the About page -->
-        <AboutVideo />
-
         <!-- Testimonials section (currently commented out) -->
         <!-- <AboutTestimonials /> -->
 
