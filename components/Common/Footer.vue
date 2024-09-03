@@ -2,7 +2,7 @@
   <!-- Start Footer Section -->
   <footer>
     <div class="footer-container">
-      <div class="container pb-80 pt-80 ontop">
+      <div class="container pb-80 pt-80 relative z-[7]">
         <div class="row">
           <div class="col-lg-3">
             <div class="logo">
@@ -12,7 +12,7 @@
           <div class="col-lg-6">
             <div class="column">
               <h6 class="sub-title mb-30">{{ $t('components.common.footer.section.socialMedia.title') }}</h6>
-              <ul class="m-0 p-0">
+              <ul class="rest">
                 <li class="hover-this cursor-pointer mr-9 rtl:mr-0 rtl:ml-9">
                   <a href="https://github.com/6degrees" class="hover-anim">{{ $t('components.common.footer.section.socialMedia.links.github') }}</a>
                 </li>
@@ -48,7 +48,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="links">
-              <ul class="m-0 p-0">
+              <ul class="rest">
                 <li class="mr-9 rtl:mr-0 rtl:ml-9">
                   <a href="https://up.monitoring.6d.com.sa/status/main" class="animsition-link">{{ $t('components.common.footer.section.links.serviceStatus') }}</a>
                 </li>

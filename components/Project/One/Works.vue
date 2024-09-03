@@ -1,6 +1,6 @@
 <template>
   <!-- Works section specific to Project 1 -->
-  <div class="works thecontainer ontop">
+  <div class="works thecontainer relative z-[7]">
     <div v-for="item in data" :key="item.id" class="panel">
       <div class="item">
         <div class="img">

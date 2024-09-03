@@ -22,7 +22,7 @@
         <div class="col-lg-10 offset-lg-1">
           <div class="row mt-80">
             <div class="col-md-4 sm-mb30">
-              <ul class="list m-0 p-0">
+              <ul class="list rest">
                 <li class="text-lg mb-15"><span class="mr-10">+</span> {{ $t('components.about.intro.section.services.customSoftwareDevelopment') }}</li>
                 <li class="text-lg mb-15"><span class="mr-10">+</span> {{ $t('components.about.intro.section.services.mobileAppDevelopment') }}</li>
                 <li class="text-lg mb-15"><span class="mr-10">+</span> {{ $t('components.about.intro.section.services.websiteDevelopment') }}</li>

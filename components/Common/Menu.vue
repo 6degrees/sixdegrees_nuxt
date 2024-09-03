@@ -5,30 +5,30 @@
       <div class="row">
         <div class="col-lg-8 flex items-center justify-center">
           <div class="menu-links">
-            <ul class="main-menu m-0 p-0">
+            <ul class="main-menu rest">
               <li @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
-                <div class="o-hidden">
+                <div class="overflow-hidden">
                   <a :href="pageRout.toHomePage()" class="link animsition-link" @click="closeMenu">
                     <span class="nm">01.</span>{{ $t('components.common.menu.section.menu.home') }}
                   </a>
                 </div>
               </li>
               <li @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
-                <div class="o-hidden">
+                <div class="overflow-hidden">
                   <a :href="pageRout.toAboutPage()" class="link animsition-link" @click="closeMenu">
                     <span class="nm">02.</span>{{ $t('components.common.menu.section.menu.about') }}
                   </a>
                 </div>
               </li>
               <li @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
-                <div class="o-hidden">
+                <div class="overflow-hidden">
                   <a :href="pageRout.toContactPage()" class="link animsition-link" @click="closeMenu">
                     <span class="nm">03.</span>{{ $t('components.common.menu.section.menu.contact') }}
                   </a>
                 </div>
               </li>
               <li @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
-                <div class="o-hidden">
+                <div class="overflow-hidden">
                   <a :href="availableLocales[0].hrf" class="link animsition-link" @click="closeMenu">
                     <span class="nm">04.</span>{{ availableLocales[0].name }}
                   </a>
@@ -50,7 +50,7 @@
             </div>
             <div class="bottom">
               <h6 class="uppercase font-semibold mb-4">{{ $t('components.common.menu.section.contactInfo.joinUs.title') }}</h6>
-              <ul class="flex space-x-4 m-0 p-0 social-text text-sm">
+              <ul class="flex space-x-4 rest social-text text-sm">
                 <li>
                   <a href="https://github.com/6degrees" class="hover-this">
                     <span class="hover-anim">{{ $t('components.common.menu.section.contactInfo.joinUs.socialMedia.github') }}</span>

@@ -14,7 +14,7 @@
     <div id="smooth-content">
       <main class="main-bg">
         <!-- Main container with background and overlay -->
-        <div class="main-box main-bg ontop">
+        <div class="main-box main-bg relative z-[7]">
           <!-- Header Section -->
           <LandingHeader/>
 

@@ -18,7 +18,7 @@
       <main class="main-bg mt-100">
 
         <!-- Main box containing the project's specific sections -->
-        <div class="main-box main-bg ontop">
+        <div class="main-box main-bg relative z-[7]">
 
           <!-- Header component for Project Two -->
           <ProjectTwoHeader />

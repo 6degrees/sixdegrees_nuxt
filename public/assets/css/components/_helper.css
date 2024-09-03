@@ -48,7 +48,7 @@
   bottom: 0;
 }
 
-.ontop {
+.relative z-[7] {
   position: relative;
   z-index: 7;
 }
