@@ -608,9 +608,9 @@ img.left {
     text-transform: lowercase !important;
 }
 
-.text-left {
+/* .text-left {
     text-align: left;
-}
+} */
 
 .ls1 {
     letter-spacing: 1px !important;
@@ -1393,12 +1393,12 @@ body.loaded {
 }
 
 
-.sub-title {
+/* .sub-title {
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
+} */
 
 .sub-title.bord {
     padding: 10px 30px;
@@ -1411,16 +1411,16 @@ body.loaded {
     border-color: rgba(0, 0, 0, 0.1);
 }
 
-
+/* 
 .about .text-reval .text {
     font-size: 44px;
     font-weight: 600;
     line-height: 1.2;
-}
+} */
 
-.about .text-indent {
+/* .about .text-indent {
     text-indent: 20%;
-}
+} */
 
 .text-reval .text {
     background: -webkit-gradient(linear, left top, right top, color-stop(50%, #1c1b1b), color-stop(50%, #7d7d7d));
@@ -1522,39 +1522,6 @@ body.loaded {
     font-size: 13px;
     text-transform: uppercase;
 }
-
-/* Brands
------------------------------------------------------------------*/
-.clients-carso {
-    padding: 60px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.clients-carso .img {
-    margin: auto;
-    opacity: .8;
-}
-
-.clients-carso .img:hover {
-    opacity: 1;
-}
-
-.brands .brand-items {
-    text-align: center;
-}
-
-.brands .brand-items .img {
-   width: 100%;
-   height: 100%;
-    margin: 100px auto;
-    opacity: .7;
-}
-
-.brands .brand-items .img:hover {
-    opacity: 1;
-}
-
 
 
 .contact .container:after {
@@ -2017,43 +1984,7 @@ footer .logo img {
     }
 }
 
-/* Team
------------------------------------------------------------------*/
-/* .team .row.no-pad > div {
-    padding: 0;
-}
 
-.team .item {
-    position: relative;
-}
-
-.team .item .img {
-    position: relative;
-}
-
-.team .item .img img {
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-}
-
-.team .item .info {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-}
-
-.team .item-join {
-    height: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-top: 0;
-    border-left: 0;
-    padding: 20px 60px;
-}
-
-.team .item-join .arrow svg {
-    width: 80px;
-    height: 80px;
-} */
 
 /* Testimonials
 -----------------------------------------------------------------*/

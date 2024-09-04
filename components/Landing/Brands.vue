@@ -1,16 +1,16 @@
 <template>
   <!-- Start Clients Section -->
-  <div class="clients-carso">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-11">
-          <div class="w-full flex items-center relative z-10 marquee-container">
-            <div class="marquee-content" ref="marqueeContent">
-              <div class="marquee-row">
-                <!-- Display logos in a continuous loop -->
-                <figure class="brand-item" v-for="(logo, index) in loopedLogos" :key="index">
+  <div class="py-9 border-t border-t-[rgba(255,255,255,0.2)] border-b border-b-[rgba(255,255,255,0.2)] overflow-hidden">
+    <div class="container mx-auto">
+      <div class="flex justify-center">
+        <div class="w-full lg:w-11/12">
+          <div class="w-full flex items-center relative z-10 overflow-hidden">
+            <div class="flex whitespace-nowrap" ref="marqueeContent">
+              <div class="flex marquee-row">
+           
+                <figure class="flex-none px-4 mr-10 transition-opacity duration-300 ease-in-out opacity-70 hover:opacity-100" v-for="(logo, index) in loopedLogos" :key="index">
                   <a href="#">
-                    <img :src="logo.img" :alt="logo.alt" class="logo"/>
+                    <img :src="logo.img" :alt="logo.alt" class="max-h-[50px] max-w-[150px] object-contain transition-transform duration-300 ease-in-out hover:scale-110"/>
                   </a>
                 </figure>
               </div>
@@ -22,6 +22,7 @@
   </div>
   <!-- End Clients Section -->
 </template>
+
 
 <script setup>
 import { ref, onMounted } from 'vue';
@@ -41,13 +42,13 @@ const loopedLogos = createLoopedLogos(logos);
 
 // Function to animate the marquee
 const animateMarquee = () => {
-  const row = document.querySelector('.marquee-row'); // Select the marquee row
+  const row = marqueeContent.value.querySelector('.marquee-row'); // Select the marquee row
   const rowWidth = row.scrollWidth / 2; // Calculate half the width of the row
 
   gsap.to(row, {
     x: `-=${rowWidth}`, // Move the row to the left by half of its width
-    duration: 10, // Adjust the duration to control speed
-    ease: "linear", // Use a linear easing function for consistent speed
+    duration: 20, // Adjust the duration to control speed (increase for slower, decrease for faster)
+    ease: "none", // Use 'none' for a consistent speed without acceleration
     repeat: -1, // Repeat indefinitely
     modifiers: {
       x: gsap.utils.wrap(-rowWidth, 0) // Wrap the position to create a seamless loop
@@ -60,48 +61,3 @@ onMounted(() => {
   animateMarquee(); // Start the marquee animation
 });
 </script>
-
-<style scoped>
-.clients-carso {
-  overflow: hidden; /* Hide overflow to prevent showing duplicated content */
-}
-
-.marquee-container {
-  width: 100%;
-  overflow: hidden; /* Hide overflow to create a continuous scroll effect */
-}
-
-.marquee-content {
-  display: flex;
-  white-space: nowrap; /* Prevent wrapping of logos */
-}
-
-.marquee-row {
-  display: flex;
-}
-
-.brand-item {
-  flex: 0 0 auto; /* Prevent shrinking or growing */
-  margin-right: 40px; /* Space between logos */
-  opacity: 0.5; /* Set reduced opacity by default */
-  transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
-}
-
-.brand-item:hover {
-  opacity: 1; /* Full opacity on hover */
-}
-.logo {
-  max-height: 50px; /* Adjust this to your desired height */
-  max-width: 150px; /* Adjust this to your desired width */
-  width: auto; /* Maintain aspect ratio */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: contain; /* Ensure logos fit within the specified dimensions */
-  transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
-}
-
-.brand-item:hover .logo {
-  transform: scale(1.1); /* Slightly enlarge the logo on hover */
-}
-
-
-</style>
