@@ -26,9 +26,9 @@
         </div>
       </div>
       <!-- Features Grid -->
-      <div class="flex flex-wrap"">
+      <div class="flex flex-wrap">
         <!-- Iterate over each feature item -->
-        <div v-for="item in data" :key="item.id" class="w-full md:w-1/2 lg:w-1/4 features-items p-3">
+        <div v-for="item in data" :key="item.id" class="w-full md:w-1/2 lg:w-1/4 features-items p-3 pt-4">
           <div class="relative">
             <!-- Feature Number -->
             <span class="absolute top-0 ltr:right-0 rtl:left-0">{{ item.numb }}</span>
@@ -37,9 +37,9 @@
               <img :src="item.icon" alt="Feature Icon"/>
             </div>
             <!-- Feature Title -->
-            <h6 class="text-2xl my-10 mt-10 mb-2.5">{{item.title[$i18n.locale]}}</h6>
+            <h6 class="text-2xl my-10 mt-10 mb-2.5 pb-4">{{item.title[$i18n.locale]}}</h6>
             <!-- Feature Description -->
-            <p>{{item.content[$i18n.locale]}}</p>
+            <p class="pb-2">{{item.content[$i18n.locale]}}</p>
           </div>
         </div>
       </div>

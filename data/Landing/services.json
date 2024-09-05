@@ -3,52 +3,52 @@
     "id": 1,
     "numb": "01",
     "title": {
-      "en": "Proudly Saudi",
-      "ar": "بكل فخر سعودي"
+      "en": "Local Roots, Global Reach",
+      "ar": "جذور محلية ووصول عالمي"
     },
     "icon": "/assets/imgs/serv-icons/0.png",
     "content": {
-      "en": "As a homegrown Saudi company, 6 Degrees Technologies is deeply rooted in the values and vision of the Kingdom of Saudi Arabia. We are committed to supporting the Kingdom's Vision 2030 by driving digital transformation and innovation across various sectors. Our local presence and understanding of the Saudi market enable us to deliver solutions that are culturally and regionally relevant.",
-      "ar": "بصفتها شركة سعودية محلية، تعد الدرجات الست متجذرة بعمق في قيم ورؤية المملكة العربية السعودية. نحن ملتزمون بدعم رؤية المملكة 2030 من خلال قيادة التحول الرقمي والابتكار في مختلف القطاعات. تواجدنا المحلي وفهمنا للسوق السعودي يمكننا من تقديم حلول تتماشى مع الثقافة والإقليم."
+      "en": "Proudly rooted in Saudi Arabia, we blend local insight with world-class IT solutions to meet your unique needs and set new standards",
+      "ar": " : نحن نفخر بجذورنا في المملكة العربية السعودية، حيث نجمع بين الرؤى المحلية وحلول تكنولوجيا المعلومات ذات المستوى العالمي لتلبية احتياجاتك الفريدة ووضع معايير جديدة."
     }
   },
   {
     "id": 2,
     "numb": "02",
     "title": {
-      "en": "Client-Centric Approach",
-      "ar": "نهج يركز على العميل"
+      "en": "Visionary Technology",
+      "ar": " التكنولوجيا الابتكارية  "
     },
     "icon": "/assets/imgs/serv-icons/1.png",
     "content": {
-      "en": "Our clients are at the heart of everything we do. We take the time to understand your business goals and challenges, ensuring that our solutions are perfectly aligned with your vision. Our personalized approach guarantees that you receive the highest level of service and support, from initial consultation to project completion and beyond.",
-      "ar": "عملاؤنا هم في صميم كل ما نقوم به. نأخذ الوقت لفهم أهداف عملك وتحدياتك، مما يضمن أن حلولنا تتماشى تمامًا مع رؤيتك. يضمن نهجنا الشخصي أنك تتلقى أعلى مستوى من الخدمة والدعم، بدءًا من الاستشارة الأولية إلى إتمام المشروع وما بعده."
+      "en": "We’re all about bold ideas. Our solutions don’t just meet industry standards they set new ones, pushing boundaries to keep you ahead",
+      "ar": ": نحن نركز على الأفكار الجريئة. لا تلبي حلولنا معايير الصناعة فحسب، بل إنها تضع معايير جديدة، وتدفع الحدود لتبقيك في المقدمة."
     }
   },
   {
     "id": 3,
     "numb": "03",
     "title": {
-      "en": "Expertise and Experience",
-      "ar": "الخبرة والتجربة"
+      "en": "Client Centric Approach",
+      "ar": " نهج يركز على العميل"
     },
     "icon": "/assets/imgs/serv-icons/2.png",
     "content": {
-      "en": "With years of experience in the industry, 6 Degrees Technologies boasts a team of highly skilled professionals. Our expertise spans various domains, including website development, app development, UI/UX design, SEO, and smart building automation. This extensive knowledge base allows us to tackle complex projects with confidence and precision.",
-      "ar": "مع سنوات من الخبرة في الصناعة، تفتخر الدرجات الست بفريق من المحترفين المهرة للغاية. تمتد خبرتنا إلى مجالات مختلفة، بما في ذلك تطوير المواقع، تطوير التطبيقات، تصميم واجهات المستخدم، تحسين محركات البحث، وأتمتة المباني الذكية. تتيح لنا هذه المعرفة الواسعة التعامل مع المشاريع المعقدة بثقة ودقة."
+      "en": "Your goals are our guide. From start to finish, we tailor our services to fit your business perfectly, ensuring results that truly matter",
+      "ar": "أهدافك هي دليلنا. من البداية إلى النهاية، نقوم بتصميم خدماتنا لتناسب عملك تمامًا، مما يضمن نتائج مهمة حقًا."
     }
   },
   {
     "id": 4,
     "numb": "04",
     "title": {
-      "en": "Innovative Solutions",
-      "ar": "حلول مبتكرة"
+      "en": "Comprehensive Support",
+      "ar": "دعم شامل "
     },
     "icon": "/assets/imgs/serv-icons/0.png",
     "content": {
-      "en": "At 6 Degrees Technologies, we believe in pushing the boundaries of technology. Our team of experts consistently delivers innovative solutions tailored to meet the unique needs of each client. Whether it's developing cutting-edge applications, designing intuitive user interfaces, or implementing smart automation, we are committed to staying ahead of the technological curve.",
-      "ar": "في الدرجات الست، نؤمن بدفع حدود التكنولوجيا. يقوم فريقنا من الخبراء باستمرار بتقديم حلول مبتكرة مصممة لتلبية احتياجات كل عميل. سواء كان الأمر يتعلق بتطوير تطبيقات متقدمة، أو تصميم واجهات مستخدم بديهية، أو تنفيذ أتمتة ذكية، فإننا ملتزمون بالبقاء في طليعة التطور التكنولوجي."
+      "en": "We’re with you for the long haul. Our support keeps your tech running smoothly, long after the initial launch",
+      "ar": ": نحن معك على المدى الطويل. يضمن دعمنا استمرار تشغيل التكنولوجيا لديك بسلاسة، لفترة طويلة بعد الإطلاق الأولي."
     }
   }
 ]
