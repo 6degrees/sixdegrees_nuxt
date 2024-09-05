@@ -1,9 +1,9 @@
 <template>
-  <header class="header-project3 bg-img d-flex align-items-end" data-background="/assets/imgs/works/projects/2/first.png"  data-overlay-dark="9">
+  <header class="header-project3 bg-img flex items-end" data-background="/assets/imgs/works/projects/2/first.png"  data-overlay-dark="9">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="caption">
+      <div class="flex flex-wrap">
+        <div class="w-full">
+          <div class="text-8xl	">
             <h1>{{ $t('components.project3.section.header.title') }}</h1>
           </div>
         </div>

@@ -126,11 +126,10 @@ export default {
                         'title': 'Contact Form'
                     },
                     'phone': {
-                        'title': 'Phone Number(s)',
+                        'title': 'Phone Number',
+                        'heading':"Or simply use the following",
                         'numbers': {
-                            'primary': '+966 55 841 2255',
-                            'secondary': '+966 53 786 2922',
-                            'note': '(For SMS only)'
+                            'primary': '+966 55 841 2255'
                         }
                     },
                     'email': {
@@ -162,19 +161,25 @@ export default {
                         'text': 'An IT business enabler and partner'
                     },
                     'services': {
-                        'uiUx': 'UI/UX Design',
+                        'customSoftwareDevelopment': 'Custom Software Development',
+                        'mobileAppDevelopment': 'Mobile App Development',
                         'websiteDevelopment': 'Website Development',
-                        'applicationDevelopment': 'Application Development',
-                        'seo': 'SEO',
-                        'hardwareImport': 'Hardware Import',
-                        'smartBuildingAutomation': 'Smart Building Automation',
-                        'apiIntegration': 'API Integration',
-                        'dataMigration': 'Data Migration'
+                        'uiUxDesign': 'UI/UX Design',
+                        'iotSmartBuildingAutomation': 'IoT & Smart Building Automation',
+                        'cloudSolutions': 'Cloud Solutions',
+                        'itOperationsSupport': 'IT Operations & Support',
+                        'businessIntelligenceDataAnalytics': 'Business Intelligence & Data Analytics',
+                        'thirdPartyIntegration': 'Third-Party Integration',
+                        'seoDigitalMarketing': 'SEO & Digital Marketing',
+                        'itConsultingStrategy': 'IT Consulting & Strategy'
                     },
                     'numbers': {
-                        'yearsOfExperience': '+25 Years of Experience',
-                        'completedProjects': '+50 Completed Projects',
-                        'satisfiedClients': '+200 Satisfied Clients'
+                        'years': '+25',
+                        'yearsOfExperience': 'Years of Experience',
+                        'completed': '+300',
+                        'completedProjects': ' Completed Projects',
+                        'clients': '+200',
+                        'satisfiedClients': ' Satisfied Clients'
                     }
                 }
             }

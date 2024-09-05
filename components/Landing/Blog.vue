@@ -5,14 +5,14 @@
     <div class="container">
       <!-- Section Header -->
       <div class="sec-head mb-80">
-        <div class="d-flex align-items-center justify-end">
+        <div class="flex items-center justify-end">
           <!-- Title Section -->
           <div>
-            <h3 class="uppercase font-extralight fz-50">{{ $t('components.landing.blogs.section.title') }} <span class="font-bold">{{ $t('components.landing.blogs.section.subtitle') }}</span></h3>
+            <h3 class="uppercase font-extralight text-5xl fz-50">{{ $t('components.landing.blogs.section.title') }} <span class="font-bold">{{ $t('components.landing.blogs.section.subtitle') }}</span></h3>
           </div>
           <!-- Link to All Blogs -->
           <div class="ml-auto underline">
-            <a href="/blog" class="animsition-link all-more sub-title ls1"></a>
+            <a href="/blog" class="animsition-link all-more sub-title tracking-wide"></a>
           </div>
         </div>
       </div>
@@ -21,15 +21,15 @@
         <!-- Link Wrapper -->
         <a :href="item.link" class="block__link animsition-link" :data-img="item.img"></a>
         <!-- Row for Blog Content -->
-        <div class="row">
-          <div class="col-lg-6 cont">
+        <div class="flex flex-wrap">
+          <div class="lg:w-1/2 ">
             <!-- Blog Info (Tag and Date) -->
-            <div class="info">
-              <span class="tag mr-1.5 rtl:mr-0 rtl:ml-1.5">{{ item.tag[$i18n.locale] }}</span>
-              <span class="date">{{ item.date[$i18n.locale] }}</span>
+            <div class="text-[13px] uppercase tracking-[1px] mb-[30px]">
+              <span class="px-[20px] py-[7px] border border-[rgba(0,0,0,0.2)] rounded-[30px] mr-1.5 rtl:mr-0 rtl:ml-1.5">{{ item.tag[$i18n.locale] }}</span>
+              <span class="opacity-80">{{ item.date[$i18n.locale] }}</span>
             </div>
             <!-- Blog Title -->
-            <h3 class="uppercase">{{ item.title[$i18n.locale] }}</h3>
+            <h3 class="uppercase text-3xl">{{ item.title[$i18n.locale] }}</h3>
           </div>
         </div>
       </div>

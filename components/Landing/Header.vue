@@ -9,7 +9,7 @@
             <!-- Main Title and Subtitle, localized using $t for translation -->
             <h1 class="font-bold text-4xl sm:text-5xl md:text-6xl uppercase">{{ $t('components.landing.header.title') }}
             </h1>
-              <h1 class="font-thin sm:text-4xl md:text-5xl capitalize">{{$t('components.landing.header.subtitle')}}</h1>
+              <h1 class="font-thin sm:text-4xl md:text-5xl capitalize text-slate-400">{{$t('components.landing.header.subtitle')}}</h1>
           
           </div>
         </div>

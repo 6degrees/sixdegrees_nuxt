@@ -1,5 +1,5 @@
 <template>
-  <section class="section-padding">
+  <section class="py-[120px]">
     <div class="container">
       <div class="info mb-80 pb-20 bord-thin-bottom">
         <div class="row">

@@ -1,11 +1,11 @@
 <template>
   <!-- Start Header Section -->
-  <header class="about-header py-[120px] pb-0">
-    <div class="container mt-100">
-      <div class="row">
-        <div class="col-lg-9 offset-lg-1">
+  <header class="py-[120px] pb-0">
+    <div class="container mt-[100px]">
+      <div class="flex flex-wrap">
+        <div class="lg:w-3/4 lg:ml-1/12 px-4">
           <div>
-            <h6 class="uppercase tracking-widest font-light mb-15 text-lg">{{ $t('components.about.header.section.subtitle') }}</h6>
+            <h6 class="uppercase tracking-widest font-light mb-15 text-lg text-slate-400	">{{ $t('components.about.header.section.subtitle') }}</h6>
             <h1 class="uppercase text-8xl">{{ $t('components.about.header.section.title') }}</h1>
           </div>
         </div>

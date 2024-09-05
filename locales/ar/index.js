@@ -126,11 +126,11 @@ export default {
                         'title': 'نموذج الاتصال'
                     },
                     'phone': {
-                        'title': 'ارقام التواصل',
+                        'title': 'رقم التواصل',
+                        'heading':"أو ببساطة استخدم ما يلي",
                         'numbers': {
                             'primary': '+966 55 841 2255',
-                            'secondary': '+966 53 786 2922',
-                            'note': '(للاستخدام عبر الرسائل القصيرة فقط)'
+
                         }
                     },
                     'email': {
@@ -162,19 +162,25 @@ export default {
                         'text': 'ممكن الأعمال التقنية وشريك'
                     },
                     'services': {
-                        'uiUx': 'تصميم واجهة المستخدم وتجربة المستخدم',
+                        'customSoftwareDevelopment': 'تطوير البرمجيات المخصصة',
+                        'mobileAppDevelopment': 'تطوير تطبيقات الجوال',
                         'websiteDevelopment': 'تطوير المواقع',
-                        'applicationDevelopment': 'تطوير التطبيقات',
-                        'seo': 'تحسين محركات البحث (SEO)',
-                        'hardwareImport': 'استيراد الأجهزة',
-                        'smartBuildingAutomation': 'أتمتة المباني الذكية',
-                        'apiIntegration': 'تكامل واجهات البرمجة (API)',
-                        'dataMigration': 'ترحيل البيانات'
+                        'uiUxDesign': 'تصميم واجهة المستخدم وتجربة المستخدم',
+                        'iotSmartBuildingAutomation': 'إنترنت الأشياء وأتمتة المباني الذكية',
+                        'cloudSolutions': 'الحلول السحابية',
+                        'itOperationsSupport': 'دعم العمليات التقنية',
+                        'businessIntelligenceDataAnalytics': 'ذكاء الأعمال وتحليل البيانات',
+                        'thirdPartyIntegration': 'تكامل الطرف الثالث',
+                        'seoDigitalMarketing': 'تحسين محركات البحث والتسويق الرقمي',
+                        'itConsultingStrategy': 'استشارات تقنية المعلومات والاستراتيجيات'
                     },
                     'numbers': {
-                        'yearsOfExperience': '+25 سنوات من الخبرة',
-                        'completedProjects': '+50 مشاريع مكتملة',
-                        'satisfiedClients': '+200 عملاء راضون'
+                        'years': '+25',
+                        'yearsOfExperience': ' سنوات من الخبرة',
+                        'completed': '+300',
+                        'completedProjects': ' مشاريع مكتملة',
+                        'clients': '+200',
+                      'satisfiedClients': ' عملاء راضون'
                     }
                 }
             }

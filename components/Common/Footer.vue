@@ -3,52 +3,43 @@
   <footer>
     <div class="footer-container">
       <div class="container pb-80 pt-80 relative z-[7]">
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="logo">
-              <img src="/assets/imgs/logo-light.png" alt="" />
+        <div class="flex flex-wrap">
+          <div class="lg:w-1/4">
+            <div class="max-w-[100px] mt-12">
+              <img src="/assets/imgs/logo-light.png" alt="6 Degrees" />
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="column">
+          <div class="lg:w-1/2">
+            <div class=" mt-12">
               <h6 class="sub-title mb-30">{{ $t('components.common.footer.section.socialMedia.title') }}</h6>
-              <ul class="rest">
-                <li class="hover-this cursor-pointer mr-9 rtl:mr-0 rtl:ml-9">
+              <ul class=" p-0 m-0">
+                <li class="hover-this cursor-pointer mr-9 rtl:mr-0 rtl:ml-9 inline-block">
                   <a href="https://github.com/6degrees" class="hover-anim">{{ $t('components.common.footer.section.socialMedia.links.github') }}</a>
                 </li>
-                <li class="hover-this cursor-pointer mr-9 rtl:mr-0 rtl:ml-9">
-                  <a href="https://github.com/6degrees" class="hover-anim">{{ $t('components.common.footer.section.socialMedia.links.behance') }}</a>
+                <li class="hover-this cursor-pointer mr-9 rtl:mr-0 rtl:ml-9 inline-block">
+                  <a href="https://www.behance.net/6degz" class="hover-anim">{{ $t('components.common.footer.section.socialMedia.links.behance') }}</a>
                 </li>
-                <li class="hover-this cursor-pointer mr-9 rtl:mr-0 rtl:ml-9">
+                <li class="hover-this cursor-pointer mr-9 rtl:mr-0 rtl:ml-9 inline-block">
                   <a href="https://twitter.com/6degrees_sa" class="hover-anim">{{ $t('components.common.footer.section.socialMedia.links.twitter') }}</a>
                 </li>
-                <li class="hover-this cursor-pointer mr-9 rtl:mr-0 rtl:ml-9">
+                <li class="hover-this cursor-pointer mr-9 rtl:mr-0 rtl:ml-9 inline-block">
                   <a href="https://www.linkedin.com/company/6degz" class="hover-anim">{{ $t('components.common.footer.section.socialMedia.links.linkedin') }}</a>
                 </li>
-                <li class="hover-this cursor-pointer mr-9 rtl:mr-0 rtl:ml-9">
+                <li class="hover-this cursor-pointer mr-9 rtl:mr-0 rtl:ml-9 inline-block">
                   <a href="https://instagram.com/6degrees_sa" class="hover-anim">{{ $t('components.common.footer.section.socialMedia.links.instagram') }}</a>
                 </li>
               </ul>
             </div>
           </div>
-          <!-- Uncomment and use if needed
-          <div class="col-lg-3">
-              <div class="column">
-                  <h6 class="sub-title mb-30">{{ $t('components.common.footer.section.office.title') }}</h6>
-                  <p>{{ $t('components.common.footer.section.office.address') }}</p>
-                  <h5 class="mt-15 underline">
-                      <a href="#0">{{ $t('components.common.footer.section.office.phone') }}</a>
-                  </h5>
-              </div>
-          </div>
-          -->
+
+         
         </div>
       </div>
       <div class="container bord pt-30 pb-30 bord-thin-top">
-        <div class="row">
-          <div class="col-lg-6">
+        <div class="flex flex-wrap">
+          <div class="lg:w-1/2">
             <div class="links">
-              <ul class="rest">
+              <ul class="p-0 m-0">
                 <li class="mr-9 rtl:mr-0 rtl:ml-9">
                   <a href="https://up.monitoring.6d.com.sa/status/main" class="animsition-link">{{ $t('components.common.footer.section.links.serviceStatus') }}</a>
                 </li>
@@ -64,10 +55,10 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="copyright d-flex">
+          <div class="lg:w-1/2">
+            <div class="flex">
               <div class="ltr:ml-auto rtl:mr-auto">
-                <p class="fz-13">
+                <p>
                   {{ $t('components.common.footer.section.copyright.text') }}
                 </p>
               </div>

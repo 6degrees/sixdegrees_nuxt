@@ -1,15 +1,15 @@
 <template>
   <!-- Start Technology Stack Section -->
-  <div class="flex justify-center items-center h-full pt-80" id="techStack">
+  <div class="flex justify-center items-center h-full pt-20" id="techStack">
     <div class="relative max-w-[70rem] mx-auto">
       <div>
-        <h2 class="pb-30 mt-10 text-center font-bold uppercase text-2xl">
+        <h2 class="pb-[30px] mt-10 text-center font-bold uppercase text-2xl ">
           {{ $t('components.landing.technologies.section.title') }}<br/>
           <span class="font-extralight text-5xl mt-10"> {{ $t('components.landing.technologies.section.subtitle') }}</span>
         </h2>
       </div>
-      <div class="w-full flex flex-col items-center relative z-10 marquee-container">
-        <div class="marquee-content" ref="marqueeContent">
+      <div class="w-full flex flex-col items-center relative z-10 overflow-hidden relative w-full h-[400px] z-10 marquee-container">
+        <div class="marquee-content flex flex-col absolute w-[400%] " ref="marqueeContent">
           <div class="marquee-row" v-for="(shuffledRow, rowIndex) in logos" :key="rowIndex">
             <!-- Use precomputed shuffled array -->
             <figure class="technology m-3 lg:m-4" v-for="(logo, index) in shuffledRow" :key="index + '-row' + rowIndex">

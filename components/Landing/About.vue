@@ -27,13 +27,13 @@
             <div class=" py-4 mb-6 border-t border-t-[rgba(255,255,255,0.2)] border-b border-b-[rgba(255,255,255,0.2)] wow fadeInUp" data-wow-delay=".2s">
               <div class="flex items-center justify-between">
                 <div>
-                  <span class="mb-8 opacity-8 ">
+                  <span class="mb-8 opacity-8 text-slate-500">
                     {{ $t('components.landing.about.section.services.design.number') }} /
                     <span class="uppercase ml-5">{{ $t('components.landing.about.section.services.design.title') }}</span>
                   </span>
                   <h5 class="text-2xl">{{ $t('components.landing.about.section.services.design.subtitle') }}</h5>
                 </div>
-                <div class="flex items-center">
+                <div class="flex items-center text-slate-500">
                   <NuxtLink :to="pageRout.toAboutPage()" class="animsition-link">{{ $t('components.landing.about.section.services.design.link') }}</NuxtLink>
                   <span class="text-3xl pe-7s-angle-right"></span>
                 </div>
@@ -43,13 +43,13 @@
             <div class=" py-4 mb-6 border-b border-b-[rgba(255,255,255,0.2)] wow fadeInUp" data-wow-delay=".4s">
               <div class="d-flex align-items-center justify-content-between">
                 <div>
-                  <span class="mb-8 opacity-8">
+                  <span class="mb-8 opacity-8 text-slate-500">
                     {{ $t('components.landing.about.section.services.development.number') }} /
                     <span class="uppercase ml-5">{{ $t('components.landing.about.section.services.development.title') }}</span>
                   </span>
                   <h5 class="text-2xl">{{ $t('components.landing.about.section.services.development.subtitle') }}</h5>
                 </div>
-                <div class="flex items-center">
+                <div class="flex items-center text-slate-500">
                   <NuxtLink :to="pageRout.toAboutPage()" >{{ $t('components.landing.about.section.services.development.link') }}</NuxtLink>
                   <span class="text-3xl pe-7s-angle-right"></span>
                 </div>
@@ -59,13 +59,13 @@
             <div class=" py-4 mb-6 border-b border-b-[rgba(255,255,255,0.2)] wow fadeInUp" data-wow-delay=".6s">
               <div class="d-flex align-items-center justify-content-between">
                 <div>
-                  <span class="mb-8 opacity-8">
+                  <span class="mb-8 opacity-8 text-slate-500">
                     {{ $t('components.landing.about.section.services.iot.number') }} /
                     <span class="uppercase ml-5">{{ $t('components.landing.about.section.services.iot.title') }}</span>
                   </span>
                   <h5 class="text-2xl">{{ $t('components.landing.about.section.services.iot.subtitle') }}</h5>
                 </div>
-                <div class="flex items-center">
+                <div class="flex items-center text-slate-500">
                   <NuxtLink :to="pageRout.toAboutPage()" >{{ $t('components.landing.about.section.services.iot.link') }}</NuxtLink>
                   <span class="text-3xl pe-7s-angle-right"></span>
                 </div>

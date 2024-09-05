@@ -1,17 +1,17 @@
 <template>
-  <section class="section-padding bord-thin-bottom">
+  <section class="py-10 pt-0 border-b border-[rgba(255,255,255,0.2)]">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-5">
+      <div class="flex flex-wrap">
+        <div class="lg:w-5/12">
           <!-- Title with translation key -->
-          <h2 class="mb-50" v-html="$t('components.project2.section.challenge.title')"></h2>
+          <h2 class="mb-50 text-4xl" v-html="$t('components.project2.section.challenge.title')"></h2>
         </div>
-        <div class="col-lg-7">
-          <div class="text">
+        <div class="lg:w-7/12">
+          <div class="">
             <!-- Goal with translation key -->
-            <h5 class="mb-30 fw-400 line-height-40">{{ $t('components.project2.section.challenge.goal') }}</h5>
+            <h5 class="mb-[30px] font-normal leading-[40px] text-2xl">{{ $t('components.project2.section.challenge.goal') }}</h5>
             <!-- Description with translation key -->
-            <p class="fz-18">{{ $t('components.project2.section.challenge.description') }}</p>
+            <p class="text-slate-400">{{ $t('components.project2.section.challenge.description') }}</p>
           </div>
 
         </div>
