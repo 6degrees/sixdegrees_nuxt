@@ -157,7 +157,7 @@ export default {
                 'section': {
                     'whoWeAre': {
                         'subtitle': 'Who We Are?',
-                        'description': 'We are a pioneering tech company based in Saudi Arabia, dedicated to driving digital transformation and innovation across various sectors. Our journey began with a vision to bridge the gap between technology and business needs, and today, we are proud to be a trusted partner for numerous businesses in the Kingdom.',
+                        'description': 'At 6 Degrees Technologies, we believe in the power of connections. Inspired by the theory that every person in the world is linked by no more than six degrees of separation, we see ourselves as the essential link between your business and its technological goals. Whether you are an emerging startup or an established enterprise, we are here to connect you with innovative IT solutions tailored to your unique needs.',
                         'text': 'An IT business enabler and partner'
                     },
                     'services': {
@@ -311,12 +311,12 @@ export default {
                         'label': 'Industry:',
                         'description': 'Education, Retail, Community Engagement'
                     },
-                    'challengeTitle': '01 . The Challenge',
+                    'challengeTitle': 'The Challenge',
                     'challengeSubtitle': 'The Penpal project faced the challenge of creating a platform that would effectively engage college students while also bridging the gap between them and local businesses',
                     'challengeDescription': 'It was essential to design two distinct applications—one for students and one for businesses—that maintained a seamless, user-friendly experience across both platforms. Additionally, the project required the implementation of a robust admin dashboard capable of centralized management, content control, and detailed analytics and reporting, ensuring that the platform could be efficiently managed and optimized.'
                 },
                 'bottom_content': {
-                    'title': '02 . The Solution',
+                    'title': 'The Solution',
                     'content': "The primary goals of the Penpal project were to develop a user-centric platform that resonates with college students, making it intuitive and engaging. The project also aimed to promote local businesses by fostering stronger connections with students, enabling these businesses to offer exclusive discounts. Another key goal was to facilitate significant savings for students through easily accessible offers. Furthermore, the project sought to enhance community engagement by encouraging interactions between students and local businesses. Finally, the development of a powerful admin dashboard was crucial, providing centralized control, comprehensive analytics, and streamlined content management for efficient platform operation."
                 },
             }
@@ -345,13 +345,13 @@ export default {
                     }
                 },
                 'top_content': {
-                    'title': '01 . The Challenge',
+                    'title': 'The Challenge',
                     'subtitle': 'The primary challenges faced in the AlSharqiya Gets Creative project included creating a platform that effectively showcases the creativity within the Eastern Province while also driving engagement within the community.',
                     'description': 'Another challenge was ensuring the platform provided seamless accessibility for users to discover and participate in local creative events. Additionally, it was crucial to design a centralized hub that could foster collaboration among local artists, designers, and creative individuals, enabling them to gain visibility and collaborate on projects.'
 
                 },
                 'bottom_content': {
-                    'title': '02 . The Solution',
+                    'title': 'The Solution',
                     'description': 'The solution involved developing a Progressive Web Application (PWA) that served as a centralized hub for the AlSharqiya Gets Creative initiative. The PWA was designed with a user-centric approach, providing a platform where users could easily access event data, rate events, and obtain detailed information, including directions to event locations. The platform enhanced community engagement by offering a space where local artists and creatives could showcase their work, collaborate on projects, and gain visibility. This user-friendly platform also ensured seamless accessibility, helping to increase visibility for local creatives and their work.'
                 }
             }

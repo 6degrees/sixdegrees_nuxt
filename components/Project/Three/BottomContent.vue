@@ -5,11 +5,11 @@
         <div class="col-lg-11">
           <div class="row">
             <div class="col-lg-5">
-              <h4 class="mb-50">{{ $t('components.project3.section.bottom_content.title') }}</h4>
+              <h4 class="mb-50 text-4xl">{{ $t('components.project3.section.bottom_content.title') }}</h4>
             </div>
             <div class="col-lg-7">
               <div class="text">
-                <p class="fz-18">{{ $t('components.project3.section.bottom_content.content') }}</p>
+                <p class="text-slate-400">{{ $t('components.project3.section.bottom_content.content') }}</p>
               </div>
             </div>
           </div>

@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-12">
           <div class="caption text-center">
-            <h1>{{ $t('components.project4.section.header.title') }}</h1>
+            <h1 class="text-7xl">{{ $t('components.project4.section.header.title') }}</h1>
           </div>
         </div>
       </div>
@@ -13,25 +13,25 @@
           <div class="col-md-6 col-lg-3">
             <div class="item mb-30">
               <span class="opacity-8 mb-5">{{ $t('components.project4.section.header.info.first.title') }}</span>
-              <h6>{{ $t('components.project4.section.header.info.first.desc') }}</h6>
+              <h6 class="opacity-65">{{ $t('components.project4.section.header.info.first.desc') }}</h6>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="item mb-30">
               <span class="opacity-8 mb-5">{{ $t('components.project4.section.header.info.second.title') }}</span>
-              <h6>{{ $t('components.project4.section.header.info.second.desc') }}</h6>
+              <h6 class="opacity-65">{{ $t('components.project4.section.header.info.second.desc') }}</h6>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="item mb-30">
               <span class="opacity-8 mb-5">{{ $t('components.project4.section.header.info.third.title') }}</span>
-              <h6>{{ $t('components.project4.section.header.info.third') }}</h6>
+              <h6 class="opacity-65">{{ $t('components.project4.section.header.info.third.desc') }}</h6>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="item">
               <span class="opacity-8 mb-5">{{ $t('components.project4.section.header.info.fourth.title') }}</span>
-              <h6>{{ $t('components.project4.section.header.info.fourth.desc') }}</h6>
+              <h6 class="opacity-65">{{ $t('components.project4.section.header.info.fourth.desc') }}</h6>
             </div>
           </div>
         </div>
