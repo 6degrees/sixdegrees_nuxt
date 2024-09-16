@@ -51,7 +51,26 @@
 |
 */
 useHead({
-  titleTemplate: `%s - Project Three`, // Template for the page title
+  title: 'Penpal App', 
+  meta: [
+    // Basic Meta Tags
+    { name: 'description', content: 'Learn how we developed the Penpal app to offer discounts and promotions to college students, showcasing nearby offers based on location.' },
+    
+    // Open Graph Tags (for Facebook, LinkedIn, etc.)
+    { property: 'og:title', content: 'Penpal App' },
+    { property: 'og:description', content: 'Discover the Penpal app, offering discounts and promotions for college students, with location-based offers.' },
+    { property: 'og:image', content: '/assets/imgs/meta/3.png' }, // Replace with the actual image URL
+    { property: 'og:url', content: process.client ? window.location.href : '' }, 
+    { property: 'og:type', content: 'website' },
+    
+    // Twitter Card Tags
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Penpal App' },
+    { name: 'twitter:description', content: 'Discover the Penpal app, offering discounts and promotions for college students, with location-based offers.' },
+    { name: 'twitter:image', content: '/assets/imgs/meta/3.png' }, // Replace with the actual image URL
+    { name: 'twitter:url', content: process.client ? window.location.href : '' } ,
+  ],
+  
   bodyAttrs: {
     class: 'main-bg' // Add 'main-bg' class to the body element
   },

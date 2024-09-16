@@ -52,8 +52,26 @@
 |
 */
 useHead({
-  titleTemplate: `%s - Project Four`, // Template for the page title
-  bodyAttrs: {
+  title: 'Eastern Gets Creative', // Page specific title
+  meta: [
+    // Basic Meta Tags
+    { name: 'description', content: 'Explore the Eastern Gets Creative project, an initiative under Ithra that celebrates and nurtures creative talent in the Eastern Province.' },
+    
+    // Open Graph Tags (for Facebook, LinkedIn, etc.)
+    { property: 'og:title', content: 'Eastern Gets Creative' },
+    { property: 'og:description', content: 'Discover how the Eastern Gets Creative project nurtures and celebrates creative talent under Ithra’s initiative in the Eastern Province.' },
+    { property: 'og:image', content: '/assets/imgs/meta/4.png' }, 
+    { property: 'og:url', content: process.client ? window.location.href : '' }, 
+    { property: 'og:type', content: 'website' },
+    
+    // Twitter Card Tags
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Eastern Gets Creative' },
+    { name: 'twitter:description', content: 'Discover how the Eastern Gets Creative project nurtures and celebrates creative talent under Ithra’s initiative in the Eastern Province.' },
+    { name: 'twitter:image', content: '/assets/imgs/meta/4.png' },
+    { name: 'twitter:url', content: process.client ? window.location.href : '' } ,
+  ],
+ bodyAttrs: {
     class: 'main-bg' // Add 'main-bg' class to the body element
   },
   script: [

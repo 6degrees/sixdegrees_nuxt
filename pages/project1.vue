@@ -51,7 +51,26 @@
 |
 */
 useHead({
-  titleTemplate: `%s - Project One`, // Template for the page title
+  title: 'SATORP - World Safety Day',
+  meta: [
+    // Basic Meta Tags
+    { name: 'description', content: 'Explore our SATORP project where we developed a web application to manage event booths for World Safety Day.' },
+
+    // Open Graph Tags
+    { property: 'og:title', content: 'SATORP - World Safety Day' },
+    { property: 'og:description', content: 'Learn about the SATORP project where we created a web app for managing event booths and tracking progress.' },
+    { property: 'og:image', content: '/assets/imgs/meta/1.png' },
+    { property: 'og:url', content: process.client ? window.location.href : '' }, 
+    { property: 'og:type', content: 'website' },
+
+    // Twitter Card Tags
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'SATORP - World Safety Day' },
+    { name: 'twitter:description', content: 'Learn about the SATORP project where we created a web app for managing event booths and tracking progress.' },
+    { name: 'twitter:image', content: '/assets/imgs/meta/1.png' },
+    { name: 'twitter:url', content: process.client ? window.location.href : '' } ,
+  ],
+
   bodyAttrs: {
     class: 'main-bg' // Add 'main-bg' class to the body element
   },

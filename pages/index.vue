@@ -61,7 +61,25 @@
 |
 */
 useHead({
-  titleTemplate: `%s - Landing`, // Set the title template for the page
+  title: '6 Degrees Technologies - الدرجات الست لتقنية المعلومات',
+  meta: [
+    // Basic Meta Tags
+    { name: 'description', content: 'An IT business enabler and partner, we aim to be the link between you and your technological goal' },
+    
+    // Open Graph Tags
+    { property: 'og:title', content: '6 Degrees Technologies - About Us' },
+    { property: 'og:description', content: 'An IT business enabler and partner, we aim to be the link between you and your technological goal' },
+    { property: 'og:image', content: '/assets/imgs/meta/5.png' },
+    { property: 'og:url', content: process.client ? window.location.href : '' },
+    { property: 'og:type', content: 'website' },
+
+    // Twitter Card Tags
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: '6 Degrees Technologies - About Us' },
+    { name: 'twitter:description', content: 'An IT business enabler and partner, we aim to be the link between you and your technological goal' },
+    { name: 'twitter:image', content: '/assets/imgs/meta/5.png' },
+    { name: 'twitter:url', content: process.client ? window.location.href : '' } ,
+  ],
   bodyAttrs: {
     class: 'landing' // Add class to the body element for styling
   },

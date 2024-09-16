@@ -48,7 +48,26 @@
 |
 */
 useHead({
-  titleTemplate: `%s - Project Two`, // Template for the page title
+  title: 'AlMoajil Hospitality',
+  meta: [
+    // Basic Meta Tags
+    { name: 'description', content: 'Discover our collaboration with AlMoajil Hospitality to create a dynamic web presence and enhance customer engagement.' },
+
+    // Open Graph Tags
+    { property: 'og:title', content: 'AlMoajil Hospitality' },
+    { property: 'og:description', content: 'Learn how we collaborated with AlMoajil Hospitality to create a dynamic web presence.' },
+    { property: 'og:image', content: '/assets/imgs/meta/2.png' },
+    { property: 'og:url', content: process.client ? window.location.href : '' }, 
+    { property: 'og:type', content: 'website' },
+
+    // Twitter Card Tags
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'AlMoajil Hospitality Project' },
+    { name: 'twitter:description', content: 'Learn how we collaborated with AlMoajil Hospitality to create a dynamic web presence.' },
+    { name: 'twitter:image', content: '/assets/imgs/meta/2.png' },
+    { name: 'twitter:url', content: process.client ? window.location.href : '' } ,
+  ],
+  
   bodyAttrs: {
     class: 'main-bg' // Add 'main-bg' class to the body element
   },
