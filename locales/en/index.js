@@ -67,8 +67,8 @@ export default {
         },
         'landing': {
             'header': {
-                'title': 'Connecting Futures',
-                'subtitle': 'Innovating Saudi Arabia’s Digital Landscape',
+                'title': 'Empowering Digital Transformation ',
+                'subtitle': 'Through Strong Connections',
             },
             'about': {
                 'section': {

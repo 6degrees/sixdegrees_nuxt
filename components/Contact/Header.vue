@@ -5,7 +5,10 @@
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="cont text-center mb-80" dir="ltr">
-            <h6 class="sub-title mb-15"><span class="icon-img-30 mr-10"><img src="/assets/imgs/svg-assets/hi.png" alt="" /></span>
+            <h6 class="sub-title mb-15 flex items-center justify-center">
+              <span class="mr-2 w-5 h-5 inline-block">
+                <img src="/assets/imgs/svg-assets/hi.png" alt="" class="w-full h-full" />
+              </span>
               {{ $t('components.contact.header.section.subtitle') }}
             </h6>
             <h1>{{ $t('components.contact.header.section.title') }}</h1>

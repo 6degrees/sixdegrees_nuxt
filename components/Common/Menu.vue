@@ -40,16 +40,16 @@
         <div class="col-lg-4 flex items-center justify-center">
           <div class="cont-info">
             <div class="item mb-12">
-              <h6 class="uppercase font-semibold mb-4">{{ $t('components.common.menu.section.contactInfo.headQuarter.title') }}</h6>
+              <h6 class="uppercase font-semibold mb-4 text-slate-400">{{ $t('components.common.menu.section.contactInfo.headQuarter.title') }}</h6>
               <p class="font-normal text-lg">{{ $t('components.common.menu.section.contactInfo.headQuarter.address') }}</p>
             </div>
             <div class="item mb-12">
-              <h6 class="uppercase font-semibold mb-4">{{ $t('components.common.menu.section.contactInfo.howToConnect.title') }}</h6>
+              <h6 class="uppercase font-semibold mb-4 text-slate-400">{{ $t('components.common.menu.section.contactInfo.howToConnect.title') }}</h6>
               <a class="font-normal text-lg" href="tel:+966-558412255" dir="ltr">{{ $t('components.common.menu.section.contactInfo.howToConnect.phone') }}</a><br>
               <a class="font-normal text-lg" href="mailto:contact@6degrees.com.sa">contact@6degrees.com.sa</a>
             </div>
             <div class="bottom">
-              <h6 class="uppercase font-semibold mb-4">{{ $t('components.common.menu.section.contactInfo.joinUs.title') }}</h6>
+              <h6 class="uppercase font-semibold mb-4 text-slate-400">{{ $t('components.common.menu.section.contactInfo.joinUs.title') }}</h6>
               <ul class="flex space-x-4 rest social-text text-sm">
                 <li>
                   <a href="https://github.com/6degrees" class="hover-this">
