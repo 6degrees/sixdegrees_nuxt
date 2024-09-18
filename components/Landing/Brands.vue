@@ -4,11 +4,10 @@
     <div class="container mx-auto">
       <div class="flex justify-center">
         <div class="w-full lg:w-11/12">
-          <div class="w-full flex items-center relative z-10 overflow-hidden">
+          <div class="w-full flex items-center justify-center relative z-10 overflow-hidden">
             <div class="flex whitespace-nowrap" ref="marqueeContent">
-              <div class="flex marquee-row">
-           
-                <figure class="flex-none px-4 mr-10 transition-opacity duration-300 ease-in-out opacity-70 hover:opacity-100" v-for="(logo, index) in loopedLogos" :key="index">
+              <div class="flex marquee-row items-center">
+                <figure class="flex-none px-4 mx-6 transition-opacity duration-300 ease-in-out opacity-70 hover:opacity-100" v-for="(logo, index) in loopedLogos" :key="index">
                   <a href="#">
                     <img :src="logo.img" :alt="logo.alt" class="max-h-[50px] max-w-[150px] object-contain transition-transform duration-300 ease-in-out hover:scale-110"/>
                   </a>
@@ -22,6 +21,7 @@
   </div>
   <!-- End Clients Section -->
 </template>
+
 
 
 <script setup>
