@@ -7,28 +7,28 @@
           <div class="menu-links">
             <ul class="main-menu rest">
               <li @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
-                <div class="overflow-hidden">
+                <div>
                   <a :href="pageRout.toHomePage()" class="link animsition-link" @click="closeMenu">
                     <span class="nm">01.</span>{{ $t('components.common.menu.section.menu.home') }}
                   </a>
                 </div>
               </li>
               <li @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
-                <div class="overflow-hidden">
+                <div>
                   <a :href="pageRout.toAboutPage()" class="link animsition-link" @click="closeMenu">
                     <span class="nm">02.</span>{{ $t('components.common.menu.section.menu.about') }}
                   </a>
                 </div>
               </li>
               <li @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
-                <div class="overflow-hidden">
+                <div>
                   <a :href="pageRout.toContactPage()" class="link animsition-link" @click="closeMenu">
                     <span class="nm">03.</span>{{ $t('components.common.menu.section.menu.contact') }}
                   </a>
                 </div>
               </li>
               <li @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
-                <div class="overflow-hidden">
+                <div>
                   <a :href="availableLocales[0].hrf" class="link animsition-link" @click="closeMenu">
                     <span class="nm">04.</span>{{ availableLocales[0].name }}
                   </a>
