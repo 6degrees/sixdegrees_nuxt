@@ -19,7 +19,9 @@ body {
     overflow-x: hidden !important;
 }
 
-
+body:lang(ar) {
+    font-family: 'SST Arabic', sans-serif;
+}
 @-webkit-keyframes grain {
     0%,
     to {
