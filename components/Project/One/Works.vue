@@ -13,6 +13,7 @@
 
 <script setup>
 import data from '@/data/Project/One/works.json';
+const {locale} = useI18n()
 
 function handleResize() {
   const allTriggers = ScrollTrigger.getAll();
@@ -30,7 +31,7 @@ onMounted(() => {
     let sections = gsap.utils.toArray(".panel");
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1),
+      xPercent: locale.value === 'ar' ? 100 * (sections.length - 1) : -100 * (sections.length - 1),
       ease: "none",
       scrollTrigger: {
         trigger: ".thecontainer",
