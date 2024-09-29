@@ -438,12 +438,12 @@ main {
     -webkit-text-stroke: 1px #1d1d1d;
 }
 
-.dark-text .bord-thin-bottom,
+/* .dark-text .bord-thin-bottom,
 .dark-text .bord-thin-top,
 .text-dark .bord-thin-bottom,
 .text-dark .bord-thin-top {
     border-color: rgba(0, 0, 0, 0.2);
-}
+} */
 
 
 .rest {

@@ -4,7 +4,7 @@
     <div v-for="item in data" :key="item.id" class="panel">
       <div class="item">
         <div class="h-[400px] min-h-[50vh]">
-          <img :src="item.img" class="w-full h-full object-cover object-center" alt=""/>
+          <img :src="item.img" class="w-full h-full object-cover object-center" alt="projects"/>
         </div>
         <div class="px-2.5 py-6 border-b border-[rgba(12,0,0,0.2)] d-flex align-items-center">
           <div>

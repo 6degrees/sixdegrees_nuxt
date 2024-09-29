@@ -5,7 +5,7 @@
       <!-- Logo Section -->
       <div :class="`logo icon-img-${borderBottom ? '100' : '90'}`">
         <a :href="pageRout.toHomePage()">
-          <img src="/assets/imgs/logo-light.png" alt="" />
+          <img src="/assets/imgs/logo-light.png" alt="6 Degrees Technologies" />
         </a>
       </div>
       <!-- Menu Icon -->

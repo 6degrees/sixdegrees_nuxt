@@ -46,17 +46,17 @@
           <swiper v-bind="swiperOptions" class="swiper-container" id="content-carousel-container-unq-project2">
             <swiper-slide>
               <div class="h-[75vh] min-h-[500px]">
-                <img src="/assets/imgs/works/projects/1/first.png" alt="" />
+                <img src="/assets/imgs/works/projects/1/first.png" alt="AMH" />
               </div>
             </swiper-slide>
             <swiper-slide>
               <div class="h-[75vh] min-h-[500px]">
-                <img src="/assets/imgs/works/projects/1/second.png" alt="" />
+                <img src="/assets/imgs/works/projects/1/second.png" alt="AMH" />
               </div>
             </swiper-slide>
             <swiper-slide>
               <div class="h-[75vh] min-h-[500px]">
-                <img src="/assets/imgs/works/projects/1/third.png" alt="" />
+                <img src="/assets/imgs/works/projects/1/third.png" alt="AMH" />
               </div>
             </swiper-slide>
           </swiper>
