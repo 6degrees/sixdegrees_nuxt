@@ -3,18 +3,19 @@
   <div class="topnav blur" :class="{ 'bord-thin-bottom': borderBottom }">
     <div class="container">
       <!-- Logo Section -->
-      <div :class="`logo icon-img-${borderBottom ? '100' : '90'}`">
-      <NuxtLink :to="pageRout.toHomePage()">
-        <img src="/assets/imgs/logo-light.png" alt="6 Degrees Technologies" loading="lazy" />
-      </NuxtLink>
+      <div :class="`logo w-34 h-auto lg:w-32 icon-img-${borderBottom ? '100' : '90'}`">
+        <NuxtLink :to="pageRout.toHomePage()">
+          <!-- Increased logo size with Tailwind width and height classes -->
+          <img src="/assets/imgs/logo-light.png" alt="6 Degrees Technologies" loading="lazy" class="w-34 h-auto lg:w-32" />
+        </NuxtLink>
       </div>
       
       <!-- Menu Icon -->
       <div class="menu-icon cursor-pointer ml-auto rtl:mr-auto rtl:ml-0" @click="toggleMenu" aria-label="Toggle navigation menu">
         <span class="text pt-1 pr-4 rtl:pr-0 rtl:pl-4">
-          <span class="word">{{ $t('components.common.navbar.menu.title') }}</span>
+          <span class="word text-xl lg:text-2xl">{{ $t('components.common.navbar.menu.title') }}</span> <!-- Increased text size for menu title -->
         </span>
-        <span class="icon">
+        <span class="icon text-2xl lg:text-3xl"> <!-- Increased icon size -->
           <i></i>
           <i></i>
         </span>
@@ -117,4 +118,3 @@ const toggleMenu = () => {
   }
 };
 </script>
-

@@ -7,10 +7,10 @@
         <div class="lg:w-2/3 mb-2 lg:mb-0">
           <div class="text-left rtl:text-right">
             <!-- Main Title -->
-            <h1 class="font-bold text-4xl sm:text-5xl md:text-6xl uppercase">{{ $t('components.landing.header.title') }}</h1>
+            <h1 class=" text-4xl sm:text-5xl md:text-6xl uppercase">{{ $t('components.landing.header.title') }}</h1>
             
             <!-- Subtitle, responsive with Tailwind -->
-            <h1 class="font-thin text-xl sm:text-2xl md:text-4xl lg:text-5xl capitalize text-slate-400 mt-4 sm:mt-6 md:mt-8">
+            <h1 class="font-thin text-xl sm:text-2xl md:text-xl lg:text-3xl uppercase text-slate-400 mt-4 sm:mt-6 md:mt-8">
               {{ $t('components.landing.header.subtitle') }}
             </h1>
           </div>

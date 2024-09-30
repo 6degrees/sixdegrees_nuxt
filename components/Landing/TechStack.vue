@@ -8,8 +8,9 @@
           <span class="font-extralight text-5xl mt-10"> {{ $t('components.landing.technologies.section.subtitle') }}</span>
         </h2>
       </div>
-      <div class="w-full flex flex-col items-center relative z-10 overflow-hidden relative w-full h-[400px] z-10 marquee-container">
-        <div class="marquee-content flex flex-col absolute w-[400%] " ref="marqueeContent">
+      <!-- Increase the height of the logo section -->
+      <div class="w-full flex flex-col items-center relative z-10 overflow-hidden relative w-full h-[500px] z-10 marquee-container"> 
+        <div class="marquee-content flex flex-col absolute w-[400%]" ref="marqueeContent">
           <div class="marquee-row" v-for="(shuffledRow, rowIndex) in logos" :key="rowIndex">
             <!-- Use precomputed shuffled array -->
             <figure class="technology m-3 lg:m-4" v-for="(logo, index) in shuffledRow" :key="index + '-row' + rowIndex">
@@ -37,38 +38,9 @@
 import logos from '@/data/Landing/logs.json'; // Import the JSON data for use in the Swiper component
 import {gsap} from 'gsap'; // Import GSAP for animations
 
-/*
-|--------------------------------------------------------------------------
-| Script Setup
-|--------------------------------------------------------------------------
-|
-| The script setup block initializes variables and functions for managing
-| locale settings and navigation within the application.
-|
-*/
 const {locale} = useI18n()
 const marqueeContent = ref(null);
 
-/*
-|--------------------------------------------------------------------------
-| Function: animateMarquee
-|--------------------------------------------------------------------------
-|
-| Animates the marquee effect for each row of logos. The rows will scroll
-| horizontally in a continuous loop, creating a smooth, seamless animation.
-| The GSAP library is used to handle the animation, with the 'linear' ease
-| and infinite repeat to achieve the marquee effect.
-|
-| @function document.querySelectorAll - Selects all elements with the class 'marquee-row'
-| @function gsap.fromTo - Animates the rows from an initial to a final position
-| @param {HTMLElement} row - The row element to be animated
-| @property {number} distance - The distance to scroll, calculated as half the scrollWidth
-| @property {number} duration - The duration of the animation in seconds
-| @property {string} ease - The easing function for the animation
-| @property {number} repeat - The number of times the animation should repeat (-1 for infinite)
-| @property {object} modifiers - Modifiers applied to the animation, such as looping the position
-|
-*/
 const animateMarquee = () => {
   const rows = document.querySelectorAll('.marquee-row'); // Select all marquee rows
   rows.forEach(row => {
@@ -89,22 +61,7 @@ const animateMarquee = () => {
   });
 };
 
-/*
-|--------------------------------------------------------------------------
-| Lifecycle Hook: onMounted
-|--------------------------------------------------------------------------
-|
-| This hook is triggered when the component is mounted to the DOM. It calls
-| the animateMarquee function to start the marquee animation as soon as the
-| component is ready.
-|
-| @function onMounted - Lifecycle hook that runs after the component is mounted
-|
-*/
 onMounted(() => {
   animateMarquee(); // Start the marquee animation
 });
 </script>
-
-
-

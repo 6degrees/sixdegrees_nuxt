@@ -10,9 +10,9 @@
 
 
 .features-items {
-    background: radial-gradient(61.42% 73.53% at 94.28% 5.25%, #000 0%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(87.14% 83.69% at 118.24% 109.77%, rgba(0, 3, 8, 0.5) 0%, rgba(2, 12, 47, 0.50) 100%), radial-gradient(74.87% 191.72% at -31.72% 120.78%, rgba(0, 5, 10, 0.5) 22.83%, rgba(1, 6, 12, 0.5) 100%), radial-gradient(130.11% 116.7% at -47.61% 133.94%, rgba(0, 13, 81, 0.50) 0%, rgba(0, 13, 80, 0.50) 58.33%, rgba(87, 36, 254, 0.00) 100%), #262D67;
-}
 
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Border style */
+  }
 .features-items:hover {
     background: linear-gradient(32.84deg, #1c4cf7 2.14%, #0b237d 95.1%);
 
@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 400%;
+    width: 500%;
     will-change: transform;
 }
 
@@ -38,8 +38,8 @@
 }
 
 #techStack .marquee-container .marquee-content .marquee-row .technology {
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     position: relative;
     display: flex;
     align-items: center;
@@ -61,8 +61,8 @@
 }
 
 #techStack .marquee-container .marquee-content .marquee-row .technology .logo {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     object-fit: contain;
     transition: transform 0.1s ease-out, opacity 0.1s ease-out;
 }

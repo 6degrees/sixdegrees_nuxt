@@ -74,8 +74,8 @@ export default {
                 'section': {
                     'subtitle': '- About Us',
                     'intro': {
-                        'line1': 'An IT business enabler and partner',
-                        'line2': 'We aim to be the link between you',
+                        'line1': 'An IT business enabler and partner, ',
+                        'line2': 'we aim to be the link between you ',
                         'line3': 'and your technological goal'
                     },
                     'services': {
