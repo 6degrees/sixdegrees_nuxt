@@ -30,7 +30,7 @@ export default {
                         'docs': 'Docs'
                     },
                     'copyright': {
-                        'text': 'All rights reserved © 6 Degrees Technologies Est 2024.'
+                        'text': 'All rights reserved © 6 Degrees Technologies Co. 2024.'
                     }
                 }
             },
@@ -103,7 +103,7 @@ export default {
             'features': {
                 'section': {
                     'title': 'Why 6 DEGREES',
-                    'allFeatures': 'All Features',
+                    'allFeatures': 'View More',
                 }
             },
             'technologies': {
@@ -157,8 +157,7 @@ export default {
                 'section': {
                     'whoWeAre': {
                         'subtitle': 'Who We Are?',
-                        'description': 'At 6 Degrees Technologies, we believe in the power of connections. Inspired by the theory that every person in the world is linked by no more than six degrees of separation, we see ourselves as the essential link between your business and its technological goals. Whether you are an emerging startup or an established enterprise, we are here to connect you with innovative IT solutions tailored to your unique needs.',
-                        'text': 'An IT business enabler and partner'
+                        'description': 'At 6 Degrees Technologies, a proud member of Naqsh Holding, we believe in the power of connections. Inspired by the theory that every person in the world is linked by no more than six degrees of separation, we see ourselves as the essential link between your business and its technological goals. Whether you are an emerging startup or an established enterprise, we are here to connect you with innovative IT solutions tailored to your unique needs.'
                     },
                     'services': {
                         'customSoftwareDevelopment': 'Custom Software Development',
@@ -188,7 +187,7 @@ export default {
             'header': {
                 'section': {
                     'title': 'Get In Touch.',
-                    'subtitle': "Hello, Let's get in touch",
+                    'subtitle': "Hello, Let's Connect",
                     'map': {
                         'label': 'Location Map'
                     }
@@ -196,7 +195,7 @@ export default {
             },
             'info': {
                 'section': {
-                    'title': 'Contact With Us!',
+                    'title': 'Connect With Us!',
                     'subtitle': 'Contact Info',
                     'email': {
                         'label': 'Email',
@@ -336,7 +335,7 @@ export default {
                         },
                         'third': {
                             'title': 'Date:',
-                            'desc': 'djla'
+                            'desc': '01 November 2023'
                         },
                         'fourth': {
                             'title': 'Industry:',

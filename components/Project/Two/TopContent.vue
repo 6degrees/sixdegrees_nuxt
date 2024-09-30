@@ -1,5 +1,5 @@
 <template>
-  <section class="py-10 pt-0 border-b border-[rgba(255,255,255,0.2)]">
+  <section class="py-10 pt-20 border-b border-[rgba(255,255,255,0.2)]">
     <div class="container">
       <div class="flex flex-wrap">
         <div class="lg:w-5/12">

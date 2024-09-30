@@ -3,17 +3,18 @@
   <div class="flex justify-center items-center h-full pt-20" id="techStack">
     <div class="relative max-w-[70rem] mx-auto">
       <div>
-        <h2 class="pb-[30px] mt-10 text-center font-bold uppercase text-2xl ">
+        <h2 class="text-center font-bold uppercase text-2xl sm:text-3xl lg:text-4xl ">
           {{ $t('components.landing.technologies.section.title') }}<br/>
           <span class="font-extralight text-5xl mt-10"> {{ $t('components.landing.technologies.section.subtitle') }}</span>
         </h2>
       </div>
+      
       <div class="w-full flex flex-col items-center relative z-10 overflow-hidden relative w-full h-[400px] z-10 marquee-container">
         <div class="marquee-content flex flex-col absolute w-[400%] " ref="marqueeContent">
           <div class="marquee-row" v-for="(shuffledRow, rowIndex) in logos" :key="rowIndex">
             <!-- Use precomputed shuffled array -->
             <figure class="technology m-3 lg:m-4" v-for="(logo, index) in shuffledRow" :key="index + '-row' + rowIndex">
-              <img :src="logo.src" :alt="logo.alt" class="logo"/>
+              <img :src="logo.src" :alt="logo.alt" class="logo h-[40px] sm:h-[60px] lg:h-[80px]"/>
               <figcaption>
                 <span class="text-white">{{ logo.alt }}</span>
               </figcaption>

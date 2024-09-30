@@ -6,13 +6,16 @@
         <!-- Left Section: Title and Subtitle -->
         <div class="lg:w-2/3 mb-2 lg:mb-0">
           <div class="text-left rtl:text-right">
-            <!-- Main Title and Subtitle, localized using $t for translation -->
-            <h1 class="font-bold text-4xl sm:text-5xl md:text-6xl uppercase">{{ $t('components.landing.header.title') }}
+            <!-- Main Title -->
+            <h1 class="font-bold text-4xl sm:text-5xl md:text-6xl uppercase">{{ $t('components.landing.header.title') }}</h1>
+            
+            <!-- Subtitle, responsive with Tailwind -->
+            <h1 class="font-thin text-xl sm:text-2xl md:text-4xl lg:text-5xl capitalize text-slate-400 mt-4 sm:mt-6 md:mt-8">
+              {{ $t('components.landing.header.subtitle') }}
             </h1>
-              <h1 class="font-thin sm:text-4xl md:text-5xl capitalize text-slate-400">{{$t('components.landing.header.subtitle')}}</h1>
-          
           </div>
         </div>
+
         <!-- Right Section: Spline 3D Canvas -->
         <div class="lg:w-1/3">
           <div class="relative w-full h-[500px] flex-grow">
@@ -31,67 +34,22 @@
 <script setup lang="ts">
 import {Application} from '@splinetool/runtime'
 
-/*
-|--------------------------------------------------------------------------
-| onMounted Lifecycle Hook
-|--------------------------------------------------------------------------
-|
-| This lifecycle hook initializes the Spline 3D application when the component
-| is mounted. It selects the canvas element by ID and loads a Spline scene onto it.
-| Additionally, it sets up event listeners to prevent zoom interactions, ensuring
-| a consistent user experience across different devices.
-|
-*/
 onMounted(() => {
-  // Retrieve the canvas element by its ID
   const canvas = document.getElementById('canvas') as HTMLCanvasElement
-
-  // Initialize the Spline application with the canvas element
   const app = new Application(canvas)
-
-  // Load the Spline 3D scene from the provided URL
   app.load('https://prod.spline.design/rah9TcbBELz5h1ps/scene.splinecode');
-  canvas.style.willChange = 'transform'; // Hint for GPU acceleration
+  canvas.style.willChange = 'transform';
 
-  /*
-  |--------------------------------------------------------------------------
-  | Prevent Mouse Wheel Zooming
-  |--------------------------------------------------------------------------
-  |
-  | The following event listener is added to the canvas to prevent zooming
-  | with the mouse wheel, which could interfere with the user's interaction
-  | with the 3D scene.
-  |
-  */
   canvas.addEventListener('wheel', (event) => {
     event.preventDefault()
-  }, {passive: false})
+  }, { passive: false })
 
-  /*
-  |--------------------------------------------------------------------------
-  | Prevent Pinch-to-Zoom on Touch Devices
-  |--------------------------------------------------------------------------
-  |
-  | This event listener prevents pinch-to-zoom gestures on touch devices
-  | by blocking the default behavior when more than one touch point is detected.
-  |
-  */
   canvas.addEventListener('touchmove', (event) => {
     if (event.touches.length > 1) {
       event.preventDefault()
     }
-  }, {passive: false})
+  }, { passive: false })
 
-  /*
-  |--------------------------------------------------------------------------
-  | Prevent Double-Tap-to-Zoom on Touch Devices
-  |--------------------------------------------------------------------------
-  |
-  | Double-tap zooming is a common gesture on touch devices that can disrupt
-  | the interaction with the 3D scene. This listener prevents it by checking
-  | the time interval between touchend events.
-  |
-  */
   let lastTouchEnd = 0
   canvas.addEventListener('touchend', (event) => {
     const now = (new Date()).getTime()
@@ -101,16 +59,6 @@ onMounted(() => {
     lastTouchEnd = now
   }, false)
 
-  /*
-  |--------------------------------------------------------------------------
-  | Prevent Key-Based Zooming (Ctrl + +/-)
-  |--------------------------------------------------------------------------
-  |
-  | This listener prevents users from zooming the page using the Ctrl key
-  | combined with the '+' or '-' keys, which can alter the display of the
-  | 3D scene on the canvas.
-  |
-  */
   window.addEventListener('keydown', (event) => {
     if (event.ctrlKey && (event.key === '+' || event.key === '-')) {
       event.preventDefault()
