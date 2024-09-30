@@ -4,7 +4,7 @@
     <div v-for="item in data" :key="item.id" class="panel">
       <div class="item">
         <div class="h-[400px] min-h-[50vh]">
-          <img :src="item.img" class="w-full h-full object-cover object-center" alt="projects"/>
+          <img :src="item.img" loading="lazy" class="w-full h-full object-cover object-center" alt="projects"/>
         </div>
         <div class="px-2.5 py-6 border-b border-[rgba(12,0,0,0.2)] d-flex align-items-center">
           <div>
@@ -15,7 +15,9 @@
             <h6 class="text-gray-400 text-sm">{{ item.year }}</h6>
           </div>
         </div>
-        <NuxtLink :to="pageRout.toPage(item.link)" class="link-overlay animsition-link"></NuxtLink>
+        <NuxtLink :to="pageRout.toPage(item.link)" class="link-overlay animsition-link" aria-label="Navigate to {{ item.title[locale] }}"></NuxtLink>
+<!-- 
+        <NuxtLink :to="pageRout.toPage(item.link)" class="link-overlay animsition-link"></NuxtLink> -->
       </div>
     </div>
   </section>

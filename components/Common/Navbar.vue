@@ -1,16 +1,19 @@
 <template>
   <!-- Start Navbar Section -->
-  <div  class="topnav blur " :class="{ 'bord-thin-bottom': borderBottom }">
-    <div class="container ">
+  <div class="topnav blur" :class="{ 'bord-thin-bottom': borderBottom }">
+    <div class="container">
       <!-- Logo Section -->
       <div :class="`logo icon-img-${borderBottom ? '100' : '90'}`">
-        <a :href="pageRout.toHomePage()">
-          <img src="/assets/imgs/logo-light.png" alt="6 Degrees Technologies" />
-        </a>
+      <NuxtLink :to="pageRout.toHomePage()">
+        <img src="/assets/imgs/logo-light.png" alt="6 Degrees Technologies" loading="lazy" />
+      </NuxtLink>
       </div>
+      
       <!-- Menu Icon -->
-      <div class="menu-icon cursor-pointer ml-auto rtl:mr-auto rtl:ml-0" @click="toggleMenu">
-        <span class="text pt-1 pr-4 rtl:pr-0 rtl:pl-4"><span class="word">{{ $t('components.common.navbar.menu.title') }}</span></span>
+      <div class="menu-icon cursor-pointer ml-auto rtl:mr-auto rtl:ml-0" @click="toggleMenu" aria-label="Toggle navigation menu">
+        <span class="text pt-1 pr-4 rtl:pr-0 rtl:pl-4">
+          <span class="word">{{ $t('components.common.navbar.menu.title') }}</span>
+        </span>
         <span class="icon">
           <i></i>
           <i></i>
@@ -22,6 +25,8 @@
 </template>
 
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+
 /*
 |--------------------------------------------------------------------------
 | pageRout
@@ -48,21 +53,21 @@ const { borderBottom } = defineProps(['borderBottom']);
 
 /*
 |--------------------------------------------------------------------------
-| Scroll Event Handler
+| Scroll Event Handler with Debouncing
 |--------------------------------------------------------------------------
 |
-| handleScroll: This function adds or removes the 'nav-scroll' class to/from
-| the top navigation bar based on the window's scroll position. This is used
-| to apply different styles when the user scrolls down the page.
+| Debounced handleScroll function toggles 'nav-scroll' class based on the
+| scroll position, reducing the number of times the function runs.
 |
 */
+let scrollTimeout;
+
 const handleScroll = () => {
-  const menu = document.querySelector('.topnav');
-  if (window.scrollY > 100) {
-    menu.classList.add('nav-scroll');
-  } else {
-    menu.classList.remove('nav-scroll');
-  }
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(() => {
+    const menu = document.querySelector('.topnav');
+    menu.classList.toggle('nav-scroll', window.scrollY > 100);
+  }, 100);
 };
 
 /*
@@ -95,23 +100,15 @@ onUnmounted(() => {
 | Menu Toggle Function
 |--------------------------------------------------------------------------
 |
-| toggleMenu: This function toggles the visibility and animation of the
-| hamburger menu. It handles the 'open' state of the menu and adjusts the
-| position of the menu container based on its state.
+| toggleMenu: This function toggles the visibility of the menu using Vue's
+| reactivity system instead of direct DOM manipulation.
 |
 */
-const toggleMenu = () => {
-  const navDark = document.querySelector('.topnav');
-  document.querySelector('.hamenu').classList.toggle('open');
-  document.querySelector('.topnav .menu-icon').classList.toggle('open');
-  navDark.classList.toggle('navlit');
+const isMenuOpen = ref(false);
 
-  // Adjust the top position of the menu based on its open state
-  if (document.querySelector('.topnav .menu-icon').classList.contains('open')) {
-    document.querySelector('.hamenu').style.top = '0';
-  } else {
-    console.log(1)
-    document.querySelector('.hamenu').style.top = '-100%';
-  }
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
 };
 </script>
+
+
