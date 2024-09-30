@@ -25,8 +25,6 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
-
 /*
 |--------------------------------------------------------------------------
 | pageRout
@@ -53,21 +51,21 @@ const { borderBottom } = defineProps(['borderBottom']);
 
 /*
 |--------------------------------------------------------------------------
-| Scroll Event Handler with Debouncing
+| Scroll Event Handler
 |--------------------------------------------------------------------------
 |
-| Debounced handleScroll function toggles 'nav-scroll' class based on the
-| scroll position, reducing the number of times the function runs.
+| handleScroll: This function adds or removes the 'nav-scroll' class to/from
+| the top navigation bar based on the window's scroll position. This is used
+| to apply different styles when the user scrolls down the page.
 |
 */
-let scrollTimeout;
-
 const handleScroll = () => {
-  clearTimeout(scrollTimeout);
-  scrollTimeout = setTimeout(() => {
-    const menu = document.querySelector('.topnav');
-    menu.classList.toggle('nav-scroll', window.scrollY > 100);
-  }, 100);
+  const menu = document.querySelector('.topnav');
+  if (window.scrollY > 100) {
+    menu.classList.add('nav-scroll');
+  } else {
+    menu.classList.remove('nav-scroll');
+  }
 };
 
 /*
@@ -100,15 +98,23 @@ onUnmounted(() => {
 | Menu Toggle Function
 |--------------------------------------------------------------------------
 |
-| toggleMenu: This function toggles the visibility of the menu using Vue's
-| reactivity system instead of direct DOM manipulation.
+| toggleMenu: This function toggles the visibility and animation of the
+| hamburger menu. It handles the 'open' state of the menu and adjusts the
+| position of the menu container based on its state.
 |
 */
-const isMenuOpen = ref(false);
-
 const toggleMenu = () => {
-  isMenuOpen.value = !isMenuOpen.value;
+  const navDark = document.querySelector('.topnav');
+  document.querySelector('.hamenu').classList.toggle('open');
+  document.querySelector('.topnav .menu-icon').classList.toggle('open');
+  navDark.classList.toggle('navlit');
+
+  // Adjust the top position of the menu based on its open state
+  if (document.querySelector('.topnav .menu-icon').classList.contains('open')) {
+    document.querySelector('.hamenu').style.top = '0';
+  } else {
+    document.querySelector('.hamenu').style.top = '-100%';
+  }
 };
 </script>
-
 
