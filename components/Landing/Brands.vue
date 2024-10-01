@@ -9,7 +9,7 @@
               <div class="flex marquee-row items-center">
                 <figure class="flex-none px-4 mx-6 transition-opacity duration-300 ease-in-out opacity-70 hover:opacity-100" v-for="(logo, index) in loopedLogos" :key="index">
                   <a href="#">
-                    <img :src="logo.img" :alt="logo.alt" class="max-h-[50px] max-w-[150px] object-contain transition-transform duration-300 ease-in-out hover:scale-110"/>
+                    <img :src="logo.img" :alt="logo.alt" class="max-h-[60px] max-w-[150px] object-contain transition-transform duration-300 ease-in-out hover:scale-110"/>
                   </a>
                 </figure>
               </div>
