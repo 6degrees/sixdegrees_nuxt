@@ -1,6 +1,6 @@
 <template>
   <!-- Header section specific to Project 1 -->
-  <header class="header-project1 pt-[100px] lg:pt-[180px] pb-0">
+  <header class="header-project1 pt-[100px] lg:pt-[180px] ">
     <!-- Container for aligning content -->
     <div class="container mt-10 lg:mt-20">
       <div class="flex flex-wrap">
@@ -56,7 +56,7 @@
     </div>
 
     <!-- Background image with custom margin -->
-    <div class="bg-img h-[300px] lg:h-[540px] mt-30 lg:mt-[100px] bg-cover bg-center" style="background-image: url('/assets/imgs/works/projects/0/first.png')"></div>
+    <div class="bg-img h-[300px] lg:h-[540px] py-20 lg:mt-[100px] bg-cover bg-center" style="background-image: url('/assets/imgs/works/projects/0/first.png')"></div>
   </header>
 </template>
 

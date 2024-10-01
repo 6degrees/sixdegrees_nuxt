@@ -1,6 +1,6 @@
 <template>
   <!-- Bottom content section specific to Project 1 -->
-  <section class="py-[120px] border-t border-[rgba(255,255,255,0.2)]">
+  <section class="py-20 border-t border-[rgba(255,255,255,0.2)]">
     <div class="container">
       <div class="flex flex-wrap justify-center">
         <div class="lg:w-7/12">

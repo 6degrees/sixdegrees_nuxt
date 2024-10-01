@@ -172,7 +172,10 @@ export default {
                         'businessIntelligenceDataAnalytics': 'ذكاء الأعمال وتحليل البيانات',
                         'thirdPartyIntegration': 'دمج الطرف الثالث',
                         'seoDigitalMarketing': 'تحسين محركات البحث والتسويق الرقمي',
-                        'itConsultingStrategy': 'الاستشارات التقنية والاستراتيجيات'
+                        'itConsultingStrategy': 'الاستشارات التقنية والاستراتيجيات',
+                        "erp": "حلول تخطيط موارد المؤسسات (ERP)"
+
+
                     },
                     'numbers': {
                         'years': '+25',

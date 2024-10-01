@@ -1640,11 +1640,12 @@ footer .logo img {
 }
 
 .header-project3:before {
-    background: -webkit-gradient(linear, left bottom, left top, from(#0c0c0c), to(transparent));
-    background: -webkit-linear-gradient(bottom, #0c0c0c, transparent);
-    background: -o-linear-gradient(bottom, #0c0c0c, transparent);
-    background: linear-gradient(to top, #0c0c0c, transparent);
+    background: -webkit-gradient(linear, left bottom, left top, from(#010822), to(transparent));
+    background: -webkit-linear-gradient(bottom, #010822, transparent);
+    background: -o-linear-gradient(bottom, #010822, transparent);
+    background: linear-gradient(to top, #010822, transparent);
     opacity: 1;
+    
 }
 
 .header-project4 {

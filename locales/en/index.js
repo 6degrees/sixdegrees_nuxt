@@ -171,7 +171,8 @@ export default {
                         'businessIntelligenceDataAnalytics': 'Business Intelligence & Data Analytics',
                         'thirdPartyIntegration': 'Third-Party Integration',
                         'seoDigitalMarketing': 'SEO & Digital Marketing',
-                        'itConsultingStrategy': 'IT Consulting & Strategy'
+                        'itConsultingStrategy': 'IT Consulting & Strategy',
+                        "erp":'Enterprise Resource Planning (ERP) Solutions'
                     },
                     'numbers': {
                         'years': '+25',
