@@ -9,9 +9,22 @@
 }
 
 
+
+.language-switcher-button {
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Border styling */
+    padding: 8px 30px; /* Padding inside the button */
+    border-radius: 50px; /* Rounded corners for a button-like look */
+    transition: all 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .language-switcher-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+    color: white; /* Change text color on hover if needed */
+  }
+
 .features-items {
 
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Border style */
+    border: 1px solid rgba(255, 255, 255, 0.2); 
   }
 .features-items:hover {
     background: linear-gradient(32.84deg, #1c4cf7 2.14%, #0b237d 95.1%);

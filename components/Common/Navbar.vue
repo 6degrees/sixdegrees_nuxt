@@ -9,12 +9,16 @@
           <img src="/assets/imgs/logo-light.png" alt="6 Degrees Technologies" loading="lazy" class="w-34 h-auto lg:w-32" />
         </NuxtLink>
       </div>
-      
+
+      <!-- Language Switcher with border as a button -->
+      <div class="ml-auto rtl:mr-auto rtl:ml-0 flex items-center space-x-2 rtl:space-x-reverse">
+        <a :href="availableLocales[0].hrf" class="animsition-link language-switcher-button" @click="toggleMenu">
+          <span class="text-xl lg:text-2xl">{{ availableLocales[0].name }}</span>
+        </a>
+      </div>
+
       <!-- Menu Icon -->
-      <div class="menu-icon cursor-pointer ml-auto rtl:mr-auto rtl:ml-0" @click="toggleMenu" aria-label="Toggle navigation menu">
-        <span class="text pt-1 pr-4 rtl:pr-0 rtl:pl-4">
-          <span class="word text-xl lg:text-2xl">{{ $t('components.common.navbar.menu.title') }}</span> <!-- Increased text size for menu title -->
-        </span>
+      <div class="menu-icon cursor-pointer ml-4 rtl:mr-4 rtl:ml-0" @click="toggleMenu" aria-label="Toggle navigation menu">
         <span class="icon text-2xl lg:text-3xl"> <!-- Increased icon size -->
           <i></i>
           <i></i>
@@ -26,40 +30,13 @@
 </template>
 
 <script setup>
-/*
-|--------------------------------------------------------------------------
-| pageRout
-|--------------------------------------------------------------------------
-|
-| The pageRout variable represents the page route utility, which provides
-| methods for navigating to different pages based on predefined routes.
-|
-*/
+const { locale, locales } = useI18n(); // Include locales and current locale
 const pageRout = usePageRout();
 
-/*
-|--------------------------------------------------------------------------
-| Props Definition
-|--------------------------------------------------------------------------
-|
-| borderBottom Prop: This prop controls whether a bottom border is added to
-| the top navigation bar. It is of type Boolean.
-|
-| @type {boolean}
-|
-*/
+const availableLocales = computed(() => locales.value.filter(i => i.code !== locale.value));
+
 const { borderBottom } = defineProps(['borderBottom']);
 
-/*
-|--------------------------------------------------------------------------
-| Scroll Event Handler
-|--------------------------------------------------------------------------
-|
-| handleScroll: This function adds or removes the 'nav-scroll' class to/from
-| the top navigation bar based on the window's scroll position. This is used
-| to apply different styles when the user scrolls down the page.
-|
-*/
 const handleScroll = () => {
   const menu = document.querySelector('.topnav');
   if (window.scrollY > 100) {
@@ -69,48 +46,20 @@ const handleScroll = () => {
   }
 };
 
-/*
-|--------------------------------------------------------------------------
-| Mounted Lifecycle Hook
-|--------------------------------------------------------------------------
-|
-| This hook adds the scroll event listener when the component is mounted.
-|
-*/
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
 });
 
-/*
-|--------------------------------------------------------------------------
-| Unmounted Lifecycle Hook
-|--------------------------------------------------------------------------
-|
-| This hook removes the scroll event listener when the component is unmounted,
-| preventing memory leaks and ensuring proper cleanup.
-|
-*/
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
 });
 
-/*
-|--------------------------------------------------------------------------
-| Menu Toggle Function
-|--------------------------------------------------------------------------
-|
-| toggleMenu: This function toggles the visibility and animation of the
-| hamburger menu. It handles the 'open' state of the menu and adjusts the
-| position of the menu container based on its state.
-|
-*/
 const toggleMenu = () => {
   const navDark = document.querySelector('.topnav');
   document.querySelector('.hamenu').classList.toggle('open');
   document.querySelector('.topnav .menu-icon').classList.toggle('open');
   navDark.classList.toggle('navlit');
 
-  // Adjust the top position of the menu based on its open state
   if (document.querySelector('.topnav .menu-icon').classList.contains('open')) {
     document.querySelector('.hamenu').style.top = '0';
   } else {
@@ -118,3 +67,7 @@ const toggleMenu = () => {
   }
 };
 </script>
+
+<style scoped>
+
+</style>

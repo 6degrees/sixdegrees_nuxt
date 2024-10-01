@@ -27,13 +27,6 @@
                   </a>
                 </div>
               </li>
-              <li @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
-                <div>
-                  <a :href="availableLocales[0].hrf" class="link animsition-link" @click="closeMenu">
-                    <span class="nm">04.</span>{{ availableLocales[0].name }}
-                  </a>
-                </div>
-              </li>
             </ul>
           </div>
         </div>
@@ -94,7 +87,6 @@
 <script setup>
 const { locale, locales } = useI18n();
 const pageRout = usePageRout();
-const availableLocales = computed(() => locales.value.filter(i => i.code !== locale.value));
 const closeMenu = () => {
   document.querySelector('.hamenu').classList.remove("open");
 };
@@ -104,13 +96,5 @@ const handleMouseEnter = (event) => {
 };
 const handleMouseLeave = (event) => {
   Object.values(event.currentTarget.parentElement.children).forEach(el => el.style.opacity = "1");
-};
-const handleOpenDMenu = (event) => {
-  document.querySelector(".main-menu").classList.add("gosub");
-  event.currentTarget.parentElement.parentElement.querySelector(".sub-menu").classList.add("sub-open");
-};
-const handleCloseDMenu = () => {
-  document.querySelector(".main-menu").classList.remove("gosub");
-  document.querySelector(".main-menu .sub-menu").classList.remove("sub-open");
 };
 </script>

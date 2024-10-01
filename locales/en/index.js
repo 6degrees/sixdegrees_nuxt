@@ -157,7 +157,8 @@ export default {
                 'section': {
                     'whoWeAre': {
                         'subtitle': 'Who We Are?',
-                        'description': 'At 6 Degrees Technologies, a proud member of Naqsh Holding, we believe in the power of connections. Inspired by the theory that every person in the world is linked by no more than six degrees of separation, we see ourselves as the essential link between your business and its technological goals. Whether you are an emerging startup or an established enterprise, we are here to connect you with innovative IT solutions tailored to your unique needs.'
+                        'text':'Empowering Businesses Through Innovation and Connectivity',
+                        'description': 'At 6 Degrees Technologies, we believe that technology is the key to unlocking limitless potential. Drawing inspiration from the concept that every individual and business is connected by six degrees of separation, we position ourselves as the vital link between your organization and its technological future. Our mission is to provide transformative IT solutions tailored to your specific needs, whether you are a growing startup or a well-established enterprise. From cutting-edge software development to smart building automation, we aim to bridge the gap between your business challenges and innovative digital solutions. Let us help you harness the power of technology to elevate your business to new heights.'
                     },
                     'services': {
                         'customSoftwareDevelopment': 'Custom Software Development',
@@ -186,7 +187,7 @@ export default {
         'contact': {
             'header': {
                 'section': {
-                    'title': 'Get In Touch.',
+                    'title': 'Find Us by the Corniche.',
                     'subtitle': "Hello, Let's Connect",
                     'map': {
                         'label': 'Location Map'
