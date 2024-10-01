@@ -13,7 +13,7 @@
       <!-- Language Switcher with border as a button -->
       <div class="ml-auto rtl:mr-auto rtl:ml-0 flex items-center space-x-2 rtl:space-x-reverse">
         <a :href="availableLocales[0].hrf" class="animsition-link language-switcher-button" @click="toggleMenu">
-          <span class="text-xl lg:text-xl">{{ availableLocales[0].name }}</span>
+          <span class="text-md lg:text-md">{{ availableLocales[0].name }}</span>
         </a>
       </div>
 

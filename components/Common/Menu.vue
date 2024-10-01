@@ -2,10 +2,10 @@
   <!-- Start Menu Section -->
   <div class="hamenu flex items-center justify-center min-h-screen">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 flex items-center justify-center">
+      <div class="flex flex-wrap">
+        <div class="w-full lg:w-8/12 flex items-center justify-center">
           <div class="menu-links">
-            <ul class="main-menu rest">
+            <ul class="main-menu">
               <li @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
                 <div>
                   <a :href="pageRout.toHomePage()" class="link animsition-link" @click="closeMenu">
@@ -30,7 +30,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-4 flex items-center justify-center">
+        <div class="w-full lg:w-4/12 flex items-center justify-center">
           <div class="cont-info">
             <div class="item mb-12">
               <h6 class="uppercase font-semibold mb-4 text-slate-400">{{ $t('components.common.menu.section.contactInfo.headQuarter.title') }}</h6>
