@@ -13,7 +13,7 @@
               </div>
               <div class="lg:w-7/12 w-full">
                 <div>
-                  <p class="text-slate-400">{{ $t('components.project2.section.bottom_content.story.description') }}</p>
+                  <p class="text-slate-400 text-lg md:text-xl">{{ $t('components.project2.section.bottom_content.story.description') }}</p>
                 </div>
               </div>
             </div>
@@ -28,7 +28,7 @@
               </div>
               <div class="lg:w-7/12 w-full">
                 <div>
-                  <p class="text-slate-400">{{ $t('components.project2.section.bottom_content.approach.description') }}</p>
+                  <p class="text-slate-400 text-lg md:text-xl">{{ $t('components.project2.section.bottom_content.approach.description') }}</p>
                 </div>
               </div>
             </div>

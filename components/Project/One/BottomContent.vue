@@ -11,7 +11,7 @@
             <h5 class="mb-[30px] font-normal text-2xl">
               {{ $t('components.project1.section.bottom_content.subtitle') }}
             </h5>
-            <p class="text-lg text-slate-400">
+            <p class="text-lg md:text-xl text-slate-400">
               {{ $t('components.project1.section.bottom_content.description') }}
             </p>
           </div>

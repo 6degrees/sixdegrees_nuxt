@@ -1,15 +1,17 @@
 <template>
-  <div class="img-column">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="img md-mb30">
-            <img src="/assets/imgs/works/projects/2/fourth.png" alt="Penpal" />
+  <div>
+    <div class="container mx-auto">
+      <div class="flex flex-wrap">
+        <!-- First Image Column -->
+        <div class="w-full lg:w-1/2 p-4">
+          <div class="img">
+            <img src="/assets/imgs/works/projects/2/fourth.png" alt="Penpal" class="w-full h-auto object-contain" />
           </div>
         </div>
-        <div class="col-lg-6">
+        <!-- Second Image Column -->
+        <div class="w-full lg:w-1/2 p-4">
           <div class="img">
-            <img src="/assets/imgs/works/projects/2/third.png" alt="Penpal" />
+            <img src="/assets/imgs/works/projects/2/third.png" alt="Penpal" class="w-full h-auto object-contain" />
           </div>
         </div>
       </div>

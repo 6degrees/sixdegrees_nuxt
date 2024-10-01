@@ -1,17 +1,24 @@
 <template>
-  <section class="section-padding">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
+  <section class="py-[120px]">
+    <div class="container mx-auto">
+      <div class="flex justify-center">
+        <div class="w-full lg:w-8/12">
           <div>
-            <h4 class="mb-30 text-4xl">{{ $t('components.project4.section.top_content.title') }}</h4>
+            <!-- Title -->
+            <h4 class="mb-8 text-4xl">{{ $t('components.project4.section.top_content.title') }}</h4>
+
+            <!-- Subtitle -->
             <div class="text">
-              <h5 class="mb-50 fw-400 line-height-40 text-2xl">
+              <h5 class="mb-12 font-normal leading-10 text-2xl">
                 {{ $t('components.project4.section.top_content.subtitle') }}
               </h5>
-              <div class="row justify-content-end">
-                <div class="col-lg-9">
-                  <p class="text-slate-400">{{ $t('components.project4.section.top_content.description') }}</p>
+
+              <!-- Description -->
+              <div class="flex justify-end">
+                <div class="w-full lg:w-9/12">
+                  <p class="text-slate-400 text-lg md:text-xl">
+                    {{ $t('components.project4.section.top_content.description') }}
+                  </p>
                 </div>
               </div>
             </div>

@@ -11,7 +11,7 @@
             <!-- Goal with translation key -->
             <h5 class="mb-[30px] font-normal leading-[40px] text-2xl">{{ $t('components.project2.section.challenge.goal') }}</h5>
             <!-- Description with translation key -->
-            <p class="text-slate-400">{{ $t('components.project2.section.challenge.description') }}</p>
+            <p class="text-slate-400 text-lg md:text-xl">{{ $t('components.project2.section.challenge.description') }}</p>
           </div>
 
         </div>
