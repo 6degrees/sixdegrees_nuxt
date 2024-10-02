@@ -2,11 +2,18 @@
   <!-- Start Technology Stack Section -->
   <div class="flex justify-center items-center h-full pt-20" id="techStack">
     <div class="relative max-w-[70rem] mx-auto">
-      <div>
-        <h2 class=" mt-10 text-center font-bold uppercase text-2xl">
-          {{ $t('components.landing.technologies.section.title') }}   </h2> <br/>
-         <h2> <span class="font-extralight text-5xl text-center uppercase text-2xl "> {{ $t('components.landing.technologies.section.subtitle') }}</span></h2>
-      
+      <div class="pb-5 text-center">
+        <!-- Title Section with responsive text size -->
+        <h2 class="mt-10 font-bold uppercase text-2xl sm:text-3xl md:text-4xl">
+          {{ $t('components.landing.technologies.section.title') }}
+        </h2> 
+        <br />
+        <!-- Subtitle with responsive text size and centered text -->
+        <h2>
+          <span class="font-extralight text-2xl sm:text-3xl md:text-5xl uppercase text-center">
+            {{ $t('components.landing.technologies.section.subtitle') }}
+          </span>
+        </h2>
       </div>
       <!-- Increase the height of the logo section -->
       <div class="w-full flex flex-col items-center relative z-10 overflow-hidden relative w-full h-[500px] z-10 marquee-container"> 

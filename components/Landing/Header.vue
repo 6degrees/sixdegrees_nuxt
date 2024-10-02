@@ -1,26 +1,26 @@
 <template>
   <!-- Start Land Header -->
-  <header class="flex items-center pt-28 pb-24 md:pt-36 md:pb-25 sm:pt-24 sm:pb-20 xs:pt-16 xs:pb-10">
+  <header class="flex items-center pt-32 pb-32 md:pt-36 md:pb-25 sm:pt-24 sm:pb-30 xs:pt-20 xs:pb-15">
     <div class="container">
       <div class="flex justify-between items-center">
         <!-- Left Section: Title and Subtitle -->
         <div class="lg:w-2/3 mb-2 lg:mb-0">
           <div class="text-left rtl:text-right">
             <!-- Main Title -->
-            <h1 class=" text-4xl sm:text-5xl md:text-6xl uppercase">{{ $t('components.landing.header.title') }}</h1>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl uppercase">{{ $t('components.landing.header.title') }}</h1>
             
-            <!-- Subtitle, responsive with Tailwind -->
+            <!-- Subtitle -->
             <h1 class="font-thin text-xl sm:text-2xl md:text-xl lg:text-3xl uppercase text-slate-400 mt-4 sm:mt-6 md:mt-8">
               {{ $t('components.landing.header.subtitle') }}
             </h1>
           </div>
         </div>
 
-        <!-- Right Section: Spline 3D Canvas -->
-        <div class="lg:w-1/3">
+        <!-- Right Section: Spline 3D Canvas (Hidden on mobile, visible on tablet and desktop) -->
+        <div class="lg:w-1/3 hidden md:block">
           <div class="relative w-full h-[500px] flex-grow">
             <div class="relative w-full h-full flex justify-center items-center lg:justify-start lg:items-start">
-              <!-- Placeholder for the Spline 3D Canvas -->
+              <!-- Spline 3D Canvas -->
               <canvas id="canvas" class="w-full h-full border-none z--1 lg:z-0"></canvas>
             </div>
           </div>
@@ -32,13 +32,14 @@
 </template>
 
 <script setup lang="ts">
-import {Application} from '@splinetool/runtime'
+import { Application } from '@splinetool/runtime'
 
 onMounted(() => {
   const canvas = document.getElementById('canvas') as HTMLCanvasElement
   const app = new Application(canvas)
-  app.load('https://prod.spline.design/rah9TcbBELz5h1ps/scene.splinecode');
-  canvas.style.willChange = 'transform';
+  app.load('https://prod.spline.design/rah9TcbBELz5h1ps/scene.splinecode')
+
+  canvas.style.willChange = 'transform'
 
   canvas.addEventListener('wheel', (event) => {
     event.preventDefault()

@@ -33,7 +33,7 @@
             <!-- Feature Number -->
             <span class="absolute top-0 ltr:right-0 rtl:left-0">{{ item.numb }}</span>
             <!-- Feature Icon -->
-            <div class="w-14">
+            <div class="w-14 text-light">
               <img :src="item.icon" alt="Feature Icon"/>
             </div>
             <!-- Feature Title -->
