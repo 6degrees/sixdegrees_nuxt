@@ -36,7 +36,7 @@
                 </div>
                 <div class="flex items-center text-slate-500">
                   <NuxtLink :to="pageRout.toAboutPage()" class="animsition-link">{{ $t('components.landing.about.section.services.design.link') }}</NuxtLink>
-                  <span class="text-3xl pe-7s-angle-right"></span>
+                  <span :class="[$i18n.locale === 'en' ? 'pe-7s-angle-right' : 'pe-7s-angle-left']" class="text-3xl"></span>
                 </div>
               </div>
             </div>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="flex items-center text-slate-500">
                   <NuxtLink :to="pageRout.toAboutPage()">{{ $t('components.landing.about.section.services.development.link') }}</NuxtLink>
-                  <span class="text-3xl pe-7s-angle-right"></span>
+                  <span :class="[$i18n.locale === 'en' ? 'pe-7s-angle-right' : 'pe-7s-angle-left']" class="text-3xl"></span>
                 </div>
               </div>
             </div>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="flex items-center text-slate-500">
                   <NuxtLink :to="pageRout.toAboutPage()">{{ $t('components.landing.about.section.services.iot.link') }}</NuxtLink>
-                  <span class="text-3xl pe-7s-angle-right"></span>
+                  <span :class="[$i18n.locale === 'en' ? 'pe-7s-angle-right' : 'pe-7s-angle-left']" class="text-3xl"></span>
                 </div>
               </div>
             </div>
