@@ -158,13 +158,29 @@ main {
 }
 
 .hover-this .hover-anim {
-    pointer-events: none;
+    pointer-events: auto;
     -webkit-transition: -webkit-transform 0.2s linear;
     transition: -webkit-transform 0.2s linear;
     -o-transition: transform 0.2s linear;
     transition: transform 0.2s linear;
     transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
+/* Ensure the links maintain their default color on hover */
+.hover-this a {
+    color: inherit; /* Keeps the inherited color (or you can define a custom color) */
+    text-decoration: none; /* Remove underline if needed */
+  }
+  
+  .hover-this a:hover {
+    color: inherit; /* Prevents the link from changing color on hover */
+    text-decoration: none; /* Keeps the text without underline on hover */
+  }
+  
+  /* Optional: Add hover animations (e.g., transform) */
+  .hover-this:hover .hover-anim {
+    transform: scale(1.1); /* Adds a scale effect on hover without changing the color */
+  }
+  
 
 .cursor {
     pointer-events: none;
