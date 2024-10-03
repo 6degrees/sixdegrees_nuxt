@@ -2,16 +2,16 @@
   <!-- Start Footer Section -->
   <footer>
     <div class="footer-container">
-      <div class="container pb-80 pt-80 relative z-[7]">
+      <div class="container pb-20 pt-20 relative z-[7]">
         <div class="flex flex-wrap">
           <div class="lg:w-1/4">
-            <div class="max-w-[100px] mt-12">
+            <div class="max-w-[100px] mt-10">
               <img src="/assets/imgs/logo-light.png" alt="6 Degrees" />
             </div>
           </div>
           <div class="lg:w-1/2">
             <div class=" mt-12">
-              <h6 class="sub-title mb-30">{{ $t('components.common.footer.section.socialMedia.title') }}</h6>
+              <h6 class="sub-title mb-10">{{ $t('components.common.footer.section.socialMedia.title') }}</h6>
               <ul class=" p-0 m-0">
                 <li class="hover-this cursor-pointer mr-9 rtl:mr-0 rtl:ml-9 inline-block">
                   <a href="https://github.com/6degrees" class="hover-anim">{{ $t('components.common.footer.section.socialMedia.links.github') }}</a>
@@ -35,7 +35,7 @@
          
         </div>
       </div>
-      <div class="container bord pt-30 pb-30 bord-thin-top">
+      <div class="container bord pt-10 pb-30 bord-thin-top">
         <div class="flex flex-wrap">
           <div class="lg:w-1/2">
             <div class="links">

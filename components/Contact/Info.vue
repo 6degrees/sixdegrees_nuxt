@@ -2,9 +2,9 @@
   <!-- Start Contact Info Section -->
   <section class="py-[120px] main-bg pt-0">
     <div class="container">
-      <div class="sec-head text-center mb-80">
+      <div class="sec-head text-center mb-20">
         <span class=" opacity-8 text-slate-400 text-lg md:text-xl">- {{ $t('components.contact.info.section.subtitle') }}</span> <!-- Increased font size -->
-        <h3 class="uppercase text-5xl pt-5">{{ $t('components.contact.info.section.title') }}</h3>
+        <h3 class="uppercase text-5xl pt-3">{{ $t('components.contact.info.section.title') }}</h3>
       </div>
 
       <div class="flex flex-wrap justify-center">

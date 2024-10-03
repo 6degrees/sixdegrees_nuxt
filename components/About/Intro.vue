@@ -12,7 +12,7 @@
                 <span>{{ $t('components.about.intro.section.whoWeAre.text') }}</span>
               </h2>
             </div>
-            <p class="text-lg ">
+            <p class="text-lg pt-5 ">
               {{ $t('components.about.intro.section.whoWeAre.description') }}
             </p>
           </div>
@@ -20,7 +20,7 @@
       </div>
       <div class="flex flex-wrap">
         <div class="lg:w-5/6 lg:ml-1/12">
-          <div class="flex flex-wrap mt-80">
+          <div class="flex flex-wrap mt-20">
             <div class="md:w-1/3 sm:mb-[30px]">
               <ul class=" m-0 p-0">
                 <li class="text-lg mb-[15px]"><span class="mr-10">+</span> {{ $t('components.about.intro.section.services.customSoftwareDevelopment') }}</li>
@@ -45,7 +45,7 @@
               </ul>
             </div>
           </div>
-          <div class="flex flex-wrap text-8xl leading-none mt-80">
+          <div class="flex flex-wrap text-8xl leading-none mt-20">
             <div class="lg:w-1/3">
               <div class="md-mb50">
                 <h3 class="stroke font-medium pb-[30px] mb-[30px] border-b border-[rgba(255,255,255,0.2)]">{{ $t('components.about.intro.section.numbers.years') }}</h3>

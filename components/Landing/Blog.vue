@@ -4,7 +4,7 @@
     <!-- Container for the blog list section -->
     <div class="container">
       <!-- Section Header -->
-      <div class="sec-head mb-80">
+      <div class="sec-head mb-20">
         <div class="flex items-center justify-end">
           <!-- Title Section -->
           <div>

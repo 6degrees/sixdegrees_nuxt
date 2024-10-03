@@ -165,20 +165,20 @@ main {
     transition: transform 0.2s linear;
     transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
-/* Ensure the links maintain their default color on hover */
+
 .hover-this a {
-    color: inherit; /* Keeps the inherited color (or you can define a custom color) */
-    text-decoration: none; /* Remove underline if needed */
+    color: inherit; 
+    text-decoration: none; 
   }
   
   .hover-this a:hover {
-    color: inherit; /* Prevents the link from changing color on hover */
-    text-decoration: none; /* Keeps the text without underline on hover */
+    color: inherit; 
+    text-decoration: none; 
   }
   
-  /* Optional: Add hover animations (e.g., transform) */
+  
   .hover-this:hover .hover-anim {
-    transform: scale(1.1); /* Adds a scale effect on hover without changing the color */
+    transform: scale(1.1); 
   }
   
 
@@ -454,14 +454,6 @@ main {
     -webkit-text-stroke: 1px #1d1d1d;
 }
 
-/* .dark-text .bord-thin-bottom,
-.dark-text .bord-thin-top,
-.text-dark .bord-thin-bottom,
-.text-dark .bord-thin-top {
-    border-color: rgba(0, 0, 0, 0.2);
-} */
-
-
 .rest {
     padding: 0 !important;
     margin: 0 !important;
@@ -500,13 +492,13 @@ img.left {
     background-position: center center;
 }
 
-.section-padding {
+/* .section-padding {
     padding: 120px 0;
-}
+} */
 
-.rounded {
+/* .rounded {
     border-radius: 5px;
-}
+} */
 
 .circle {
     border-radius: 50%;
@@ -570,14 +562,14 @@ img.left {
     text-align: left;
 } */
 
-.ls1 {
+/* .ls1 {
     letter-spacing: 1px !important;
-}
+} */
 
-.ls2 {
+/* .ls2 {
     letter-spacing: 2px !important;
-}
-
+} */
+/* 
 .mt-5 {
     margin-top: 5px !important;
 }
@@ -668,8 +660,8 @@ img.left {
 
 .pt-5 {
     padding-top: 5px !important;
-}
-
+} */
+/* 
 .pt-10 {
     padding-top: 10px !important;
 }
@@ -686,12 +678,12 @@ img.left {
 
 .pt-80 {
     padding-top: 80px !important;
-}
+} */
 
 /* .pb-0 {
     padding-bottom: 0 !important;
 } */
-
+/* 
 .pb-20 {
     padding-bottom: 20px !important;
 }
@@ -707,7 +699,7 @@ img.left {
 
 .pb-80 {
     padding-bottom: 80px !important;
-}
+} */
 
 body.loaded {
     overflow: hidden !important;
@@ -1365,40 +1357,6 @@ body.loaded {
 
 
 
-.text-reval .text {
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #1c1b1b), color-stop(50%, #7d7d7d));
-    background: -webkit-linear-gradient(left, #120303 50%, #7d7d7d 50%);
-    background: -o-linear-gradient(left, #efefef 50%, #7d7d7d 50%);
-    background: linear-gradient(to right, #dedbdb 50%, #7d7d7d 50%);
-    background-size: 200% 100%;
-    background-position-x: 100%;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-transition: background-position-x .8s !important;
-    -o-transition: background-position-x .8s !important;
-    transition: background-position-x .8s !important;
-}
-
-.vid-sec {
-    margin-top: 180px;
-}
-
-.vid-sec .vid-intro {
-    margin-top: -180px;
-}
-
-.vid-sec .vid-intro .video-container {
-    height: 550px;
-    min-height: 80vh;
-}
-
-.vid-sec .vid-intro .video-container video {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-}
 
 .blog.box-light,
 .blog-list.box-light {
@@ -1451,52 +1409,7 @@ body.loaded {
     display: none;
 }
 
-.contact input,
-.contact textarea {
-    padding: 15px 0;
-    border: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    background: transparent;
-    color: #fff;
-    width: 100%;
-}
 
-.contact input:focus,
-.contact textarea:focus {
-    border-color: rgba(255, 255, 255, 0.7);
-}
-
-.contact button {
-    width: 120px;
-    height: 120px;
-    border: 1px solid #eee;
-    border-radius: 50%;
-    background: transparent;
-    color: #fff;
-}
-
-.contact .hover-this {
-    display: inline-block;
-    cursor: pointer;
-}
-
-.contact .info {
-    position: relative;
-    height: 100%;
-    z-index: 3;
-}
-
-.contact .info:after {
-    content: '';
-    position: absolute;
-    top: -120px;
-    left: -80px;
-    right: -80vw;
-    bottom: -120px;
-    background: #141414;
-    opacity: .5;
-    z-index: -1;
-}
 
 /* Numbers
 -----------------------------------------------------------------*/
@@ -1831,70 +1744,6 @@ footer .logo img {
     }
 }
 
-
-
-/* Testimonials
------------------------------------------------------------------*/
-.testimonials .swiper-button-prev,
-.testimonials .swiper-button-next {
-    display: inline-block;
-    position: static;
-    width: 45px;
-    height: 45px;
-    line-height: 55px;
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    color: #fff;
-    font-size: 35px;
-    margin-left: 10px;
-}
-
-.testimonials .swiper-button-prev:after,
-.testimonials .swiper-button-next:after {
-    display: none;
-}
-
-.testimonials .swiper-button-prev:hover,
-.testimonials .swiper-button-next:hover {
-    background: #55e6a5;
-    border-color: #55e6a5;
-    color: #0c0c0c;
-}
-
-.testimonials .swiper-pagination {
-    width: 140px;
-    height: 140px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    position: static;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    text-align: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.testimonials .swiper-pagination span {
-    font-size: 30px;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-total {
-    position: relative;
-    font-size: 17px;
-    margin-bottom: -10px;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-total:before {
-    content: '/';
-    position: relative;
-    margin: 0 2px 0 7px;
-}
 
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 992px) {
