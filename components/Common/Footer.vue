@@ -35,7 +35,7 @@
          
         </div>
       </div>
-      <div class="container bord pt-10 pb-30 bord-thin-top">
+      <div class="container bord py-8 bord-thin-top">
         <div class="flex flex-wrap">
           <div class="lg:w-1/2">
             <div class="links">
