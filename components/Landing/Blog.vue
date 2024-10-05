@@ -5,15 +5,12 @@
     <div class="container">
       <!-- Section Header -->
       <div class="sec-head mb-20">
-        <div class="flex items-center justify-end">
+        <div class="flex items-center justify-start">
           <!-- Title Section -->
           <div>
             <h3 class="uppercase font-thin text-5xl ">{{ $t('components.landing.blogs.section.title') }} <span class="font-bold">{{ $t('components.landing.blogs.section.subtitle') }}</span></h3>
           </div>
-          <!-- Link to All Blogs -->
-          <div class="ml-auto underline">
-            <a href="/blog" class="animsition-link all-more sub-title tracking-wide"></a>
-          </div>
+     
         </div>
       </div>
       <!-- Loop through blog items -->
