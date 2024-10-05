@@ -17,12 +17,15 @@
       </div>
 
       <!-- Menu Icon -->
-      <div class="menu-icon cursor-pointer ml-4 rtl:mr-4 rtl:ml-0" @click="toggleMenu" aria-label="Toggle navigation menu">
+      <button 
+        class="menu-icon cursor-pointer ml-4 rtl:mr-4 rtl:ml-0" 
+        @click="toggleMenu" 
+        aria-label="Toggle navigation menu">
         <span class="icon text-2xl lg:text-3xl">
           <i></i>
           <i></i>
         </span>
-      </div>
+      </button>
     </div>
   </div>
   <!-- End Navbar Section -->
@@ -68,5 +71,5 @@ const toggleMenu = () => {
 </script>
 
 <style scoped>
-
+/* Add your styles here if needed */
 </style>
