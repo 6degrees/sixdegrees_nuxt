@@ -1,16 +1,6 @@
-/**
- * demo.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2018, Codrops
- * http://www.codrops.com
- */
+
 {
     const mapNumber = (X,A,B,C,D) => (X-A)*(D-C)/(B-A)+C;
-    // from http://www.quirksmode.org/js/events_properties.html#position
 	const getMousePos = (e) => {
         let posx = 0;
         let posy = 0;

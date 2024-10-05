@@ -48,7 +48,7 @@ export default defineNuxtConfig({
         { src: '/assets/js/ScrollTrigger.min.js' },
         { src: '/assets/js/ScrollSmoother.min.js' },
         { src: '/assets/js/scripts.js', defer: true },
-        { src: 'https://unpkg.com/@splinetool/viewer@1.9.3/build/spline-viewer.js', type: 'module' } // Add Spline viewer script
+        // { src: 'https://unpkg.com/@splinetool/viewer@1.9.3/build/spline-viewer.js', type: 'module' } // Add Spline viewer script
       ]
     }
   },
