@@ -7,7 +7,7 @@
           <div class="lg:w-2/3">
             <div class="sec-head mb-50">
               <span class="sub-title mb-6 opacity-8 text-slate-400">{{ $t('components.landing.contacts.section.title') }}</span>
-              <h3 class="uppercase font-bold text-5xl mt-10" v-html="$t('components.landing.contacts.section.heading')"></h3>
+              <h5 class="uppercase font-bold text-5xl my-4" v-html="$t('components.landing.contacts.section.heading')"></h5>
             </div>
             <div class="flex flex-wrap">
               <div class="w-full md:w-1/2 ">

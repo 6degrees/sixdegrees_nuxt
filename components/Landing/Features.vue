@@ -7,7 +7,7 @@
         <div class="flex items-center">
           <div>
             <!-- Main Heading -->
-            <h3 class="uppercase font-extralight text-5xl">{{ $t('components.landing.features.section.title') }}</h3>
+            <h5 class="uppercase font-extralight text-5xl">{{ $t('components.landing.features.section.title') }}</h5>
           </div>
           <div class="ml-auto rtl:ml-0 rtl:mr-auto">
             <div class="flex items-center">

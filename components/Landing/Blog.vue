@@ -8,7 +8,7 @@
         <div class="flex items-center justify-start">
           <!-- Title Section -->
           <div>
-            <h3 class="uppercase font-thin text-5xl ">{{ $t('components.landing.blogs.section.title') }} <span class="font-bold">{{ $t('components.landing.blogs.section.subtitle') }}</span></h3>
+            <h5 class="uppercase font-thin text-5xl ">{{ $t('components.landing.blogs.section.title') }} <span class="font-bold">{{ $t('components.landing.blogs.section.subtitle') }}</span></h5>
           </div>
      
         </div>

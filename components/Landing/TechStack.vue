@@ -4,9 +4,9 @@
     <div class="relative max-w-[70rem] mx-auto">
       <div class="pb-5 text-center">
         <!-- Title Section with responsive text size -->
-        <h2 class="mt-10 font-bold uppercase text-2xl sm:text-3xl md:text-4xl">
+        <h5 class="mt-10 font-bold uppercase text-2xl sm:text-3xl md:text-4xl">
           {{ $t('components.landing.technologies.section.title') }}
-        </h2> 
+        </h5> 
         <br />
         <!-- Subtitle with responsive text size and centered text -->
         <h2>
