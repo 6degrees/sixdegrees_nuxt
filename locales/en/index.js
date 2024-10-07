@@ -188,7 +188,7 @@ export default {
         'contact': {
             'header': {
                 'section': {
-                    'title': 'Find Us by the Corniche.',
+                    'title': 'Find Us In the Corniche.',
                     'subtitle': "Hello, Let's Connect",
                     'map': {
                         'label': 'Location Map'

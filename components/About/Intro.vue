@@ -42,6 +42,8 @@
                 <li class="text-lg mb-[15px]"><span class="mr-10">+</span> {{ $t('components.about.intro.section.services.thirdPartyIntegration') }}</li>
                 <li class="text-lg mb-[15px]"><span class="mr-10">+</span> {{ $t('components.about.intro.section.services.seoDigitalMarketing') }}</li>
                 <li class="text-lg mb-[15px]"><span class="mr-10">+</span> {{ $t('components.about.intro.section.services.itConsultingStrategy') }}</li>
+                <li class="text-lg mb-[15px]"><span class="mr-10">+</span> {{ $t('components.about.intro.section.services.erp') }}</li>
+
               </ul>
             </div>
           </div>
