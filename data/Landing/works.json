@@ -15,7 +15,7 @@
   },
   {
     "id": 2,
-    "img": "/assets/imgs/works/full/2.png",
+    "img": "/assets/imgs/works/full/AMH.jpg",
     "category": {
       "en": "Web Development",
       "ar": "تطوير الويب"
@@ -29,7 +29,7 @@
   },
   {
     "id": 3,
-    "img": "/assets/imgs/works/full/3.png",
+    "img": "/assets/imgs/works/full/penpal.jpg",
     "category": {
       "en": "Application Development",
       "ar": " تطوير التطبيقات"
@@ -43,7 +43,7 @@
   },
   {
     "id": 4,
-    "img": "/assets/imgs/works/full/4.png",
+    "img": "/assets/imgs/works/full/SGC.jpg",
     "category": {
       "en": "Web Application",
       "ar": " تطبيق الويب"

@@ -49,12 +49,12 @@
             </SwiperSlide>
             <SwiperSlide>
               <div class="relative w-full h-[50vh] lg:h-[75vh] min-h-[300px] lg:min-h-[500px]">
-                <img src="/assets/imgs/works/projects/1/second.png" alt="AMH" class="absolute inset-0 w-full h-full object-cover"/>
+                <img src="/assets/imgs/works/projects/1/AMH2.jpg" alt="AMH" class="absolute inset-0 w-full h-full object-cover"/>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div class="relative w-full h-[50vh] lg:h-[75vh] min-h-[300px] lg:min-h-[500px]">
-                <img src="/assets/imgs/works/projects/1/third.png" alt="AMH" class="absolute inset-0 w-full h-full object-cover"/>
+                <img src="/assets/imgs/works/projects/1/AMH3.jpg" alt="AMH" class="absolute inset-0 w-full h-full object-cover"/>
               </div>
             </SwiperSlide>
           </Swiper>

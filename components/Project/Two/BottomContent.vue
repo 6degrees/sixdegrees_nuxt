@@ -4,7 +4,7 @@
       <div class="flex flex-wrap justify-center">
         <div class="lg:w-11/12 w-full">
           <div >
-            <img src="/assets/imgs/works/projects/1/fourth.png" alt="AMH" />
+            <img src="/assets/imgs/works/projects/1/AMH1.jpg" alt="AMH" />
           </div>
           <div class="cont py-20">
             <div class="flex flex-wrap ">
@@ -34,7 +34,7 @@
             </div>
           </div>
           <div >
-            <img src="/assets/imgs/works/projects/1/second.png" alt="AMH" />
+            <img src="/assets/imgs/works/projects/1/AMH2.jpg" alt="AMH" />
           </div>
         </div>
       </div>

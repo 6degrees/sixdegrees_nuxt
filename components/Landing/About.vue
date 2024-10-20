@@ -14,9 +14,9 @@
         <div class="lg:w-2/3">
           <div>
             <div>
-              <span class="text-5xl font-semibold mb-2">{{ $t('components.landing.about.section.intro.line1') }}</span> 
-              <span class="text-5xl font-semibold mb-2">{{ $t('components.landing.about.section.intro.line2') }}</span> 
-              <span class="text-5xl font-semibold mb-2">{{ $t('components.landing.about.section.intro.line3') }}</span>
+              <span class="text-5xl font-semibold mb-2">{{ $t('components.landing.about.section.intro.line1') }} </span> 
+              <span class="text-5xl font-semibold mb-2"> {{ $t('components.landing.about.section.intro.line2') }} </span> <br/>
+              <span class="text-5xl font-semibold mb-2"> {{ $t('components.landing.about.section.intro.line3') }} </span>
             </div>
           </div>
         </div>
