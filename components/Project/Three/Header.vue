@@ -1,5 +1,5 @@
 <template>
-  <header class="header-project3 bg-img flex items-end" data-background="/assets/imgs/works/projects/2/first.png"  data-overlay-dark="9">
+  <header class="header-project3 bg-img flex items-end" data-background="/assets/imgs/works/projects/2/first.jpg"  data-overlay-dark="9">
     <div class="container">
       <div class="flex flex-wrap">
         <div class="w-full">

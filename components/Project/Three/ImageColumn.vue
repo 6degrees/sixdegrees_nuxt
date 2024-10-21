@@ -5,13 +5,13 @@
         <!-- First Image Column -->
         <div class="w-full lg:w-1/2 p-4">
           <div class="img">
-            <img src="/assets/imgs/works/projects/2/fourth.png" alt="Penpal" class="w-full h-auto object-contain" />
+            <img src="/assets/imgs/works/projects/2/fourth.jpg" alt="Penpal" class="w-full h-auto object-contain" />
           </div>
         </div>
         <!-- Second Image Column -->
         <div class="w-full lg:w-1/2 p-4">
           <div class="img">
-            <img src="/assets/imgs/works/projects/2/third.png" alt="Penpal" class="w-full h-auto object-contain" />
+            <img src="/assets/imgs/works/projects/2/third.jpg" alt="Penpal" class="w-full h-auto object-contain" />
           </div>
         </div>
       </div>

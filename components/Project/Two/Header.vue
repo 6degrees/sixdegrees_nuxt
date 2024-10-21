@@ -44,7 +44,7 @@
           <Swiper :modules="swiperOptions.modules" :slides-per-view="swiperOptions.slidesPerView" :loop="swiperOptions.loop" :centeredSlides="swiperOptions.centeredSlides" :spaceBetween="swiperOptions.spaceBetween" :breakpoints="swiperOptions.breakpoints" autoplay="true">
             <SwiperSlide>
               <div class="relative w-full h-[50vh] lg:h-[75vh] min-h-[300px] lg:min-h-[500px]">
-                <img src="/assets/imgs/works/projects/1/first.png" alt="AMH" class="absolute inset-0 w-full h-full object-cover"/>
+                <img src="/assets/imgs/works/projects/1/first.jpg" alt="AMH" class="absolute inset-0 w-full h-full object-cover"/>
               </div>
             </SwiperSlide>
             <SwiperSlide>

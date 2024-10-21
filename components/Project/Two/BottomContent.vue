@@ -19,7 +19,7 @@
             </div>
           </div>
           <div >
-            <img src="/assets/imgs/works/projects/1/first.png" alt="AMH" />
+            <img src="/assets/imgs/works/projects/1/first.jpg" alt="AMH" />
           </div>
           <div class="cont py-20">
             <div class="flex flex-wrap ">

@@ -1,27 +1,27 @@
 [
   {
     "id": 1,
-    "image": "/assets/imgs/works/projects/0/second.png",
+    "image": "/assets/imgs/works/projects/0/second.jpg",
      "alt":"SATORP"
   },
   {
     "id": 2,
-    "image": "/assets/imgs/works/projects/0/third.png",
+    "image": "/assets/imgs/works/projects/0/third.jpg",
      "alt":"SATORP"
   },
   {
     "id": 3,
-    "image": "/assets/imgs/works/projects/0/fourth.png",
+    "image": "/assets/imgs/works/projects/0/fourth.jpg",
      "alt":"SATORP"
   },
   {
     "id": 4,
-    "image": "/assets/imgs/works/projects/0/fifth.png",
+    "image": "/assets/imgs/works/projects/0/fifth.jpg",
          "alt":"SATORP"
   },
   {
     "id": 5,
-    "image": "/assets/imgs/works/projects/0/sixth.png",
+    "image": "/assets/imgs/works/projects/0/sixth.jpg",
          "alt":"SATORP"
   }
 ]

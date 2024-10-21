@@ -2,7 +2,7 @@
   <!-- Header section for Project 4 -->
   <header 
     class="header-project4 bg-cover bg-center relative flex items-end h-[400px] lg:h-[700px]" 
-    :style="{ backgroundImage: `url('/assets/imgs/works/projects/3/first.png')` }"
+    :style="{ backgroundImage: `url('/assets/imgs/works/projects/3/first.jpg')` }"
   >
     <!-- Semi-transparent overlay -->
     <div class="absolute inset-0  "></div>
