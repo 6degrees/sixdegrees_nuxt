@@ -4,9 +4,9 @@
     <div class="container">
       <!-- Logo Section -->
       <div :class="`logo w-34 h-auto lg:w-32 icon-img-${borderBottom ? '100' : '90'}`">
-        <NuxtLink :to="pageRout.toHomePage()">
+        <a :href="pageRout.toHomePage()">
           <img src="/assets/imgs/logo-light.png" alt="6 Degrees Technologies" loading="lazy" class="w-34 h-auto lg:w-32" />
-        </NuxtLink>
+        </a>
       </div>
 
       <!-- Language Switcher with border as a button -->
@@ -17,9 +17,9 @@
       </div>
 
       <!-- Menu Icon -->
-      <button 
-        class="menu-icon cursor-pointer ml-4 rtl:mr-4 rtl:ml-0" 
-        @click="toggleMenu" 
+      <button
+        class="menu-icon cursor-pointer ml-4 rtl:mr-4 rtl:ml-0"
+        @click="toggleMenu"
         aria-label="Toggle navigation menu">
         <span class="icon text-2xl lg:text-3xl">
           <i></i>
