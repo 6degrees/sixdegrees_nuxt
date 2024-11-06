@@ -3,8 +3,8 @@
   <div class="works thecontainer relative z-[7]">
     <div v-for="item in data" :key="item.id" class="panel">
       <div class="item">
-        <div class="img">
-          <img :src="item.image" alt="" />
+        <div>
+          <img :src="item.image" :alt="item.alt" class="w-full h-auto md:min-h-[60vh] md:min-w-[70vh] object-cover" />
         </div>
       </div>
     </div>
