@@ -8,3 +8,4 @@ services:
     container_name: six-degrees-app
     ports:
       - ${OUTPUT_PORT}:3000
+    restart: unless-stopped
