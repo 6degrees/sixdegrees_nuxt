@@ -48,8 +48,25 @@ export default defineNuxtConfig({
         { src: '/assets/js/ScrollTrigger.min.js' },
         { src: '/assets/js/ScrollSmoother.min.js' },
         { src: '/assets/js/scripts.js', defer: true },
-        // { src: 'https://unpkg.com/@splinetool/viewer@1.9.3/build/spline-viewer.js', type: 'module' } // Add Spline viewer script
-      ]
+        // Google Tag Manager
+        { 
+          src: "https://www.googletagmanager.com/gtag/js?id=AW-16793981677", 
+          async: true 
+        },
+        {
+          innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16793981677');
+          `,
+          type: "text/javascript",
+          charset: "utf-8"
+        }
+      ],
+      __dangerouslyDisableSanitizersByTagID: {
+        "gtag-config": ["innerHTML"]
+      }
     }
   },
   css: [
