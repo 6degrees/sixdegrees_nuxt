@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   ssr: true,
   devtools: { enabled: false },
   typescript: {
-    shim: false
+    shim: false,
   },
   postcss: {
     plugins: {
@@ -15,45 +15,48 @@ export default defineNuxtConfig({
     head: {
       title: "6 Degrees Technologies",
       htmlAttrs: {
-        lang: 'en'
+        lang: "en",
       },
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         { charset: "utf-8" },
-        { "http-equiv": 'X-UA-Compatible', content: "IE=edge" },
-        { name: 'keywords', content: '' },
+        { "http-equiv": "X-UA-Compatible", content: "IE=edge" },
+        { name: "keywords", content: "" },
         {
-          name: 'description',
-          content: 'Where your technological future, comes today. The limits to technology uses is beyond imagination, digitize your life with us'
+          name: "description",
+          content:
+            "Where your technological future, comes today. The limits to technology uses is beyond imagination, digitize your life with us",
         },
-        { name: 'author', content: 'Six Degrees Technologies' }
+        { name: "author", content: "Six Degrees Technologies" },
       ],
       link: [
-        { rel: 'shortcut icon', href: '/assets/imgs/favicon.ico' },
+        { rel: "shortcut icon", href: "/assets/imgs/favicon.ico" },
         // Google Fonts
         {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap'
+          rel: "stylesheet",
+          href:
+            "https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap",
         },
-        { rel: 'stylesheet', href: '/assets/fonts/mona-sans/style.css' },
-        { rel: 'stylesheet', href: '/assets/fonts/SST/style.css' },
-        { rel: 'stylesheet', href: '/assets/css/plugins.css' },
-        { rel: 'stylesheet', href: '/assets/css/style.css' },
+        { rel: "stylesheet", href: "/assets/fonts/mona-sans/style.css" },
+        { rel: "stylesheet", href: "/assets/fonts/SST/style.css" },
+        { rel: "stylesheet", href: "/assets/css/plugins.css" },
+        { rel: "stylesheet", href: "/assets/css/style.css" },
       ],
       script: [
-        { src: '/assets/js/plugins.js' },
-        { src: '/assets/js/isotope.pkgd.min.js' },
-        { src: '/assets/js/wow.min.js' },
-        { src: '/assets/js/gsap.min.js' },
-        { src: '/assets/js/ScrollTrigger.min.js' },
-        { src: '/assets/js/ScrollSmoother.min.js' },
-        { src: '/assets/js/scripts.js', defer: true },
+        { src: "/assets/js/plugins.js" },
+        { src: "/assets/js/isotope.pkgd.min.js" },
+        { src: "/assets/js/wow.min.js" },
+        { src: "/assets/js/gsap.min.js" },
+        { src: "/assets/js/ScrollTrigger.min.js" },
+        { src: "/assets/js/ScrollSmoother.min.js" },
+        { src: "/assets/js/scripts.js", defer: true },
         // Google Tag Manager
-        { 
-          src: "https://www.googletagmanager.com/gtag/js?id=AW-16793981677", 
-          async: true 
+        {
+          src: "https://www.googletagmanager.com/gtag/js?id=AW-16793981677",
+          async: true,
         },
         {
+          id: "gtag-config",
           innerHTML: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -61,34 +64,28 @@ export default defineNuxtConfig({
             gtag('config', 'AW-16793981677');
           `,
           type: "text/javascript",
-          charset: "utf-8"
-        }
+          charset: "utf-8",
+        },
       ],
       __dangerouslyDisableSanitizersByTagID: {
-        "gtag-config": ["innerHTML"]
-      }
-    }
+        "gtag-config": ["innerHTML"],
+      },
+    },
   },
-  css: [
-    'swiper/css/bundle',
-    '@/assets/css/main.css'
-  ],
+  css: ["swiper/css/bundle", "@/assets/css/main.css"],
   webpack: {
     extractCSS: true,
     optimization: {
       splitChunks: {
-        layouts: true
-      }
-    }
+        layouts: true,
+      },
+    },
   },
-  modules: [
-    '@nuxtjs/i18n',
-    'nuxt-swiper'
-  ],
+  modules: ["@nuxtjs/i18n", "nuxt-swiper"],
   hooks: {
-    'vite:extendConfig': (config) => {
-      if (typeof config.server!.hmr === 'object') {
-        config.server!.hmr.protocol = process.env.HMR_PROTOCOL || 'ws';
+    "vite:extendConfig": (config) => {
+      if (typeof config.server!.hmr === "object") {
+        config.server!.hmr.protocol = process.env.HMR_PROTOCOL || "ws";
       }
     },
   },
@@ -106,7 +103,7 @@ export default defineNuxtConfig({
         iso: "en",
         dir: "ltr",
         file: "en",
-        hrf: "/en"
+        hrf: "/en",
       },
       {
         code: "ar",
@@ -114,7 +111,7 @@ export default defineNuxtConfig({
         iso: "ar",
         dir: "rtl",
         file: "ar",
-        hrf: "/ar"
+        hrf: "/ar",
       },
     ],
     defaultLocale: "en",
