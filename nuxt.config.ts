@@ -31,7 +31,6 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: "shortcut icon", href: "/assets/imgs/favicon.ico" },
-        // Google Fonts
         {
           rel: "stylesheet",
           href:
@@ -43,14 +42,7 @@ export default defineNuxtConfig({
         { rel: "stylesheet", href: "/assets/css/style.css" },
       ],
       script: [
-        { src: "/assets/js/plugins.js" },
-        { src: "/assets/js/isotope.pkgd.min.js" },
-        { src: "/assets/js/wow.min.js" },
-        { src: "/assets/js/gsap.min.js" },
-        { src: "/assets/js/ScrollTrigger.min.js" },
-        { src: "/assets/js/ScrollSmoother.min.js" },
-        { src: "/assets/js/scripts.js", defer: true },
-        // Google Tag Manager
+        // Google Ads Tag
         {
           src: "https://www.googletagmanager.com/gtag/js?id=AW-16793981677",
           async: true,
@@ -66,9 +58,26 @@ export default defineNuxtConfig({
           type: "text/javascript",
           charset: "utf-8",
         },
+        // Google Analytics Tag
+        {
+          src: "https://www.googletagmanager.com/gtag/js?id=G-0WTRN79WNX",
+          async: true,
+        },
+        {
+          id: "analytics-config",
+          innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-0WTRN79WNX');
+          `,
+          type: "text/javascript",
+          charset: "utf-8",
+        },
       ],
       __dangerouslyDisableSanitizersByTagID: {
         "gtag-config": ["innerHTML"],
+        "analytics-config": ["innerHTML"],
       },
     },
   },
