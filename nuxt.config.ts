@@ -42,6 +42,13 @@ export default defineNuxtConfig({
         { rel: "stylesheet", href: "/assets/css/style.css" },
       ],
       script: [
+        { src: '/assets/js/plugins.js' },
+        { src: '/assets/js/isotope.pkgd.min.js' },
+        { src: '/assets/js/wow.min.js' },
+        { src: '/assets/js/gsap.min.js' },
+        { src: '/assets/js/ScrollTrigger.min.js' },
+        { src: '/assets/js/ScrollSmoother.min.js' },
+        { src: '/assets/js/scripts.js', defer: true },
         // Google Ads Tag
         {
           src: "https://www.googletagmanager.com/gtag/js?id=AW-16793981677",
