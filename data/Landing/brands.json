@@ -1,82 +1,87 @@
 [
   {
     "id": 1,
+    "img": "/assets/imgs/brands/04.png",
+     "alt":"aramco"
+  },
+  {
+    "id": 2,
+    "img": "/assets/imgs/brands/12.png",
+     "alt":"MoC"
+  },
+  {
+    "id": 3,
+    "img": "/assets/imgs/brands/20.png",
+     "alt":"KFCA"
+  },
+  {
+    "id": 4,
+    "img": "/assets/imgs/brands/02.png",
+     "alt":"AMH"
+  },
+  {
+    "id": 5,
+    "img": "/assets/imgs/brands/10.png",
+     "alt":"GDC"
+  },
+  {
+    "id": 6,
+    "img": "/assets/imgs/brands/03.png",
+     "alt":"Alasasyah"
+  },
+  {
+    "id": 7,
+    "img": "/assets/imgs/brands/16.png",
+     "alt":"Saudi Cement"
+  },
+  {
+    "id": 8,
     "img": "/assets/imgs/brands/01.png",
     "alt":"aramco golf"
     
   },
   {
-    "id": 2,
-    "img": "/assets/imgs/brands/02.png",
-     "alt":"AMH"
-  },
-  {
-    "id": 3,
-    "img": "/assets/imgs/brands/03.png",
-     "alt":"Alasasyah"
-  },
-  {
-    "id": 4,
-    "img": "/assets/imgs/brands/04.png",
-     "alt":"aramco"
-  },
-  {
-    "id": 5,
-    "img": "/assets/imgs/brands/05.png",
-     "alt":"Burgerfi"
-  },  
-  {
-    "id": 6,
-    "img": "/assets/imgs/brands/06.png",
-     "alt":"Burooj"
-  },
-  {
-    "id": 7,
-    "img": "/assets/imgs/brands/07.png",
-     "alt":"MNS"
-  },
-  {
-    "id": 8,
-    "img": "/assets/imgs/brands/09.png",
-     "alt":"Fisique"
-  },
-  {
     "id": 9,
-    "img": "/assets/imgs/brands/10.png",
-     "alt":"GDC"
-  },
-  {
-    "id": 10,
     "img": "/assets/imgs/brands/11.png",
      "alt":"Ithra"
   },
   {
+    "id": 10,
+    "img": "/assets/imgs/brands/05.png",
+     "alt":"Burgerfi"
+  },  
+  {
     "id": 11,
-    "img": "/assets/imgs/brands/12.png",
-     "alt":"MoC"
+    "img": "/assets/imgs/brands/06.png",
+     "alt":"Burooj"
   },
   {
     "id": 12,
+    "img": "/assets/imgs/brands/07.png",
+     "alt":"MNS"
+  },
+  {
+    "id": 13,
+    "img": "/assets/imgs/brands/09.png",
+     "alt":"Fisique"
+  },
+  {
+    "id": 14,
     "img": "/assets/imgs/brands/14.png",
      "alt":"Penpal"
   },
   {
-    "id": 13,
+    "id": 15,
     "img": "/assets/imgs/brands/15.png",
      "alt":"SATORP"
   },
   {
-    "id": 14,
-    "img": "/assets/imgs/brands/16.png",
-     "alt":"Saudi Cement"
-  },
-  {
-    "id": 15,
+    "id": 16,
     "img": "/assets/imgs/brands/17.png",
      "alt":"Somou"
   },
   {
-    "id": 16,
+    "id": 17,
     "img": "/assets/imgs/brands/19.png",
      "alt":"Ziebart"
   }
