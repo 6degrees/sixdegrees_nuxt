@@ -90,7 +90,7 @@ useHead({
     }
   ],
   script: [
-    {src: "/assets/js/TweenMax.min.js"}, // Include TweenMax JavaScript library
+    //{src: "/assets/js/TweenMax.min.js"}, // Include TweenMax JavaScript library
     {src: "/assets/js/charming.min.js"}, // Include Charming JavaScript library
     {src: "/assets/js/smoother-script.js", defer: true} // Include custom smoother script with defer attribute
   ]
