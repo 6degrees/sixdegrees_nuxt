@@ -41,7 +41,7 @@
             <div class="links">
               <ul class="p-0 m-0">
                 <li class="mr-9 rtl:mr-0 rtl:ml-9">
-                  <a href="https://up.monitoring.6d.com.sa/status/main" class="animsition-link">{{ $t('components.common.footer.section.links.serviceStatus') }}</a>
+                  <a href="https://up.monitoring.6degrees.com.sa/status/main" class="animsition-link">{{ $t('components.common.footer.section.links.serviceStatus') }}</a>
                 </li>
                 <li class="mr-9 rtl:mr-0 rtl:ml-9">
                   <NuxtLink :to="pageRout.toAboutPage()" class="animsition-link">{{ $t('components.common.footer.section.links.about') }}</NuxtLink>
