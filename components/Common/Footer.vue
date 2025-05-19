@@ -44,11 +44,17 @@
                   <a href="https://up.monitoring.6degrees.com.sa/status/main" class="animsition-link">{{ $t('components.common.footer.section.links.serviceStatus') }}</a>
                 </li>
                 <li class="mr-9 rtl:mr-0 rtl:ml-9">
-                  <NuxtLink :to="pageRout.toAboutPage()" class="animsition-link">{{ $t('components.common.footer.section.links.about') }}</NuxtLink>
-                </li>
-                <li class="mr-9 rtl:mr-0 rtl:ml-9">
-                  <NuxtLink :to="pageRout.toContactPage()" class="animsition-link">{{ $t('components.common.footer.section.links.contact') }}</NuxtLink>
-                </li>
+                  <NuxtLink :to="localePath('/privacy-policy')" class="animsition-link">
+  {{ $t('components.common.footer.section.links.privacy') }}
+</NuxtLink>
+
+</li>
+<li class="mr-9 rtl:mr-0 rtl:ml-9">
+  <NuxtLink :to="localePath('/terms-and-conditions')" class="animsition-link">
+  {{ $t('components.common.footer.section.links.terms') }}
+</NuxtLink>
+
+</li>
                 <li class="mr-9 rtl:mr-0 rtl:ml-9">
                   <a href="https://wiki.6degrees.com.sa/" class="animsition-link">{{ $t('components.common.footer.section.links.docs') }}</a>
                 </li>
@@ -82,6 +88,8 @@
 |
 */
 const pageRout = usePageRout()
+const localePath = useLocalePath()
+
 
 /*
 |--------------------------------------------------------------------------

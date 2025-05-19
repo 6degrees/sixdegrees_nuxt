@@ -7,6 +7,59 @@ export default {
                 },
             },
             'footer': {
+                    "pages": {
+                      "privacy": {
+                        "title": "Privacy Policy",
+                        "intro": "At 6 Degrees Technologies, we value your privacy and are committed to protecting your personal information. This policy outlines how we collect, use, and safeguard the data you provide to us when using our website and services.",
+                        "headings": {
+                          "1": "1. Information We Collect",
+                          "2": "2. How We Use Your Information",
+                          "3": "3. Data Protection",
+                          "5": "4. Third-Party Services",
+                          "6": "5. Your Rights",
+                          "7": "6. Updates to This Policy"
+                        },
+                        "content": {
+                          "1": "We may collect personal information such as your name, email address, phone number, company name, and any other details you voluntarily provide through our forms, inquiries, or subscriptions.",
+                          "2": {
+                            "1": "Respond to your inquiries and service requests",
+                            "2": "Send important updates or newsletters (only with your consent)",
+                            "3": "Improve our website and service offerings",
+                            "4": "Analyze usage patterns to enhance user experience"
+                          },
+                          "3": "We implement appropriate technical and organizational measures to secure your personal data from unauthorized access, misuse, or disclosure.",                          "5": "We may use third-party tools (e.g., analytics, CRM, marketing platforms) that collect data on our behalf. These providers comply with strict data protection regulations.",
+                          "6": {
+                            "1": "You have the right to access, correct, or request deletion of your personal data. To do so, please contact us at:",
+                          },
+                          "7": "We may update this Privacy Policy from time to time. Changes will be posted on this page with the effective date noted at the top. Last updated: May 2025"
+                        }
+                      },
+                  
+                      "terms": {
+                        "title": "Terms & Conditions",
+                        "intro": "Welcome to 6 Degrees Technologies. By accessing our website or using our services, you agree to the following terms and conditions. Please read them carefully.",
+                        "headings": {
+                          "1": "1. Acceptance of Terms",
+                          "2": "2. Services",
+                          "3": "3. Intellectual Property",
+                          "4": "4. User Responsibilities",
+                          "5": "5. Limitation of Liability",
+                          "6": "6. External Links",
+                          "7": "7. Changes to Terms"
+                        },
+                        "content": {
+                          "1": "By using our website or engaging with our services, you confirm that you accept these terms and will comply with them. If you do not agree, please do not use our platform.",
+                          "2": "6 Degrees Technologies offers services including website and app development, UI/UX design, IoT and smart home automation, hardware support, and consulting. Specific terms may apply to certain services, which will be communicated separately.",
+                          "3": "All content, designs, trademarks, and intellectual property on this website are owned by or licensed to 6 Degrees Technologies. Unauthorized use is strictly prohibited.",
+                          "4": "Users agree not to use our website for any unlawful purposes or in a manner that could damage, disable, or impair the website's functionality or interfere with other users.",
+                          "5": "We do our best to ensure accurate information and uninterrupted service, but we do not guarantee the site will always be error-free. 6 Degrees Technologies shall not be held liable for any indirect, incidental, or consequential damages resulting from your use of the site.",
+                          "6": "Our website may contain links to third-party websites. We are not responsible for their content or practices and recommend reviewing their terms before engaging with them.",
+                          "7": "We may revise these terms at any time by updating this page. Continued use of our services implies acceptance of the updated terms. Last updated: May 2025"
+                        }
+                      }
+                    },
+         
+                  
                 'section': {
                     'socialMedia': {
                         'title': 'Social Media',
@@ -25,14 +78,16 @@ export default {
                     },
                     'links': {
                         'serviceStatus': 'Service Status',
-                        'about': 'About',
-                        'contact': 'Contact',
+                           "privacy": "Privacy Policy",
+          "terms": "Terms & Conditions",
                         'docs': 'Docs'
                     },
                     'copyright': {
                         'text': 'All rights reserved © 6 Degrees Technologies Co. 2024.'
                     }
                 }
+
+
             },
             'menu': {
                 'section': {
