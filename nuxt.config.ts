@@ -51,6 +51,20 @@ export default defineNuxtConfig({
         { src: '/assets/js/ScrollSmoother.min.js' },
         { src: '/assets/js/scripts.js', defer: true },
 
+        // Google Tag Manager
+        {
+          id: "gtm-script",
+          innerHTML: `
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5ZK7BH6Z');
+          `,
+          type: "text/javascript",
+          charset: "utf-8"
+        },
+
         // Google Ads
         {
           src: "https://www.googletagmanager.com/gtag/js?id=AW-16793981677",
@@ -126,18 +140,41 @@ export default defineNuxtConfig({
           `,
           type: "text/javascript",
           charset: "utf-8",
+        },
+
+        // Snap Pixel
+        {
+          id: "snap-pixel",
+          innerHTML: `
+            (function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
+            {a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
+            a.queue=[];var s='script';r=t.createElement(s);r.async=!0;
+            r.src=n;var u=t.getElementsByTagName(s)[0];
+            u.parentNode.insertBefore(r,u);})(window,document,
+            'https://sc-static.net/scevent.min.js');
+
+            snaptr('init', '3f912d57-001d-498b-874e-a59853c20d7c');
+            snaptr('track', 'PAGE_VIEW');
+          `,
+          type: "text/javascript",
+          charset: "utf-8"
         }
       ],
       noscript: [
+        {
+          children: `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZK7BH6Z" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>`
+        },
         {
           children: `<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=30178781758373644&ev=PageView&noscript=1" />`
         }
       ],
       __dangerouslyDisableSanitizersByTagID: {
+        "gtm-script": ["innerHTML"],
         "gtag-config": ["innerHTML"],
         "analytics-config": ["innerHTML"],
         "meta-pixel": ["innerHTML"],
-        "tiktok-pixel": ["innerHTML"]
+        "tiktok-pixel": ["innerHTML"],
+        "snap-pixel": ["innerHTML"]
       }
     },
   },
